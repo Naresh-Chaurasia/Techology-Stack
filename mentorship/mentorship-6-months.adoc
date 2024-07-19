@@ -27,11 +27,11 @@
 
 * *Project 2* - Java Selenium Automation
 
-* *Project 3* - Working with Data Using Python
+* *Project 3* - API Automation using REST Assured
 
 * *Project 4* - API Automation using REST Assured
 
-* *Project 5* - API Automation using REST Assured
+* *Project 5* - DevOps Pipeline using Jenkins
 
 * *Mock* Interviews
 
