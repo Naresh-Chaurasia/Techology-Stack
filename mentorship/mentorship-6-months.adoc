@@ -5,8 +5,6 @@
 
 * *Core Java* Programming
 
-* *Python* Programming
-
 * *Selenium* Automation with Java
 
 * *API Automation* using REST Assured
