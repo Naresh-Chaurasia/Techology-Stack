@@ -19,9 +19,9 @@
 
 * *Docker* Container Introduction
 
-* *Microservices* Architecture
+* Basics of *Microservices* Architecture
 
-* *Amazon AWS* Cloud Computing
+* Basics of  *Amazon AWS* Cloud Computing
 
 * *Project 1* - Java Selenium Automation
 
