@@ -1,0 +1,40 @@
+= Mentorship Program - 6 Months
+:toc: left
+:toclevels: 5
+:sectnums:
+
+* *Core Java* Programming
+
+* *Python* Programming
+
+* *Selenium* Automation with Java
+
+* *API Automation* using REST Assured
+
+* *DevOps* Concepts
+
+* *Linux* Basics
+
+* *GitHub* Basics - Code Checkin, Code Checkout, Merging
+
+* *Jenkin* Introduction
+
+* *Docker* Container Introduction
+
+* *Microservices* Architecture
+
+* *Amazon AWS* Cloud Computing
+
+* *Project 1* - Java Selenium Automation
+
+* *Project 2* - Java Selenium Automation
+
+* *Project 3* - Working with Data Using Python
+
+* *Project 4* - API Automation using REST Assured
+
+* *Project 5* - API Automation using REST Assured
+
+* *Mock* Interviews
+
+* How to use *ChatGPT* for coding, debugging and automation
