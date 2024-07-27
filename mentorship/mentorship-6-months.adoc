@@ -5,7 +5,13 @@
 
 == Core Java Programming
 
+== Agile
 
+link:core-java.adoc[Core Java,window=_blank]
+
+* *Java Installation*
+- Environment Variables
+- Path and CLASSPATH
 
 * *Basic Java Concepts*
 

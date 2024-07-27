@@ -1,0 +1,63 @@
+= Core Java - Notes
+:toc: top
+:toclevels: 5
+:sectnums
+
+
+== Path Environment Variable
+
+The `PATH` environment variable in Java (and more broadly in any operating system) is a system variable used to specify the directories in which executable programs are located. When you run a command in the terminal or command prompt, the operating system searches through these directories to find the executable file corresponding to the command.
+
+*Importance of `PATH` in Java*
+
+When working with Java, the `PATH` environment variable is crucial because it allows the system to locate the Java Development Kit (JDK) executables, such as `java` (the Java runtime) and `javac` (the Java compiler). By setting the `PATH` variable to include the directory where the JDK binaries are located, you can run Java commands from any command line prompt without needing to specify the full path to the executable.
+
+*Setting the `PATH` Environment Variable*
+
+*On Windows:*
+1. **Locate JDK Installation Directory**:
+- Typically, it is something like `C:\Program Files\Java\jdk-17\bin`.
+
+2. **Set the PATH variable**:
+- Open the **Start Menu** and search for `Environment Variables`.
+- Click on **Edit the system environment variables**.
+- In the System Properties window, click on the **Environment Variables** button.
+- In the Environment Variables window, under **System variables**, find the `Path` variable and select it. Click on **Edit**.
+- In the Edit Environment Variable dialog, click on **New** and add the path to the JDK `bin` directory (e.g., `C:\Program Files\Java\jdk-17\bin`).
+- Click **OK** to close all dialog boxes.
+
+---
+
+*On macOS/Linux:*
+
+1. **Locate JDK Installation Directory**:
+- Typically, it is something like `/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin` on macOS or `/usr/lib/jvm/java-17-openjdk-amd64/bin` on Linux.
+
+2. **Set the PATH variable**:
+- Open a terminal.
+- Open the `.bash_profile`, `.bashrc`, `.zshrc`, or `.profile` file in a text editor (depending on your shell and system configuration):
+```sh
+nano ~/.bash_profile
+```
+- Add the following line to set the PATH variable:
+```sh
+export PATH=$PATH:/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin
+# or for Linux
+export PATH=$PATH:/usr/lib/jvm/java-17-openjdk-amd64/bin
+```
+- Save the file and exit the text editor.
+- Apply the changes by running:
+```sh
+source ~/.bash_profile
+```
+
+---
+
+*Verifying the PATH*
+
+To verify that the PATH variable is set correctly, you can open a new terminal or command prompt and run:
+----
+java -version
+javac -version
+----
+If the PATH is set correctly, these commands should display the installed Java version without any errors.
