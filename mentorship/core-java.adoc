@@ -1,7 +1,7 @@
 = Core Java - Notes
-:toc: top
+:toc: right
 :toclevels: 5
-:sectnums
+:sectnums: 5
 
 
 == Path Environment Variable
@@ -62,7 +62,162 @@ javac -version
 ----
 If the PATH is set correctly, these commands should display the installed Java version without any errors.
 
-== Data Types and Variables
+== Data Types in Java
+
+image::java-data-types.png[]
+
+---
+
+
+*Primitive Data Types*
+
+1. **byte**:
+- Example: `byte b = 100;`
+- Range: -128 to 127
+
+2. **short**:
+- Example: `short s = 10000;`
+- Range: -32,768 to 32,767
+
+3. **int**:
+- Example: `int i = 100000;`
+- Range: -2^31 to 2^31-1
+
+4. **long**:
+- Example: `long l = 100000L;`
+- Range: -2^63 to 2^63-1
+
+5. **float**:
+- Example: `float f = 234.5f;`
+- Range: Approximately ±3.40282347E+38F (6-7 significant decimal digits)
+
+6. **double**:
+- Example: `double d = 123.4;`
+- Range: Approximately ±1.79769313486231570E+308 (15 significant decimal digits)
+
+7. **char**:
+- Example: `char c = 'A';`
+- Range: 0 to 65,535 (unsigned)
+
+8. **boolean**:
+- Example: `boolean b = true;`
+- Values: `true` or `false`
+
+[source, java]
+----
+public class PrimitiveDataTypes {
+    public static void main(String[] args) {
+        // byte example
+        byte byteVar = 100;
+        System.out.println("byte value: " + byteVar);
+
+        // short example
+        short shortVar = 10000;
+        System.out.println("short value: " + shortVar);
+
+        // int example
+        int intVar = 100000;
+        System.out.println("int value: " + intVar);
+
+        // long example
+        long longVar = 100000L;
+        System.out.println("long value: " + longVar);
+
+        // float example
+        float floatVar = 234.5f;
+        System.out.println("float value: " + floatVar);
+
+        // double example
+        double doubleVar = 123.4;
+        System.out.println("double value: " + doubleVar);
+
+        // char example
+        char charVar = 'A';
+        System.out.println("char value: " + charVar);
+
+        // boolean example
+        boolean booleanVar = true;
+        System.out.println("boolean value: " + booleanVar);
+    }
+}
+
+----
+
+---
+
+*Non-Primitive Data Types*
+
+1. **String**:
+- Example: `String str = "Hello, World!";`
+- Strings are sequences of characters.
+
+2. **Array**:
+- Example: `int[] arr = {1, 2, 3, 4, 5};`
+- Arrays can hold multiple values of the same type.
+
+3. **Class**:
+
+4. **Interface**:
+
+5. **Enum**:
+
+== Variables in Java
+
+In Java, a variable is a container that holds data that can be changed during the execution of a program. Variables are fundamental to Java programming and are used to store information that your Java program manipulates. Each variable in Java has a specific type, which determines the size and layout of the variable's memory, the range of values that can be stored within that memory, and the set of operations that can be applied to the variable.
+
+*Types of Variables in Java*
+
+1. **Local Variables**:
+- Declared inside a method, constructor, or block.
+- Scope is limited to the block in which they are declared.
+- Must be initialized before use.
+
+2. **Instance Variables** (Non-static Fields):
+- Declared inside a class but outside any method.
+- Each instance of the class has its own copy of the variable.
+- Initialized to default values if not explicitly initialized.
+
+3. **Class Variables** (Static Fields):
+- Declared with the `static` keyword inside a class but outside any method.
+- Shared among all instances of the class.
+- Initialized to default values if not explicitly initialized.
+
+
+Here is an example illustrating different types of variables:
+
+[source, java]
+----
+public class VariablesExample {
+    // Instance variable
+    int instanceVar;
+
+    // Class variable (static variable)
+    static int staticVar;
+
+    public void methodExample() {
+        // Local variable
+        int localVar = 10;
+
+        System.out.println("Local variable: " + localVar);
+        System.out.println("Instance variable: " + instanceVar);
+        System.out.println("Static variable: " + staticVar);
+    }
+
+    public static void main(String[] args) {
+        // Create an instance of VariablesExample
+        VariablesExample example = new VariablesExample();
+
+        // Access instance variable
+        example.instanceVar = 5;
+
+        // Access static variable
+        VariablesExample.staticVar = 20;
+
+        // Call method to demonstrate local variable
+        example.methodExample();
+    }
+}
+----
 
 == References
 
