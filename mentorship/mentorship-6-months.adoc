@@ -5,7 +5,9 @@
 
 == Core Java Programming
 
- 1. *Basic Java Concepts*
+
+
+* *Basic Java Concepts*
 
 - *Java Basics*
 - Introduction to Java
@@ -17,7 +19,7 @@
 - Reference Data Types
 - Variables and Constants
 
- 2. *Control Flow Statements*
+* *Control Flow Statements*
 - *Conditional Statements*
 - If-else Statements
 - Switch Statements
@@ -26,7 +28,7 @@
 - While Loop
 - Do-While Loop
 
- 3. *Object-Oriented Programming (OOP)*
+* *Object-Oriented Programming (OOP)*
 - *Classes and Objects*
 - Defining a Class
 - Creating Objects
@@ -44,7 +46,7 @@
 - Abstract Classes
 - Interfaces
 
- 4. *Exception Handling*
+* *Exception Handling*
 - Types of Exceptions
 - Checked Exceptions
 - Unchecked Exceptions
@@ -52,7 +54,7 @@
 - Throw and Throws
 - Finally Block
 
- 5. *Collections Framework*
+* *Collections Framework*
 - *List*
 - ArrayList
 - LinkedList
@@ -65,7 +67,7 @@
 - LinkedHashMap
 - TreeMap
 
- 6. *Java Input and Output (I/O)*
+* *Java Input and Output (I/O)*
 - File Handling
 - File Class
 - Reading and Writing Files
@@ -73,7 +75,7 @@
 - Byte Streams
 - Character Streams
 
- 7. *Multithreading*
+* *Multithreading*
 - Creating Threads
 - Extending Thread Class
 - Implementing Runnable Interface
@@ -81,7 +83,7 @@
 - Synchronization
 - Inter-Thread Communication
 
- 8. *Java Utility Classes*
+* *Java Utility Classes*
 - *String Handling*
 - String Class
 - StringBuilder and StringBuffer
@@ -89,7 +91,7 @@
 - Autoboxing and Unboxing
 
 
- 9. *Java 8 Features (#Overview#)*
+* *Java 8 Features (#Overview#)*
 - Lambda Expressions
 - Streams API
 - Functional Interfaces
