@@ -1,6 +1,6 @@
 = Mentorship Program - 6 Months
 :toc: right
-:toclevels: 5
+:toclevels:
 :sectnums:
 
 == Core Java Programming
