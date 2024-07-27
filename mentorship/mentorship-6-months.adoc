@@ -142,3 +142,10 @@ link:core-java.adoc[Core Java,window=_blank]
 == Mock Interviews
 
 == How to use ChatGPT for coding, debugging and automation
+
+== IDE
+
+* Visual Studio Code
+* IntelliJ
+* Pluggins for Editors
+
