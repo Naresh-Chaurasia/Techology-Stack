@@ -1,5 +1,5 @@
 = IDE
-:toc: top
+:toc: right
 :toclevels: 5
 :sectnums
 
@@ -10,3 +10,19 @@
 * Debug Java Code
 * Code Assistance and Refactoring
 * VS Code Plugins
+** Extension Pack for Java
+
+image::java-ext.png[]
+
+---
+
+* VS Code Command Palette
+** Command + P / Control + Shift + P
+** >java
+
+image::java-command-palette.png[]
+
+---
+
+* intellCode
+* code snippet
