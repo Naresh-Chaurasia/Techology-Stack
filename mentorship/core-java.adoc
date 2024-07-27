@@ -61,3 +61,5 @@ java -version
 javac -version
 ----
 If the PATH is set correctly, these commands should display the installed Java version without any errors.
+
+== Data Types and Variables
