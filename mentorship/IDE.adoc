@@ -1,0 +1,12 @@
+= IDE
+:toc: top
+:toclevels: 5
+:sectnums
+
+== Visual Studio Code - Java Development
+
+* Prepare VS Code for Java Development
+* Code Assistance
+* Debug Java Code
+* Code Assistance and Refactoring
+* VS Code Plugins
