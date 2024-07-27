@@ -5,7 +5,7 @@
 
 == Core Java Programming
 
-* 1. *Basic Java Concepts*
+ 1. *Basic Java Concepts*
 
 - *Java Basics*
 - Introduction to Java
@@ -17,7 +17,7 @@
 - Reference Data Types
 - Variables and Constants
 
-* 2. *Control Flow Statements*
+ 2. *Control Flow Statements*
 - *Conditional Statements*
 - If-else Statements
 - Switch Statements
@@ -26,7 +26,7 @@
 - While Loop
 - Do-While Loop
 
-* 3. *Object-Oriented Programming (OOP)*
+ 3. *Object-Oriented Programming (OOP)*
 - *Classes and Objects*
 - Defining a Class
 - Creating Objects
@@ -44,7 +44,7 @@
 - Abstract Classes
 - Interfaces
 
-* 4. *Exception Handling*
+ 4. *Exception Handling*
 - Types of Exceptions
 - Checked Exceptions
 - Unchecked Exceptions
@@ -52,7 +52,7 @@
 - Throw and Throws
 - Finally Block
 
-* 5. *Collections Framework*
+ 5. *Collections Framework*
 - *List*
 - ArrayList
 - LinkedList
@@ -65,7 +65,7 @@
 - LinkedHashMap
 - TreeMap
 
-* 6. *Java Input and Output (I/O)*
+ 6. *Java Input and Output (I/O)*
 - File Handling
 - File Class
 - Reading and Writing Files
@@ -73,7 +73,7 @@
 - Byte Streams
 - Character Streams
 
-* 7. *Multithreading*
+ 7. *Multithreading*
 - Creating Threads
 - Extending Thread Class
 - Implementing Runnable Interface
@@ -81,7 +81,7 @@
 - Synchronization
 - Inter-Thread Communication
 
-* 8. *Java Utility Classes*
+ 8. *Java Utility Classes*
 - *String Handling*
 - String Class
 - StringBuilder and StringBuffer
@@ -89,7 +89,7 @@
 - Autoboxing and Unboxing
 
 
-* 9. *Java 8 Features (#Overview#)*
+ 9. *Java 8 Features (#Overview#)*
 - Lambda Expressions
 - Streams API
 - Functional Interfaces
@@ -99,10 +99,8 @@
 
 == Basic Understanding of Maven
 
-- *Project Management and Dependency Handling*
-- *Building and Running Java Projects*
-
----
+- Project Management and Dependency Handling
+- Building and Running Java Projects
 
 == *Selenium* Automation with Java
 
@@ -122,7 +120,7 @@
 
 == Basics of  *Amazon AWS* Cloud Computing
 
-== *Project 1* - Java Selenium Automation
+== *Project 1 Java Selenium Automation
 
 == *Project 2* - Java Selenium Automation
 
@@ -134,4 +132,4 @@
 
 == *Mock* Interviews
 
-== How to use *ChatGPT* for coding, debugging and automation
+== How to use *ChatGPT for coding, debugging and automation
