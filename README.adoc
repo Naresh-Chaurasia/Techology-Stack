@@ -1,5 +1,12 @@
-= Technology Stack
+= 6 Months Mentorship
 :toc: right
 :toclevels: 5
 :sectnums:
+
+== Checklist
+
+* [ ] Recording: Drive
+* [ ] Code Accessible on GitHub
+
+
 
