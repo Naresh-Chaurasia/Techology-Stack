@@ -455,6 +455,41 @@ public class TernaryOperatorDemo {
 ----
 
 
+== Question Set 1
+
+
+Sure! Here are five multiple-choice questions for beginners on PATH, CLASSPATH, environment variables, bytecode, JDK, and JRE:
+
+1. **What does the PATH environment variable do?**
+- A) Specifies the maximum memory allocation for the operating system.
+- B) Stores the location of executables to be used from the command line.
+- C) Defines the network configuration settings.
+- D) Sets the default file permissions.
+
+2. **What is the primary purpose of the CLASSPATH environment variable in Java?**
+- A) To specify the maximum heap size for Java applications.
+- B) To locate the Java Development Kit (JDK).
+- C) To locate the classes and libraries required by Java programs.
+- D) To store the user’s personal settings for Java applications.
+
+3. **Which of the following statements about bytecode is correct?**
+- A) Bytecode is the machine code for the Java Virtual Machine (JVM).
+- B) Bytecode is the source code written by the programmer.
+- C) Bytecode is the binary code executed directly by the operating system.
+- D) Bytecode is used only for JavaScript programs.
+
+4. **What is included in the Java Development Kit (JDK)?**
+- A) Only the Java Runtime Environment (JRE).
+- B) The JRE, development tools, and libraries for Java development.
+- C) Only the Java Virtual Machine (JVM).
+- D) Only the Java API documentation.
+
+5. **What is the role of the Java Runtime Environment (JRE)?**
+- A) To compile Java source code into bytecode.
+- B) To provide libraries, Java Virtual Machine (JVM), and other components to run Java applications.
+- C) To develop and debug Java applications.
+- D) To edit Java source code files.
+
 
 
 == References
