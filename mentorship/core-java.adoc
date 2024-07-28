@@ -219,6 +219,244 @@ public class VariablesExample {
 }
 ----
 
+################################################################################
+
+== Operators in Java
+
+In Java, operators are special symbols that perform specific operations on one, two, or three operands, and then return a result. Here are the different types of operators in Java:
+
+*1. Arithmetic Operators*
+
+Used for performing basic arithmetic operations.
+
+[source,java]
+----
+public class ArithmeticOperatorsDemo {
+    public static void main(String[] args) {
+        // Define variables
+        int a = 15;
+        int b = 4;
+
+        // Addition
+        int addition = a + b;
+        System.out.println("Addition: " + a + " + " + b + " = " + addition);
+
+        // Subtraction
+        int subtraction = a - b;
+        System.out.println("Subtraction: " + a + " - " + b + " = " + subtraction);
+
+        // Multiplication
+        int multiplication = a * b;
+        System.out.println("Multiplication: " + a + " * " + b + " = " + multiplication);
+
+        // Division
+        int division = a / b;
+        System.out.println("Division: " + a + " / " + b + " = " + division);
+
+        // Modulus
+        int modulus = a % b;
+        System.out.println("Modulus: " + a + " % " + b + " = " + modulus);
+
+        // Handling division by zero
+        int zeroDivisor = 0;
+        try {
+            int result = a / zeroDivisor;
+            System.out.println("Division by zero: " + result);
+        } catch (ArithmeticException e) {
+            System.out.println("Error: Division by zero is not allowed.");
+        }
+    }
+}
+----
+
+################################################################################
+
+---
+
+*2. Unary Operators*
+
+Used with only one operand.
+
+[source,java]
+----
+public class UnaryOperatorsDemo {
+    public static void main(String[] args) {
+        // Initialize variables
+        int a = 10;
+        int b = -5;
+        boolean flag = true;
+
+        // Unary Plus
+        int unaryPlus = +a;
+        System.out.println("Unary Plus: " + unaryPlus);
+
+        // Unary Minus
+        int unaryMinus = -b;
+        System.out.println("Unary Minus: " + unaryMinus);
+
+        // Increment (Pre and Post)
+        System.out.println("Pre-Increment: " + (++a));
+        System.out.println("Post-Increment: " + (a++));
+
+        // Decrement (Pre and Post)
+        System.out.println("Pre-Decrement: " + (--b));
+        System.out.println("Post-Decrement: " + (b--));
+
+        // Logical NOT
+        boolean notFlag = !flag;
+        System.out.println("Logical NOT: " + notFlag);
+    }
+}
+
+----
+
+################################################################################
+
+---
+
+*3. Assignment Operators*
+Used to assign values to variables.
+
+[source,java]
+----
+public class AssignmentOperatorsDemo {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 5;
+
+        // Simple assignment
+        int c = a;
+        System.out.println("Simple assignment: c = " + c);
+
+        // Addition assignment
+        c += b;
+        System.out.println("Addition assignment: c += b -> c = " + c);
+
+        // Subtraction assignment
+        c -= b;
+        System.out.println("Subtraction assignment: c -= b -> c = " + c);
+
+        // Multiplication assignment
+        c *= b;
+        System.out.println("Multiplication assignment: c *= b -> c = " + c);
+
+        // Division assignment
+        c /= b;
+        System.out.println("Division assignment: c /= b -> c = " + c);
+
+        // Modulus assignment
+        c %= b;
+        System.out.println("Modulus assignment: c %= b -> c = " + c);
+    }
+}
+
+----
+
+
+################################################################################
+
+---
+
+*4. Relational Operators*
+Used to compare two values.
+
+[source,java]
+----
+public class RelationalOperatorsDemo {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 5;
+        int c = 10;
+
+        // Equal to
+        System.out.println("a == b: " + (a == b));
+        System.out.println("a == c: " + (a == c));
+
+        // Not equal to
+        System.out.println("a != b: " + (a != b));
+        System.out.println("a != c: " + (a != c));
+
+        // Greater than
+        System.out.println("a > b: " + (a > b));
+        System.out.println("a > c: " + (a > c));
+
+        // Less than
+        System.out.println("a < b: " + (a < b));
+        System.out.println("a < c: " + (a < c));
+
+        // Greater than or equal to
+        System.out.println("a >= b: " + (a >= b));
+        System.out.println("a >= c: " + (a >= c));
+
+        // Less than or equal to
+        System.out.println("a <= b: " + (a <= b));
+        System.out.println("a <= c: " + (a <= c));
+    }
+}
+
+----
+
+
+################################################################################
+
+---
+
+*5. Logical Operators*
+Used to perform logical operations on boolean expressions.
+
+
+[source,java]
+----
+public class LogicalOperatorsDemo {
+    public static void main(String[] args) {
+        boolean a = true;
+        boolean b = false;
+
+        // Logical AND
+        System.out.println("a && b: " + (a && b));
+
+        // Logical OR
+        System.out.println("a || b: " + (a || b));
+
+        // Logical NOT
+        System.out.println("!a: " + (!a));
+        System.out.println("!b: " + (!b));
+    }
+}
+----
+
+
+################################################################################
+
+---
+
+*6. Ternary Operator*
+Also known as the conditional operator, it is used to decide which value to assign to a variable based on a boolean condition.
+
+[source,java]
+----
+public class TernaryOperatorDemo {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 5;
+
+        // Ternary operator
+        int max = (a > b) ? a : b;
+        System.out.println("Max of a and b: " + max);
+
+        int min = (a < b) ? a : b;
+        System.out.println("Min of a and b: " + min);
+
+        boolean isEqual = (a == b) ? true : false;
+        System.out.println("a equals b: " + isEqual);
+    }
+}
+
+----
+
+
+
+
 == References
 
 * https://www.youtube.com/watch?v=Qtua8t20dA4
