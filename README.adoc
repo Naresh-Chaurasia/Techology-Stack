@@ -1,12 +1,11 @@
-= 6 Months Mentorship
+= Technology Stack
 :toc: right
 :toclevels: 5
 :sectnums:
 
-== Checklist
+== 6 Months Mentorship Program
 
-* [ ] Recording: Drive
-* [ ] Code Accessible on GitHub
+link:mentorship/6-months-mentorship.adoc[Months 6 Mentorship Program,window=_blank]
 
 
 
