@@ -143,6 +143,42 @@ public class PrimitiveDataTypes {
 
 ----
 
+
+== Unicode
+
+[source, java]
+----
+public class UnicodeExample {
+    public static void main(String[] args) {
+        // Initializing Unicode characters using their code points
+        char letterA = '\u0041'; // Unicode for 'A'
+        char letterB = '\u0042'; // Unicode for 'B'
+        char smileyFace = '\u263A'; // Unicode for '☺'
+
+        // Printing Unicode characters
+        System.out.println("Unicode Character \\u0041: " + letterA);
+        System.out.println("Unicode Character \\u0042: " + letterB);
+        System.out.println("Unicode Character \\u263A: " + smileyFace);
+
+        // Printing Unicode code points
+        System.out.println("Code Point of " + letterA + ": " + (int) letterA);
+        System.out.println("Code Point of " + letterB + ": " + (int) letterB);
+        System.out.println("Code Point of " + smileyFace + ": " + (int) smileyFace);
+
+        // Using Unicode characters in strings
+        String greeting = "Hello " + letterA + letterB + smileyFace + "!";
+        System.out.println(greeting);
+
+        // Unicode characters in a loop
+        System.out.println("Looping through Unicode characters:");
+        for (char ch = '\u0041'; ch <= '\u0045'; ch++) {
+            System.out.println("Unicode Character: " + ch + " Code Point: " + (int) ch);
+        }
+    }
+}
+
+----
+
 ---
 
 *Non-Primitive Data Types*
