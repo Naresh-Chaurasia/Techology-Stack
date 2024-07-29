@@ -454,37 +454,185 @@ public class TernaryOperatorDemo {
 
 ----
 
+== If, Else
+
+`if-else if` statements in Java are used to execute specific blocks of code based on multiple conditions. They are commonly used for:
+
+1. *Decision Making:* To make decisions and perform actions based on different conditions.
+2. *Validations:* To check and validate user inputs or data.
+3. *Branching Logic:* To handle different scenarios in code execution, such as in algorithms or business logic.
+
+[source,java]
+----
+public class Main {
+    public static void main(String[] args) {
+        int number = 10;
+
+        if (number > 0) {
+            System.out.println("The number is positive.");
+        } else if (number < 0) {
+            System.out.println("The number is negative.");
+        } else {
+            System.out.println("The number is zero.");
+        }
+    }
+}
+----
+
+== Switch Case
+
+[source, java]
+----
+public class Main {
+    public static void main(String[] args) {
+        int day = 3;
+        String dayName;
+
+        switch (day) {
+            case 1:
+                dayName = "Monday";
+                break;
+            case 2:
+                dayName = "Tuesday";
+                break;
+            case 3:
+                dayName = "Wednesday";
+                break;
+            case 4:
+                dayName = "Thursday";
+                break;
+            case 5:
+                dayName = "Friday";
+                break;
+            case 6:
+                dayName = "Saturday";
+                break;
+            case 7:
+                dayName = "Sunday";
+                break;
+            default:
+                dayName = "Invalid day";
+                break;
+        }
+
+        System.out.println("The day is: " + dayName);
+    }
+}
+
+----
+
+=== Switch Case V/s If Else
+
+Choosing between `switch-case` and `if-else` in Java depends on the specific use case and the nature of the conditions you need to evaluate. Here are some guidelines to help decide when to use each:
+
+*Use `switch-case` When:*
+
+1. **Multiple Discrete Values:**
+- You have a variable that you need to compare against several discrete constant values (e.g., integers, enums, characters, or strings).
+- Example: Days of the week, menu options, or status codes.
+
+2. **Readability and Maintainability:**
+- The code becomes more readable and maintainable when dealing with many possible values.
+- `switch-case` provides a cleaner and more organized structure for handling multiple branches.
+
+3. **Performance:**
+- `switch-case` can be more efficient than `if-else` when there are many branches because it can use a jump table for constant values, whereas `if-else` evaluates conditions sequentially.
+
+*Use `if-else` When:*
+1. **Range of Values:**
+- You need to evaluate conditions based on ranges or complex logical expressions.
+- Example: Checking if a number is within a certain range or combining multiple conditions.
+
+2. **Boolean Conditions:**
+- Your conditions are boolean expressions that do not compare against discrete constant values.
+- Example: Checking conditions like `x > 10 && y < 5`.
+
+3. **Complex Conditions:**
+- You have complex conditions that cannot be simplified to discrete values.
+- Example: Conditions involving multiple variables and logical operators.
+
+*Examples:*
+
+
+[source,java]
+----
+public class Main {
+    public static void main(String[] args) {
+int option = 2;
+
+switch (option) {
+    case 1:
+        System.out.println("Option 1 selected");
+        break;
+    case 2:
+        System.out.println("Option 2 selected");
+        break;
+    case 3:
+        System.out.println("Option 3 selected");
+        break;
+    default:
+        System.out.println("Invalid option");
+        break;
+    }
+}
+}
+----
+
+
+[source,java]
+----
+
+public class Main {
+    public static void main(String[] args) {
+
+
+int number = 45;
+
+if (number > 0 && number <= 10) {
+    System.out.println("Number is between 1 and 10");
+} else if (number > 10 && number <= 20) {
+    System.out.println("Number is between 11 and 20");
+} else if (number > 20 && number <= 30) {
+    System.out.println("Number is between 21 and 30");
+} else {
+    System.out.println("Number is out of range");
+}
+}
+}
+----
+
+In summary, use `switch-case` for comparing a single variable against multiple constant values for better readability and potential performance benefits. Use `if-else` for complex conditions, ranges, or when boolean expressions are involved.
 
 == Question Set 1
 
 
 Sure! Here are five multiple-choice questions for beginners on PATH, CLASSPATH, environment variables, bytecode, JDK, and JRE:
 
-1. **What does the PATH environment variable do?**
+1. *What does the PATH environment variable do?*
 - A) Specifies the maximum memory allocation for the operating system.
 - B) Stores the location of executables to be used from the command line.
 - C) Defines the network configuration settings.
 - D) Sets the default file permissions.
 
-2. **What is the primary purpose of the CLASSPATH environment variable in Java?**
+2. *What is the primary purpose of the CLASSPATH environment variable in Java?*
 - A) To specify the maximum heap size for Java applications.
 - B) To locate the Java Development Kit (JDK).
 - C) To locate the classes and libraries required by Java programs.
 - D) To store the user’s personal settings for Java applications.
 
-3. **Which of the following statements about bytecode is correct?**
+3. *Which of the following statements about bytecode is correct?*
 - A) Bytecode is the machine code for the Java Virtual Machine (JVM).
 - B) Bytecode is the source code written by the programmer.
 - C) Bytecode is the binary code executed directly by the operating system.
 - D) Bytecode is used only for JavaScript programs.
 
-4. **What is included in the Java Development Kit (JDK)?**
+4. *What is included in the Java Development Kit (JDK)?*
 - A) Only the Java Runtime Environment (JRE).
 - B) The JRE, development tools, and libraries for Java development.
 - C) Only the Java Virtual Machine (JVM).
 - D) Only the Java API documentation.
 
-5. **What is the role of the Java Runtime Environment (JRE)?**
+5. *What is the role of the Java Runtime Environment (JRE)?*
 - A) To compile Java source code into bytecode.
 - B) To provide libraries, Java Virtual Machine (JVM), and other components to run Java applications.
 - C) To develop and debug Java applications.
