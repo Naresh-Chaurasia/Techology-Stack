@@ -15,25 +15,25 @@ When working with Java, the `PATH` environment variable is crucial because it al
 *Setting the `PATH` Environment Variable*
 
 *On Windows:*
-1. **Locate JDK Installation Directory**:
+1. *Locate JDK Installation Directory*:
 - Typically, it is something like `C:\Program Files\Java\jdk-17\bin`.
 
-2. **Set the PATH variable**:
-- Open the **Start Menu** and search for `Environment Variables`.
-- Click on **Edit the system environment variables**.
-- In the System Properties window, click on the **Environment Variables** button.
-- In the Environment Variables window, under **System variables**, find the `Path` variable and select it. Click on **Edit**.
-- In the Edit Environment Variable dialog, click on **New** and add the path to the JDK `bin` directory (e.g., `C:\Program Files\Java\jdk-17\bin`).
-- Click **OK** to close all dialog boxes.
+2. *Set the PATH variable*:
+- Open the *Start Menu* and search for `Environment Variables`.
+- Click on *Edit the system environment variables*.
+- In the System Properties window, click on the *Environment Variables* button.
+- In the Environment Variables window, under *System variables*, find the `Path` variable and select it. Click on *Edit*.
+- In the Edit Environment Variable dialog, click on *New* and add the path to the JDK `bin` directory (e.g., `C:\Program Files\Java\jdk-17\bin`).
+- Click *OK* to close all dialog boxes.
 
 ---
 
 *On macOS/Linux:*
 
-1. **Locate JDK Installation Directory**:
+1. *Locate JDK Installation Directory*:
 - Typically, it is something like `/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin` on macOS or `/usr/lib/jvm/java-17-openjdk-amd64/bin` on Linux.
 
-2. **Set the PATH variable**:
+2. *Set the PATH variable*:
 - Open a terminal.
 - Open the `.bash_profile`, `.bashrc`, `.zshrc`, or `.profile` file in a text editor (depending on your shell and system configuration):
 ```sh
@@ -71,35 +71,35 @@ image::java-data-types.png[]
 
 *Primitive Data Types*
 
-1. **byte**:
+1. *byte*:
 - Example: `byte b = 100;`
 - Range: -128 to 127
 
-2. **short**:
+2. *short*:
 - Example: `short s = 10000;`
 - Range: -32,768 to 32,767
 
-3. **int**:
+3. *int*:
 - Example: `int i = 100000;`
 - Range: -2^31 to 2^31-1
 
-4. **long**:
+4. *long*:
 - Example: `long l = 100000L;`
 - Range: -2^63 to 2^63-1
 
-5. **float**:
+5. *float*:
 - Example: `float f = 234.5f;`
 - Range: Approximately ±3.40282347E+38F (6-7 significant decimal digits)
 
-6. **double**:
+6. *double*:
 - Example: `double d = 123.4;`
 - Range: Approximately ±1.79769313486231570E+308 (15 significant decimal digits)
 
-7. **char**:
+7. *char*:
 - Example: `char c = 'A';`
 - Range: 0 to 65,535 (unsigned)
 
-8. **boolean**:
+8. *boolean*:
 - Example: `boolean b = true;`
 - Values: `true` or `false`
 
@@ -183,19 +183,19 @@ public class UnicodeExample {
 
 *Non-Primitive Data Types*
 
-1. **String**:
+1. *String*:
 - Example: `String str = "Hello, World!";`
 - Strings are sequences of characters.
 
-2. **Array**:
+2. *Array*:
 - Example: `int[] arr = {1, 2, 3, 4, 5};`
 - Arrays can hold multiple values of the same type.
 
-3. **Class**:
+3. *Class*:
 
-4. **Interface**:
+4. *Interface*:
 
-5. **Enum**:
+5. *Enum*:
 
 == Variables in Java
 
@@ -203,17 +203,17 @@ In Java, a variable is a container that holds data that can be changed during th
 
 *Types of Variables in Java*
 
-1. **Local Variables**:
+1. *Local Variables*:
 - Declared inside a method, constructor, or block.
 - Scope is limited to the block in which they are declared.
 - Must be initialized before use.
 
-2. **Instance Variables** (Non-static Fields):
+2. *Instance Variables* (Non-static Fields):
 - Declared inside a class but outside any method.
 - Each instance of the class has its own copy of the variable.
 - Initialized to default values if not explicitly initialized.
 
-3. **Class Variables** (Static Fields):
+3. *Class Variables* (Static Fields):
 - Declared with the `static` keyword inside a class but outside any method.
 - Shared among all instances of the class.
 - Initialized to default values if not explicitly initialized.
@@ -563,27 +563,27 @@ Choosing between `switch-case` and `if-else` in Java depends on the specific use
 
 *Use `switch-case` When:*
 
-1. **Multiple Discrete Values:**
+1. *Multiple Discrete Values:*
 - You have a variable that you need to compare against several discrete constant values (e.g., integers, enums, characters, or strings).
 - Example: Days of the week, menu options, or status codes.
 
-2. **Readability and Maintainability:**
+2. *Readability and Maintainability:*
 - The code becomes more readable and maintainable when dealing with many possible values.
 - `switch-case` provides a cleaner and more organized structure for handling multiple branches.
 
-3. **Performance:**
+3. *Performance:*
 - `switch-case` can be more efficient than `if-else` when there are many branches because it can use a jump table for constant values, whereas `if-else` evaluates conditions sequentially.
 
 *Use `if-else` When:*
-1. **Range of Values:**
+1. *Range of Values:*
 - You need to evaluate conditions based on ranges or complex logical expressions.
 - Example: Checking if a number is within a certain range or combining multiple conditions.
 
-2. **Boolean Conditions:**
+2. *Boolean Conditions:*
 - Your conditions are boolean expressions that do not compare against discrete constant values.
 - Example: Checking conditions like `x > 10 && y < 5`.
 
-3. **Complex Conditions:**
+3. *Complex Conditions:*
 - You have complex conditions that cannot be simplified to discrete values.
 - Example: Conditions involving multiple variables and logical operators.
 
@@ -679,7 +679,8 @@ Sure! Here are five multiple-choice questions for beginners on PATH, CLASSPATH, 
 
 *Question 1: Java Data Types*
 
-**Which of the following is not a primitive data type in Java?**
+*Which of the following is not a primitive data type in Java?*
+
 A. int
 
 B. boolean
@@ -690,7 +691,7 @@ D. char
 
 *Question 2: Unicode in Java*
 
-**What is the range of Unicode values in Java?**
+*What is the range of Unicode values in Java?*
 
 A. 0 to 65535
 
@@ -702,7 +703,7 @@ D. 0 to 1114111
 
 *Question 3: Variables in Java*
 
-**Which of the following statements is correct about variable declaration and initialization in Java?**
+*Which of the following statements is correct about variable declaration and initialization in Java?*
 
 A. int a; a = 5;
 
@@ -714,7 +715,7 @@ D. Both A and B
 
 *Question 4: Operators in Java*
 
-**What will be the output of the following code?**
+*What will be the output of the following code?*
 
 [source,java]
 ----
@@ -740,7 +741,7 @@ D. 10.0
 
 *Question 5: Java Data Types*
 
-**Which of the following statements is true about the `char` data type in Java?**
+*Which of the following statements is true about the `char` data type in Java?*
 
 A. It is a 16-bit signed integer.
 
