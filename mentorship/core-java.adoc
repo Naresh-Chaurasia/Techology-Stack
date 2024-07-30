@@ -681,24 +681,35 @@ Sure! Here are five multiple-choice questions for beginners on PATH, CLASSPATH, 
 
 **Which of the following is not a primitive data type in Java?**
 A. int
+
 B. boolean
+
 C. String
+
 D. char
 
 *Question 2: Unicode in Java*
 
 **What is the range of Unicode values in Java?**
+
 A. 0 to 65535
+
 B. 0 to 32767
+
 C. 0 to 2147483647
+
 D. 0 to 1114111
 
 *Question 3: Variables in Java*
 
 **Which of the following statements is correct about variable declaration and initialization in Java?**
+
 A. int a; a = 5;
+
 B. int a = 5;
+
 C. a = 5; int a;
+
 D. Both A and B
 
 *Question 4: Operators in Java*
@@ -719,17 +730,24 @@ public class Main {
 ----
 
 A. 0
+
 B. 2
+
 C. 2.0
+
 D. 10.0
 
 
 *Question 5: Java Data Types*
 
 **Which of the following statements is true about the `char` data type in Java?**
+
 A. It is a 16-bit signed integer.
+
 B. It is a 32-bit unsigned integer.
+
 C. It is a 16-bit unsigned integer.
+
 D. It is a 32-bit signed integer.
 
 
