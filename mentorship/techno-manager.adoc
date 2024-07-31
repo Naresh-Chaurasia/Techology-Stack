@@ -1,0 +1,128 @@
+= Techno Manager
+:toc: right
+:toclevels:
+:sectnums:
+
+
+=== GitHub
+
+**GitHub** is a web-based platform for version control using Git. It allows multiple developers to collaborate on projects, track changes, and manage code versions. Key features include repositories, branches, pull requests, and GitHub Actions for CI/CD pipelines.
+
+=== ChatGPT
+
+**ChatGPT** is a language model developed by OpenAI. It is capable of understanding and generating human-like text based on the input it receives. It is used for tasks like conversational AI, customer support, content creation, and more.
+
+=== SQL / Relational Database
+
+**SQL (Structured Query Language)** is used for managing and manipulating relational databases, which store data in tables with rows and columns. Key operations include querying, updating, inserting, and deleting data. Popular relational databases include MySQL, PostgreSQL, and Oracle.
+
+=== NoSQL
+
+**NoSQL** databases provide a mechanism for storage and retrieval of data modeled in means other than tabular relations. They are designed for specific data models and include document, key-value, wide-column, and graph databases. Examples include MongoDB, Redis, Cassandra, and Neo4j.
+
+=== Docker Containers
+
+**Docker** is a platform that uses OS-level virtualization to deliver software in packages called containers. Containers are lightweight, portable, and ensure consistency across different environments by including all dependencies and configuration files.
+
+=== Kubernetes
+
+**Kubernetes** is an open-source container orchestration platform for automating deployment, scaling, and management of containerized applications. It provides a framework to run distributed systems resiliently, handling scaling and failover for applications.
+
+=== Spring Framework
+
+**Spring Framework** is a comprehensive framework for enterprise Java development. It provides a wide range of functionalities including dependency injection, aspect-oriented programming, and transaction management. **Spring Boot** simplifies the development of new Spring applications with auto-configuration and an embedded server.
+
+=== Infrastructure as Code (IaC)
+
+**Infrastructure as Code** is the process of managing and provisioning computing infrastructure through machine-readable scripts, rather than physical hardware configuration or interactive configuration tools. Tools like Terraform and AWS CloudFormation enable automated, consistent, and repeatable infrastructure deployment.
+
+=== IAM: Identity and Access Management
+
+**Identity and Access Management (IAM)** is a framework for managing digital identities and access to resources within an organization. It includes policies, processes, and technologies to ensure that the right individuals have the appropriate access to technology resources.
+
+=== AWS Cloud
+
+**Amazon Web Services (AWS)** is a comprehensive cloud computing platform that provides a wide range of services, including computing power, storage, and databases. AWS offers scalable infrastructure, development tools, and application services, making it a popular choice for cloud solutions.
+
+=== DevOps
+
+**DevOps** is a set of practices that combine software development (Dev) and IT operations (Ops). It aims to shorten the systems development life cycle and provide continuous delivery with high software quality. Key principles include collaboration, automation, and monitoring.
+
+=== API & Microservices
+
+**API (Application Programming Interface)** allows different software systems to communicate with each other. **Microservices** is an architectural style that structures an application as a collection of small, loosely coupled services, each responsible for a specific functionality and communicating over APIs.
+
+=== GraphQL
+
+**GraphQL** is a query language for APIs and a runtime for executing those queries by using a type system you define for your data. It allows clients to request exactly the data they need and nothing more, making APIs more efficient and powerful.
+
+=== Node.js
+
+**Node.js** is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows developers to run JavaScript on the server side, making it possible to build scalable and high-performance network applications. Node.js is known for its non-blocking, event-driven architecture.
+
+=== Automation Tools and Frameworks
+
+*Jenkins*
+
+**Jenkins** is an open-source automation server that supports building, deploying, and automating software development projects. It offers hundreds of plugins to support building, deploying, and automating any project.
+
+*Selenium*
+
+**Selenium** is a framework for automating web browsers. It provides tools and libraries for browser automation, enabling the testing of web applications across different browsers and platforms.
+
+*Ansible*
+
+**Ansible** is an open-source automation tool used for configuration management, application deployment, and task automation. It uses simple, human-readable YAML files to describe automation jobs.
+
+*Puppet*
+
+**Puppet** is an automation tool for managing infrastructure and automating configuration management. It uses a declarative language to define system configurations, ensuring consistency across environments.
+
+*Chef*
+
+**Chef** is an automation framework that automates the process of managing, configuring, and deploying infrastructure. It uses a Ruby-based domain-specific language for writing system configuration "recipes."
+
+*Terraform*
+
+**Terraform** is an open-source tool for building, changing, and versioning infrastructure safely and efficiently. It uses configuration files to describe the desired state of infrastructure, which it then creates and manages.
+
+*CircleCI*
+
+**CircleCI** is a continuous integration and continuous deployment (CI/CD) platform that automates the software development process. It allows teams to automatically build, test, and deploy applications.
+
+*GitLab CI/CD*
+
+**GitLab CI/CD** is an integrated continuous integration and continuous deployment tool within GitLab. It automates the process of code integration, testing, and deployment directly from the GitLab repository.
+
+*Travis CI*
+**Travis CI** is a continuous integration service used to build and test software projects hosted on GitHub. It automates the process of running tests and deploying code with each commit.
+
+*Bamboo*
+
+**Bamboo** is a continuous integration and deployment tool from Atlassian. It automates the process of building, testing, and releasing applications, and integrates with other Atlassian tools like JIRA and Bitbucket.
+
+*SaltStack*
+
+**SaltStack** is an open-source configuration management and orchestration tool. It allows for the automation of infrastructure management tasks and supports event-driven automation.
+
+*Robot Framework*
+
+**Robot Framework** is an open-source automation framework for acceptance testing and robotic process automation (RPA). It uses a keyword-driven testing approach for creating test cases.
+
+*Appium*
+
+**Appium** is an open-source automation tool for testing mobile applications. It supports automation for both native and hybrid mobile apps on iOS and Android platforms.
+
+*Gradle*
+
+**Gradle** is a build automation tool used for multi-language software development. It automates the building, testing, and deployment of applications and integrates with popular development tools like IntelliJ IDEA and Eclipse.
+
+*Maven*
+
+**Maven** is a build automation and project management tool primarily used for Java projects. It simplifies the build process by providing a project object model (POM) and a set of plugins that automate various tasks.
+
+These tools and frameworks are widely used in the software industry to streamline and automate different aspects of the development lifecycle, enhancing efficiency, consistency, and reliability.
+
+
+
+
