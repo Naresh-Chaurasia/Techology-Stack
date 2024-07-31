@@ -751,6 +751,80 @@ C. It is a 16-bit unsigned integer.
 
 D. It is a 32-bit signed integer.
 
+== Coding Exercises
+
+
+### Coding Exercise: Data Types and Variables
+
+*Objective:*
+
+The goal of this exercise is to test your understanding of Java data types, including both primitive and reference types, and your ability to work with variables.
+
+*Problem Statement:*
+
+1. **Primitive Data Types**
+- Create a Java class named `PrimitiveDataTypes`.
+- Declare variables of the following primitive data types: `int`, `double`, `char`, and `boolean`.
+- Assign appropriate values to each variable.
+- Write a method `displayPrimitives()` that prints the values of these variables to the console.
+
+2. **Reference Data Types**
+- Create a Java class named `ReferenceDataTypes`.
+- Declare variables of the following reference data types: `String`, `Array`, and a custom class type `Person` (which you will define).
+- Assign appropriate values to each variable.
+- Write a method `displayReferences()` that prints the values of these variables to the console.
+
+3. **Custom Class: Person**
+- Create a custom class named `Person` with the following attributes: `name` (String), `age` (int).
+- Include a constructor to initialize these attributes.
+- Override the `toString()` method to provide a string representation of a `Person` object.
+
+*Instructions:*
+
+*Task:*
+
+1. Implement the classes `PrimitiveDataTypes`, `Person`, and `ReferenceDataTypes` as described above.
+2. Compile and run the `PrimitiveDataTypes` and `ReferenceDataTypes` classes to ensure they work as expected.
+3. Ensure that all the values are printed correctly to the console.
+
+---
+
+This exercise will help you demonstrate your understanding of both primitive and reference data types in Java, along with basic object-oriented programming concepts.
+
+=== Coding Exercise: Conditional and Looping Statements
+
+*Objective*
+
+The goal of this exercise is to test your understanding of Java conditional statements (`if-else`, `switch`) and looping statements (`for`, `while`, `do-while`).
+
+*Problem Statement:*
+
+1. **Conditional Statements**
+
+- Create a Java class named `ConditionalStatements`.
+- Implement a method `checkNumber(int number)` that:
+- Uses an `if-else` statement to check if the number is positive, negative, or zero and prints the result.
+- Uses a `switch` statement to check if the number is 1, 2, 3, or another value and prints a corresponding message.
+
+2. **Looping Statements**
+
+- Create a Java class named `LoopingStatements`.
+- Implement the following methods:
+- `printNumbersForLoop(int n)`: Uses a `for` loop to print numbers from 1 to `n`.
+- `printNumbersWhileLoop(int n)`: Uses a `while` loop to print numbers from 1 to `n`.
+- `printNumbersDoWhileLoop(int n)`: Uses a `do-while` loop to print numbers from 1 to `n`.
+
+
+*Task:*
+
+1. Implement the classes `ConditionalStatements` and `LoopingStatements` as described above.
+2. Compile and run the `ConditionalStatements` and `LoopingStatements` classes to ensure they work as expected.
+3. Ensure that the appropriate messages and numbers are printed to the console.
+
+---
+
+This exercise will help you demonstrate your understanding of conditional and looping statements in Java.
+
 
 == References
 
