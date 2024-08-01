@@ -639,6 +639,257 @@ if (number > 0 && number <= 10) {
 
 In summary, use `switch-case` for comparing a single variable against multiple constant values for better readability and potential performance benefits. Use `if-else` for complex conditions, ranges, or when boolean expressions are involved.
 
+
+=== For, While and Do While Loop
+
+== Java Loops
+
+=== For Loop
+
+[source, java]
+----
+public class Main {
+    public static void main(String[] args) {
+        for (int i = 0; i < 5; i++) {
+            System.out.println("i = " + i);
+        }
+    }
+}
+----
+
+This code demonstrates a `for` loop in Java. It initializes an integer `i` to 0, checks if `i` is less than 5, and increments `i` by 1 after each iteration. The loop prints the value of `i` during each iteration.
+
+=== While Loop
+
+[source, java]
+----
+public class Main {
+    public static void main(String[] args) {
+        int i = 0;
+        while (i < 5) {
+            System.out.println("i = " + i);
+            i++;
+        }
+    }
+}
+----
+
+This code demonstrates a `while` loop in Java. It initializes an integer `i` to 0 and continues looping as long as `i` is less than 5. The loop prints the value of `i` and then increments `i` by 1 during each iteration.
+
+=== Do-While Loop
+
+[source, java]
+----
+public class Main {
+    public static void main(String[] args) {
+        int i = 0;
+        do {
+            System.out.println("i = " + i);
+            i++;
+        } while (i < 5);
+    }
+}
+----
+
+This code demonstrates a `do-while` loop in Java. It initializes an integer `i` to 0 and executes the loop body at least once, regardless of the condition. The loop prints the value of `i` and then increments `i` by 1. After the loop body, it checks if `i` is less than 5 before repeating.
+
+
+== OOPs Programming
+
+
+=== Methods in Java
+
+Methods in Java are blocks of code that perform a specific task and can be called upon to execute that task. Methods help in reusing code and organizing the program into smaller, manageable sections. A method typically includes a name, a return type, parameters (if any), and a body.
+
+[source, java]
+----
+public class Calculator {
+    // Method to add two numbers
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    // Method to subtract two numbers
+    public int subtract(int a, int b) {
+        return a - b;
+    }
+
+    // Method to multiply two numbers
+    public int multiply(int a, int b) {
+        return a * b;
+    }
+
+    // Method to divide two numbers
+    public double divide(int a, int b) {
+        if (b != 0) {
+            return (double) a / b;
+        } else {
+            System.out.println("Division by zero is not allowed.");
+            return 0;
+        }
+    }
+}
+----
+
+This code defines a `Calculator` class with four methods: `add`, `subtract`, `multiply`, and `divide`. Each method performs a basic arithmetic operation.
+
+*Using Methods*
+
+[source, java]
+----
+public class Main {
+    public static void main(String[] args) {
+        // Creating an object of the Calculator class
+        Calculator calculator = new Calculator();
+
+        // Calling methods on the calculator object
+        int sum = calculator.add(10, 5);
+        int difference = calculator.subtract(10, 5);
+        int product = calculator.multiply(10, 5);
+        double quotient = calculator.divide(10, 5);
+
+        // Printing the results
+        System.out.println("Sum: " + sum);
+        System.out.println("Difference: " + difference);
+        System.out.println("Product: " + product);
+        System.out.println("Quotient: " + quotient);
+    }
+}
+----
+
+In this code, we create an object `calculator` of the `Calculator` class and call its methods (`add`, `subtract`, `multiply`, and `divide`) to perform arithmetic operations. The results are then printed to the console.
+
+*Explanation*
+
+* *Method Definition*: A method is defined within a class and includes the method's return type, name, parameters, and body.
+* *Return Type*: Specifies the type of value the method returns. If the method does not return any value, the return type is `void`.
+* *Method Name*: A unique identifier for the method, used to call the method.
+* *Parameters*: Inputs to the method, enclosed in parentheses. Methods can have zero or more parameters.
+* *Method Body*: The block of code that defines what the method does. Enclosed in curly braces `{}`.
+* *Calling a Method*: To execute a method, we create an object of the class containing the method and call the method using the object.
+
+##############################################
+
+=== Classes and Objects in Java
+
+In Java, a class is a blueprint for creating objects. A class defines the properties (attributes) and behaviors (methods) that the objects created from the class can have. An object is an instance of a class.
+
+*Class Definition*
+
+[source, java]
+----
+public class Car {
+    // Attributes (properties)
+    String color;
+    String model;
+    int year;
+
+    // Constructor
+    public Car(String color, String model, int year) {
+        this.color = color;
+        this.model = model;
+        this.year = year;
+    }
+
+    // Method (behavior)
+    public void displayDetails() {
+        System.out.println("Color: " + color);
+        System.out.println("Model: " + model);
+        System.out.println("Year: " + year);
+    }
+}
+----
+
+This code defines a `Car` class with three attributes: `color`, `model`, and `year`. It includes a constructor to initialize these attributes and a method `displayDetails` to print the car's details.
+
+*Creating Objects*
+
+[source, java]
+----
+public class Main {
+    public static void main(String[] args) {
+        // Creating an object of the Car class
+        Car car1 = new Car("Red", "Toyota", 2021);
+
+        // Accessing object methods
+        car1.displayDetails();
+    }
+}
+----
+
+In this code, we create an object `car1` of the `Car` class by calling the constructor with specific values for `color`, `model`, and `year`. We then call the `displayDetails` method on the `car1` object to print its details.
+
+*Explanation*
+
+* *Class*: The `Car` class is a blueprint that defines what a car object should have (attributes) and what it can do (methods).
+* *Attributes*: `color`, `model`, and `year` are properties of the `Car` class.
+* *Constructor*: The `Car` constructor initializes the attributes when a new car object is created.
+* *Method*: `displayDetails` is a behavior that prints the car's details.
+* *Object*: `car1` is an instance of the `Car` class with specific values for its attributes.
+
+
+##############################################
+
+=== Constructors in Java
+
+A constructor in Java is a special method used to initialize objects. It is called when an object of a class is created. Constructors have the same name as the class and do not have a return type.
+
+*Constructor Definition*
+
+[source, java]
+----
+public class Car {
+    // Attributes (properties)
+    String color;
+    String model;
+    int year;
+
+    // Constructor
+    public Car(String color, String model, int year) {
+        this.color = color;
+        this.model = model;
+        this.year = year;
+    }
+
+    // Method to display car details
+    public void displayDetails() {
+        System.out.println("Color: " + color);
+        System.out.println("Model: " + model);
+        System.out.println("Year: " + year);
+    }
+}
+----
+
+This code defines a `Car` class with three attributes: `color`, `model`, and `year`. It includes a constructor to initialize these attributes and a method `displayDetails` to print the car's details.
+
+*Using Constructors*
+
+[source, java]
+----
+public class Main {
+    public static void main(String[] args) {
+        // Creating an object of the Car class using the constructor
+        Car car1 = new Car("Red", "Toyota", 2021);
+
+        // Accessing object methods
+        car1.displayDetails();
+    }
+}
+----
+
+In this code, we create an object `car1` of the `Car` class by calling the constructor with specific values for `color`, `model`, and `year`. We then call the `displayDetails` method on the `car1` object to print its details.
+
+*Explanation*
+
+* *Constructor*: A special method used to initialize objects. It has the same name as the class and no return type.
+* *Attributes*: Properties of the class, such as `color`, `model`, and `year` in the `Car` class.
+* *Initializing Attributes*: The constructor initializes the attributes when a new object is created.
+* *Creating Objects*: When creating an object, the constructor is called with the specified parameters to initialize the object's attributes.
+* *Calling Methods*: After creating an object, you can call its methods to perform actions, such as displaying details.
+
+
+##############################################
+
 == Question Set 1 (JDK, JRE, ENV Variables)
 
 
@@ -762,19 +1013,19 @@ The goal of this exercise is to test your understanding of Java data types, incl
 
 *Problem Statement:*
 
-1. **Primitive Data Types**
+1. *Primitive Data Types*
 - Create a Java class named `PrimitiveDataTypes`.
 - Declare variables of the following primitive data types: `int`, `double`, `char`, and `boolean`.
 - Assign appropriate values to each variable.
 - Write a method `displayPrimitives()` that prints the values of these variables to the console.
 
-2. **Reference Data Types**
+2. *Reference Data Types*
 - Create a Java class named `ReferenceDataTypes`.
 - Declare variables of the following reference data types: `String`, `Array`, and a custom class type `Person` (which you will define).
 - Assign appropriate values to each variable.
 - Write a method `displayReferences()` that prints the values of these variables to the console.
 
-3. **Custom Class: Person**
+3. *Custom Class: Person*
 - Create a custom class named `Person` with the following attributes: `name` (String), `age` (int).
 - Include a constructor to initialize these attributes.
 - Override the `toString()` method to provide a string representation of a `Person` object.
@@ -799,14 +1050,14 @@ The goal of this exercise is to test your understanding of Java conditional stat
 
 *Problem Statement:*
 
-1. **Conditional Statements**
+1. *Conditional Statements*
 
 - Create a Java class named `ConditionalStatements`.
 - Implement a method `checkNumber(int number)` that:
 - Uses an `if-else` statement to check if the number is positive, negative, or zero and prints the result.
 - Uses a `switch` statement to check if the number is 1, 2, 3, or another value and prints a corresponding message.
 
-2. **Looping Statements**
+2. *Looping Statements*
 
 - Create a Java class named `LoopingStatements`.
 - Implement the following methods:
