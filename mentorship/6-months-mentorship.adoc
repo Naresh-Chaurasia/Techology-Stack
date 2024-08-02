@@ -129,20 +129,22 @@ link:web-services.adoc[Web Services,window=_blank]
 
 *Components of a RESTful Service*
 
-- Resources
-- URIs (Uniform Resource Identifiers)
-- HTTP Methods
-- GET
-- POST
-- PUT
-- DELETE
-- PATCH
-- Status Codes
-- 1xx (Informational)
-- 2xx (Success)
-- 3xx (Redirection)
-- 4xx (Client Error)
-- 5xx (Server Error)
+* Resources
+** URIs (Uniform Resource Identifiers)
+
+* HTTP Methods
+** GET
+** POST
+** PUT
+** DELETE
+** PATCH
+
+* Status Codes
+** 1xx (Informational)
+** 2xx (Success)
+** 3xx (Redirection)
+** 4xx (Client Error)
+** 5xx (Server Error)
 
 *Consuming RESTful APIs*
 
