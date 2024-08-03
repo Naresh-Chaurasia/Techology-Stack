@@ -3,6 +3,7 @@
 :toclevels: 5
 :sectnums:
 
+image::tech-manager.png[]
 
 ### Intended Audience
 
