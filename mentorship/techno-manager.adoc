@@ -4,6 +4,9 @@
 :sectnums:
 
 ### Intended Audience
+
+This course aims to equip managers with the knowledge to make informed decisions, facilitate better communication with technical teams, and understand the strategic importance of various technologies in driving business success.
+
 - Non-technical Managers and Team Leads
 - Project Managers
 - Product Managers
@@ -12,7 +15,7 @@
 - Technical Recruiters
 - Any manager or leader in a technology-driven organization looking to gain a high-level understanding of modern software development and deployment practices.
 
-This course aims to equip managers with the knowledge to make informed decisions, facilitate better communication with technical teams, and understand the strategic importance of various technologies in driving business success.
+
 
 ### Course Objectives
 
