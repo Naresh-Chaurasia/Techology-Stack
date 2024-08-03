@@ -8,11 +8,17 @@
 This course aims to equip managers with the knowledge to make informed decisions, facilitate better communication with technical teams, and understand the strategic importance of various technologies in driving business success.
 
 - Non-technical Managers and Team Leads
+
 - Project Managers
+
 - Product Managers
+
 - Business Analysts
+
 - IT Executives
+
 - Technical Recruiters
+
 - Any manager or leader in a technology-driven organization looking to gain a high-level understanding of modern software development and deployment practices.
 
 
@@ -20,17 +26,28 @@ This course aims to equip managers with the knowledge to make informed decisions
 ### Course Objectives
 
 - Understand the fundamental concepts and strategic importance of modern software development and deployment technologies.
+
 - Gain a high-level understanding of version control and collaboration tools like GitHub.
+
 - Learn the business implications and applications of ChatGPT and natural language processing technologies.
+
 - Understand the basics of relational and NoSQL databases and their strategic use cases.
+
 - Grasp the concepts and business benefits of containerization with Docker and orchestration with Kubernetes.
+
 - Get acquainted with the Spring Framework and its role in enterprise application development.
+
 - Learn the principles of managing infrastructure through code with Infrastructure as Code (IaC) tools.
-- Understand the importance of Identity and Access Management (IAM) in securing technology resources.
+
+- Understand the Security Architecture.
+
 - Gain insights into AWS Cloud services and their strategic benefits.
 - Comprehend the principles of DevOps and its role in enhancing collaboration and efficiency.
+
 - Understand the design and benefits of APIs and microservices architectures.
+
 - Learn about GraphQL and its advantages in data querying.
+
 - Get an overview of NodeJS and its applications in building scalable server-side applications.
 
 
@@ -76,10 +93,11 @@ This course aims to equip managers with the knowledge to make informed decisions
    - **Overview**: IaC is the process of managing and provisioning computing infrastructure through machine-readable configuration files.
    - **Key Concepts**: Terraform, Automation, Version Control.
 
-#### IAM: Identity and Access Management
+#### Security Architecture
 
-   - **Overview**: IAM is a framework of policies and technologies for ensuring that the right individuals have the appropriate access to technology resources.
-   - **Key Concepts**: Authentication, Authorization, Role-Based Access Control (RBAC), Multi-Factor Authentication (MFA).
+   - **Overview**: Security architecture involves the design and implementation of security controls and measures to protect systems and data.
+   - **Key Concepts**: Security principles and best practices, Threat modeling and risk assessment, Identity and access management.
+
 
 #### AWS Cloud
 
@@ -91,7 +109,8 @@ This course aims to equip managers with the knowledge to make informed decisions
     - **Overview**: DevOps is a set of practices that combines software development (Dev) and IT operations (Ops) to shorten the development lifecycle and provide continuous delivery.
     - **Key Concepts**: Continuous Integration (CI), Continuous Deployment (CD), Collaboration.
 
-12. **API & MicroServices**
+#### API & MicroServices
+
     - **Overview**: APIs (Application Programming Interfaces) allow different software applications to communicate, while microservices are a way of designing software systems as independently deployable services.
     - **Key Concepts**: REST, Service Discovery, Scalability, Resilience.
 
