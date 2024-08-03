@@ -69,6 +69,8 @@ image::java-data-types.png[]
 ---
 
 
+
+
 *Primitive Data Types*
 
 1. *byte*:
@@ -770,6 +772,74 @@ In this code, we create an object `calculator` of the `Calculator` class and cal
 
 ##############################################
 
+=== Method Overloading in Java
+
+Method overloading in Java allows a class to have more than one method with the same name, but different parameters. These methods can have different numbers of parameters or different types of parameters. The main advantage of method overloading is that it increases the readability of the program.
+
+*Method Overloading Example*
+
+[source, java]
+----
+public class MathOperations {
+    // Method to add two integers
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    // Overloaded method to add three integers
+    public int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    // Overloaded method to add two double values
+    public double add(double a, double b) {
+        return a + b;
+    }
+}
+----
+
+This code defines a `MathOperations` class with three overloaded `add` methods:
+
+* The first method adds two integers.
+* The second method adds three integers.
+* The third method adds two double values.
+
+*Using Overloaded Methods*
+
+[source, java]
+----
+public class Main {
+    public static void main(String[] args) {
+        // Creating an object of the MathOperations class
+        MathOperations math = new MathOperations();
+
+        // Calling the overloaded add methods
+        int sum1 = math.add(5, 10);          // Calls the first add method
+        int sum2 = math.add(5, 10, 15);      // Calls the second add method
+        double sum3 = math.add(5.5, 10.5);   // Calls the third add method
+
+        // Printing the results
+        System.out.println("Sum1: " + sum1);
+        System.out.println("Sum2: " + sum2);
+        System.out.println("Sum3: " + sum3);
+    }
+}
+----
+
+In this code, we create an object `math` of the `MathOperations` class and call the overloaded `add` methods. Each call to the `add` method resolves to the appropriate method based on the number and type of arguments passed.
+
+*Explanation*
+
+* *Method Overloading*: Allows a class to have multiple methods with the same name but different parameters.
+* *Different Parameters*: Methods can differ in the number of parameters or the types of parameters.
+* *First add Method*: Takes two integers as parameters and returns their sum.
+* *Second add Method*: Takes three integers as parameters and returns their sum.
+* *Third add Method*: Takes two double values as parameters and returns their sum.
+* *Calling Overloaded Methods*: When calling an overloaded method, Java determines which method to invoke based on the arguments passed.
+
+
+##############################################
+
 === Classes and Objects in Java
 
 In Java, a class is a blueprint for creating objects. A class defines the properties (attributes) and behaviors (methods) that the objects created from the class can have. An object is an instance of a class.
@@ -1080,3 +1150,4 @@ This exercise will help you demonstrate your understanding of conditional and lo
 == References
 
 * https://www.youtube.com/watch?v=Qtua8t20dA4
+* 
