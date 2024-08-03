@@ -3,6 +3,8 @@
 :toclevels: 5
 :sectnums:
 
+image::tech-manager.png[]
+
 ### Intended Audience
 
 This course aims to equip managers with the knowledge to make informed decisions, facilitate better communication with technical teams, and understand the strategic importance of various technologies in driving business success.
