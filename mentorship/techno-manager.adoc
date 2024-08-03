@@ -1,6 +1,6 @@
 = Techno Manager
 :toc: right
-:toclevels:
+:toclevels: 5
 :sectnums:
 
 ### Intended Audience
