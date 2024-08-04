@@ -25,7 +25,9 @@ This course aims to equip managers with the knowledge to make informed decisions
 
 
 
-### Course Objectives
+### Learning Objectives
+
+*Why it is required to learn a topic?*
 
 - Understand the fundamental concepts and strategic importance of modern software development and deployment technologies.
 
@@ -51,6 +53,26 @@ This course aims to equip managers with the knowledge to make informed decisions
 - Learn about GraphQL and its advantages in data querying.
 
 - Get an overview of NodeJS and its applications in building scalable server-side applications.
+
+### Learning Outcomes
+
+*What One Will Be Able to Do After Completing the Course*
+
+Upon completing this course, participants will be able to effectively manage and oversee software development projects by understanding the essentials of GitHub for version control and collaboration, and leveraging ChatGPT for innovative AI-driven solutions. 
+
+They will be proficient in utilizing SQL and relational databases for efficient data management and NoSQL databases for handling diverse data types. 
+
+Participants will be able to implement and manage Docker containers for consistent application deployment, and orchestrate containerized applications using Kubernetes. 
+
+They will gain the ability to develop robust Java applications with the Spring Framework and Spring Boot, and manage infrastructure as code for automation and consistency. 
+
+With a strong grasp of security architecture, they will design and implement effective security measures. 
+
+They will leverage AWS Cloud services for scalable and cost-effective solutions, and apply DevOps practices to enhance collaboration and continuous delivery. 
+
+Participants will be adept in designing APIs and microservices for modular and scalable applications, using GraphQL to optimize data fetching, and developing high-performance server-side applications with Node.js. 
+
+Overall, they will possess the knowledge to make informed decisions, communicate effectively with technical teams, and drive technological innovations within their organizations.
 
 
 ### Topics Overview
