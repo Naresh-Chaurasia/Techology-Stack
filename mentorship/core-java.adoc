@@ -960,6 +960,82 @@ In this code, we create an object `car1` of the `Car` class by calling the const
 
 ##############################################
 
+== OOPs Question Set
+
+*Question 1*
+
+Which of the following is the correct way to define a method in Java that returns an integer and takes two integer parameters?
+
+A. `public void add(int a, int b) { return a + b; }`
+
+B. `public int add(int a, int b) { return a + b; }`
+
+C. `public int add(int a, int b) { return a.add(b); }`
+
+D. `public void add(int a, int b) { return a + b; }`
+
+.Click Here For Answer
+[%collapsible]
+====
+The answer is B
+====
+
+*Question 2*
+
+What is method overloading in Java?
+
+A. Defining multiple methods in a class with the same name and same parameters.
+
+B. Defining multiple methods in a class with different names and different parameters.
+
+C. Defining multiple methods in a class with the same name but different parameters.
+
+D. Defining multiple methods in a class with the same name and the same return type.
+
+.Click Here For Answer
+[%collapsible]
+====
+The answer is C
+====
+
+*Question 3*
+
+Which statement is true about passing arguments to methods in Java?
+
+A. Arguments are always passed by reference.
+
+B. Arguments are always passed by value.
+
+C. Primitive data types are passed by value, and objects are passed by reference.
+
+D. Primitive data types are passed by reference, and objects are passed by value.
+
+.Click Here For Answer
+[%collapsible]
+====
+The answer is B
+====
+
+*Question 4*
+
+What is the return type of a method that does not return any value?
+
+A. `int`
+
+B. `void`
+
+C. `null`
+
+D. `None`
+
+.Click Here For Answer
+[%collapsible]
+====
+The answer is B
+====
+
+##############################################
+
 == Question Set 1 (JDK, JRE, ENV Variables)
 
 
