@@ -56,7 +56,7 @@ This course aims to equip managers with the knowledge to make informed decisions
 
 ### Learning Outcomes
 
-*What One Will Be Able to Do After Completing the Course*
+*What One Will Be Able to Do After Completing the Course?*
 
 Upon completing this course, participants will be able to effectively manage and oversee software development projects by understanding the essentials of GitHub for version control and collaboration, and leveraging ChatGPT for innovative AI-driven solutions. 
 
