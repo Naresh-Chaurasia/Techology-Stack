@@ -772,6 +772,24 @@ In this code, we create an object `calculator` of the `Calculator` class and cal
 
 ##############################################
 
+*Method Calling*
+
+[source, java]
+----
+public class Main {
+    public static void main(String[] args) {
+        Main mainObj = new Main();
+        mainObj.greet("Alice");
+    }
+
+    // Method to greet a person
+    public void greet(String name) {
+        System.out.println("Hello, " + name + "!");
+    }
+}
+----
+
+
 === Method Overloading in Java
 
 Method overloading in Java allows a class to have more than one method with the same name, but different parameters. These methods can have different numbers of parameters or different types of parameters. The main advantage of method overloading is that it increases the readability of the program.
@@ -956,6 +974,126 @@ In this code, we create an object `car1` of the `Car` class by calling the const
 * *Initializing Attributes*: The constructor initializes the attributes when a new object is created.
 * *Creating Objects*: When creating an object, the constructor is called with the specified parameters to initialize the object's attributes.
 * *Calling Methods*: After creating an object, you can call its methods to perform actions, such as displaying details.
+
+
+##############################################
+
+== Strings in Java
+
+A string in Java is a sequence of characters. Strings are used to store and manipulate text. They are objects of the `String` class, which is part of the `java.lang` package. In Java, strings are immutable, meaning that once a string is created, its value cannot be changed.
+
+*Creating Strings*
+
+There are several ways to create strings in Java:
+
+[source, java]
+----
+public class Main {
+    public static void main(String[] args) {
+        // Creating strings using string literals
+        String str1 = "Hello, World!";
+        
+        // Creating strings using the new keyword
+        String str2 = new String("Hello, World!");
+
+
+        // Displaying the strings
+        System.out.println(str1);  // Output: Hello, World!
+        System.out.println(str2);  // Output: Hello, World!
+    }
+}
+----
+
+*String Methods*
+
+The `String` class provides various methods for manipulating strings. Here are some commonly used methods:
+
+[source, java]
+----
+public class Main {
+    public static void main(String[] args) {
+        String str = "Hello, World!";
+
+        // Length of the string
+        int length = str.length();
+        System.out.println("Length: " + length);  // Output: 13
+
+        // Convert to uppercase
+        String upperStr = str.toUpperCase();
+        System.out.println("Uppercase: " + upperStr);  // Output: HELLO, WORLD!
+
+        // Convert to lowercase
+        String lowerStr = str.toLowerCase();
+        System.out.println("Lowercase: " + lowerStr);  // Output: hello, world!
+
+        // Substring
+        String subStr = str.substring(7);
+        System.out.println("Substring: " + subStr);  // Output: World!
+
+        // Replace
+        String replacedStr = str.replace("World", "Java");
+        System.out.println("Replaced: " + replacedStr);  // Output: Hello, Java!
+
+        // Concatenation
+        String concatStr = str.concat(" How are you?");
+        System.out.println("Concatenated: " + concatStr);  // Output: Hello, World! How are you?
+
+        // Check equality
+        boolean isEqual = str.equals("Hello, World!");
+        System.out.println("Is Equal: " + isEqual);  // Output: true
+    }
+}
+----
+
+
+##############################################
+
+== Arrays in Java
+
+An array in Java is a container object that holds a fixed number of values of a single type. The length of an array is established when the array is created, and after creation, its length is fixed.
+
+*Creating Arrays*
+
+Arrays can be created and initialized in several ways:
+
+[source, java]
+----
+public class Main {
+    public static void main(String[] args) {
+        // Declaring and initializing an array of integers
+        int[] numbers = {1, 2, 3, 4, 5};
+
+        // Declaring an array and then allocating memory for it
+        String[] fruits = new String[3];
+        fruits[0] = "Apple";
+        fruits[1] = "Banana";
+        fruits[2] = "Cherry";
+
+        // Accessing array elements
+        System.out.println("First number: " + numbers[0]);  // Output: 1
+        System.out.println("First fruit: " + fruits[0]);    // Output: Apple
+
+        // Length of an array
+        System.out.println("Length of numbers array: " + numbers.length);  // Output: 5
+        System.out.println("Length of fruits array: " + fruits.length);    // Output: 3
+
+        // Iterating over an array using a for loop
+        System.out.print("Numbers: ");
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print(numbers[i] + " ");
+        }
+        System.out.println();
+
+        // Iterating over an array using a for-each loop
+        System.out.print("Fruits: ");
+        for (String fruit : fruits) {
+            System.out.print(fruit + " ");
+        }
+        System.out.println();
+    }
+}
+----
+
 
 
 ##############################################
