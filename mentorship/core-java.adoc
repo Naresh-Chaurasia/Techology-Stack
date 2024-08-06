@@ -975,6 +975,18 @@ In this code, we create an object `car1` of the `Car` class by calling the const
 * *Creating Objects*: When creating an object, the constructor is called with the specified parameters to initialize the object's attributes.
 * *Calling Methods*: After creating an object, you can call its methods to perform actions, such as displaying details.
 
+=== Encapsulation
+
+=== Polymorphism
+
+=== Abstraction
+
+=== Inheritance
+
+=== Classes V/s Interfaces
+
+=== this keyword
+
 
 ##############################################
 
@@ -1045,6 +1057,57 @@ public class Main {
 }
 ----
 
+##############################################
+
+== StringBuffer in Java
+
+`StringBuffer` is a thread-safe, mutable sequence of characters. Unlike `String`, which is immutable, `StringBuffer` can be modified after it is created. This makes it a useful class for manipulating strings in a way that avoids creating many intermediate `String` objects.
+
+=== Creating a StringBuffer
+
+A `StringBuffer` can be created in several ways:
+
+[source, java]
+----
+public class Main {
+    public static void main(String[] args) {
+        // Creating a StringBuffer with an initial capacity of 16 characters
+        StringBuffer buffer1 = new StringBuffer();
+
+        // Creating a StringBuffer with a specified initial capacity
+        StringBuffer buffer2 = new StringBuffer(50);
+
+        // Creating a StringBuffer with an initial string
+        StringBuffer buffer3 = new StringBuffer("Hello, World!");
+
+        // Appending text to a StringBuffer
+        buffer3.append(" How are you?");
+        System.out.println(buffer3);  // Output: Hello, World! How are you?
+
+        // Inserting text into a StringBuffer
+        buffer3.insert(13, " Java");
+        System.out.println(buffer3);  // Output: Hello, World! Java How are you?
+
+        // Reversing the contents of a StringBuffer
+        buffer3.reverse();
+        System.out.println(buffer3);  // Output: ?uoy era woH avaJ !dlroW ,olleH
+
+        // Deleting a part of the StringBuffer
+        buffer3.delete(0, 6);
+        System.out.println(buffer3);  // Output: era woH avaJ !dlroW ,olleH
+
+        // Replacing part of the StringBuffer
+        buffer3.replace(4, 7, "are you");
+        System.out.println(buffer3);  // Output: era are you avaJ !dlroW ,olleH
+
+        // Converting StringBuffer to String
+        String str = buffer3.toString();
+        System.out.println(str);  // Output: era are you avaJ !dlroW ,olleH
+    }
+}
+----
+
+
 
 ##############################################
 
@@ -1094,7 +1157,37 @@ public class Main {
 }
 ----
 
+##############################################
 
+== Access Modifier in Java
+
+##############################################
+
+== Static Keyword in Java
+
+##############################################
+
+== Packages in Java
+
+##############################################
+
+== Collections in Java
+
+=== List 
+
+=== Set
+
+=== Map
+
+##############################################
+
+== MultiThreading Concepts
+
+##############################################
+
+== Excrption Handling
+
+##############################################
 
 ##############################################
 
