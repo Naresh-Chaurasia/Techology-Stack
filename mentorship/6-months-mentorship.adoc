@@ -102,7 +102,7 @@ link:automation-architect/core-java.adoc[Core Java,window=_blank]
 - Default and Static Methods in Interfaces
 
 
-== TestNG Framework
+== TestNG/JUnit Framework
 
 == SQL / MySQL Database
 
