@@ -108,8 +108,40 @@ link:automation-architect/core-java.adoc[Core Java,window=_blank]
 
 == Basic Understanding of Maven
 
-- Project Management and Dependency Handling
-- Building and Running Java Projects
+link:automation-architect/maven.adoc[Maven,window=_blank]
+
+Sure! When introducing Maven, you should cover the following key points:
+
+1. *Introduction to Maven*
+   - What is Maven?
+   - Benefits of using Maven
+
+2. *Maven Installation*
+   - Prerequisites
+   - Steps to install Maven
+
+3. *Maven Project Structure*
+   - Standard directory layout
+
+4. *POM File*
+   - What is a POM file?
+   - Basic structure of a POM file
+
+5. *Dependencies*
+   - Adding dependencies
+   - Understanding the dependency scope
+
+6. *Build Lifecycle*
+   - Phases of the build lifecycle
+
+7. *Plugins*
+   - What are plugins?
+   - Commonly used plugins
+
+8. *Example Maven Project*
+   - Creating a simple Maven project
+   - Adding dependencies
+   - Building the project
 
 == Selenium Automation with Java
 
