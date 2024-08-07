@@ -1,4 +1,4 @@
-= Core Java - Notes
+= Core Java - Automation Architect
 :toc: right
 :toclevels: 5
 :sectnums: 5

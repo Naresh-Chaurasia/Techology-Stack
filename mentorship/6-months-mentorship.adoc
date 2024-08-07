@@ -5,7 +5,7 @@
 
 == Core Java Programming
 
-link:core-java.adoc[Core Java,window=_blank]
+link:automation-architect/core-java.adoc[Core Java,window=_blank]
 
 * *Java Installation*
 - Environment Variables
@@ -167,6 +167,8 @@ link:web-services.adoc[Web Services,window=_blank]
 
 
 == API Automation using REST Assured
+
+link:automation-architect/rest-assured.adoc[Rest Assured,window=_blank]
 
 == DevOps Concepts
 

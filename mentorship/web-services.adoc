@@ -14,12 +14,137 @@
 == Components of a RESTful Service
 - Resources
 - URIs (Uniform Resource Identifiers)
-- HTTP Methods
+
+
+== HTTP Methods
+
   - GET
   - POST
   - PUT
   - DELETE
   - PATCH
+
+=== GET
+
+The `GET` method is used to retrieve information from the server. It is a read-only operation and does not alter any data on the server.
+
+[source, java]
+----
+GET /users/123 HTTP/1.1
+Host: example.com
+----
+
+Response:
+[source, json]
+----
+{
+    "id": 123,
+    "name": "John Doe",
+    "email": "john.doe@example.com"
+}
+----
+
+=== POST
+
+The `POST` method is used to create a new resource on the server. It sends data to the server to create a new entry.
+
+[source, java]
+----
+POST /users HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com"
+}
+----
+
+Response:
+[source, json]
+----
+{
+    "id": 124,
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com"
+}
+----
+
+=== PUT
+
+The `PUT` method is used to update an existing resource on the server. It replaces the current representation of the resource with the new data.
+
+[source, java]
+----
+PUT /users/123 HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john.new@example.com"
+}
+----
+
+Response:
+[source, json]
+----
+{
+    "id": 123,
+    "name": "John Doe",
+    "email": "john.new@example.com"
+}
+----
+
+=== DELETE
+
+The `DELETE` method is used to delete a resource from the server.
+
+[source, java]
+----
+DELETE /users/123 HTTP/1.1
+Host: example.com
+----
+
+Response:
+[source, json]
+----
+{
+    "message": "User deleted successfully"
+}
+----
+
+=== PATCH
+
+The `PATCH` method is used to apply partial modifications to a resource. It updates only the specified fields of the resource.
+
+[source, java]
+----
+PATCH /users/123 HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+    "email": "john.updated@example.com"
+}
+----
+
+Response:
+[source, json]
+----
+{
+    "id": 123,
+    "name": "John Doe",
+    "email": "john.updated@example.com"
+}
+----
+
+This overview provides a brief description and examples of how to use the common HTTP methods in RESTful web services to perform operations on resources.
+
+
+################################################################################
+
+
 - Status Codes
   - 1xx (Informational)
   - 2xx (Success)
