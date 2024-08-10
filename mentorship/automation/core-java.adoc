@@ -997,6 +997,8 @@ Here are two basic objective Java interview questions on encapsulation:
 *The answer is* `B. Encapsulation`
 ====
 
+---
+
 * *What will be the output of the following code?*
 
 [source, java]
@@ -1027,6 +1029,8 @@ class Employee {
 ====
 *The answer is* `John`
 ====
+
+---
 
 === Polymorphism
 
@@ -1121,6 +1125,8 @@ public class Main {
 *The answer is* `.equals()`
 ====
 
+---
+
 * *What will be the output of the following code?*
 
 [source, java]
@@ -1141,6 +1147,8 @@ public class Main {
 *The answer is* `HelloWorld`
 ====
 
+---
+
 * *Which of the following statements will create a new string object?*
 
     A. `String s = "Hello";`
@@ -1156,6 +1164,8 @@ public class Main {
 ====
 *The answer is* `C. Both A and B`
 ====
+
+---
 
 * *What will be the output of the following code?*
 
@@ -1176,6 +1186,8 @@ public class Main {
 *The answer is* `Java Programming`
 ====
 
+---
+
 * *Which of the following methods can be used to extract a substring from a string in Java?*
 
     A. `substring(int beginIndex)`
@@ -1191,6 +1203,8 @@ public class Main {
 ====
 *The answer is* `C. Both A and B`
 ====
+
+---
 
 == StringBuffer in Java
 
