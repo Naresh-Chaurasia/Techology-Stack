@@ -1,0 +1,56 @@
+= Content - ChatGPT
+:toc: right
+:toclevels: 5
+:sectnums: 5
+
+== Example 1
+
+Here are two objective Java interview questions on the `static` keyword:
+
+* *Which of the following is true about static methods in Java?*
+
+    A. They can access instance variables directly.
+    
+    B. They belong to the class rather than any object.
+    
+    C. They can be overridden by subclasses.
+    
+    D. They cannot be accessed by class name.
+
+.Click Here For Answer
+[%collapsible]
+====
+*The answer is* `B. They belong to the class rather than any object.`
+====
+
+* *What will be the output of the following code?*
+
+[source, java]
+----
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(Example.getCount());
+        Example e1 = new Example();
+        Example e2 = new Example();
+        System.out.println(Example.getCount());
+    }
+}
+
+class Example {
+    private static int count = 0;
+
+    public Example() {
+        count++;
+    }
+
+    public static int getCount() {
+        return count;
+    }
+}
+----
+
+.Click Here For Answer
+[%collapsible]
+====
+*The answer is* `1 and 3`
+====

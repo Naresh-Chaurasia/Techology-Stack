@@ -977,6 +977,57 @@ In this code, we create an object `car1` of the `Car` class by calling the const
 
 === Encapsulation
 
+==== Question Set
+
+Here are two basic objective Java interview questions on encapsulation:
+
+* *Which concept of Object-Oriented Programming is used to restrict access to the data in a class?*
+
+    A. Inheritance
+    
+    B. Encapsulation
+    
+    C. Polymorphism
+    
+    D. Abstraction
+
+.Click Here For Answer
+[%collapsible]
+====
+*The answer is* `B. Encapsulation`
+====
+
+* *What will be the output of the following code?*
+
+[source, java]
+----
+public class Main {
+    public static void main(String[] args) {
+        Employee emp = new Employee();
+        emp.setName("John");
+        System.out.println(emp.getName());
+    }
+}
+
+class Employee {
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+----
+
+.Click Here For Answer
+[%collapsible]
+====
+*The answer is* `John`
+====
+
 === Polymorphism
 
 === Abstraction
@@ -1058,6 +1109,88 @@ public class Main {
 ----
 
 ##############################################
+
+
+=== Question Set (String Object)
+
+* *Which method is used to compare two strings in Java for equality?*
+
+.Click Here For Answer
+[%collapsible]
+====
+*The answer is* `.equals()`
+====
+
+* *What will be the output of the following code?*
+
+[source, java]
+----
+public class Main {
+    public static void main(String[] args) {
+        String str1 = "Hello";
+        String str2 = "World";
+        String result = str1.concat(str2);
+        System.out.println(result);
+    }
+}
+----
+
+.Click Here For Answer
+[%collapsible]
+====
+*The answer is* `HelloWorld`
+====
+
+* *Which of the following statements will create a new string object?*
+
+    A. `String s = "Hello";`
+    
+    B. `String s = new String("Hello");`
+    
+    C. Both A and B
+    
+    D. None of the above
+
+.Click Here For Answer
+[%collapsible]
+====
+*The answer is* `C. Both A and B`
+====
+
+* *What will be the output of the following code?*
+
+[source, java]
+----
+public class Main {
+    public static void main(String[] args) {
+        String str = "Java";
+        str = str.concat(" Programming");
+        System.out.println(str);
+    }
+}
+----
+
+.Click Here For Answer
+[%collapsible]
+====
+*The answer is* `Java Programming`
+====
+
+* *Which of the following methods can be used to extract a substring from a string in Java?*
+
+    A. `substring(int beginIndex)`
+    
+    B. `substring(int beginIndex, int endIndex)`
+    
+    C. Both A and B
+    
+    D. None of the above
+
+.Click Here For Answer
+[%collapsible]
+====
+*The answer is* `C. Both A and B`
+====
 
 == StringBuffer in Java
 
@@ -1164,6 +1297,108 @@ public class Main {
 ##############################################
 
 == Static Keyword in Java
+
+*Concept of `static` in Java*
+
+In Java, the `static` keyword is used to define class-level variables and methods. This means that the `static` members belong to the class itself, rather than to any specific instance of the class. 
+
+Here’s a breakdown of how `static` can be used:
+
+1. **Static Variables:** A static variable is shared among all instances of a class. Any instance can modify this variable, and the changes will reflect across all instances.
+
+2. **Static Methods:** A static method can be called without creating an instance of the class. Since static methods belong to the class itself, they can only access static variables and other static methods directly.
+
+
+*Example of `static` in Java*
+
+Here's an example demonstrating the use of `static`:
+
+[source, java]
+----
+public class Main {
+    public static void main(String[] args) {
+        Employee e1 = new Employee("John");
+        Employee e2 = new Employee("Jane");
+        
+        System.out.println(Employee.companyName);
+        e1.showEmployeeDetails();
+        e2.showEmployeeDetails();
+    }
+}
+
+class Employee {
+    String name;
+    static String companyName = "Tech Solutions";
+
+    Employee(String name) {
+        this.name = name;
+    }
+
+    void showEmployeeDetails() {
+        System.out.println("Employee Name: " + name);
+        System.out.println("Company: " + companyName);
+    }
+}
+----
+
+**Explanation:**
+
+- **Static Variable (`companyName`):** The variable `companyName` is static, so it is shared by all instances of the `Employee` class. Changing this value would affect all instances of the class.
+
+- **Static Method:** There is no static method in this particular example, but if we had one, it could be called directly using `Employee.methodName()` without needing an instance.
+
+- **Instance Variables and Methods:** The instance variable `name` and the method `showEmployeeDetails()` are non-static, so they are accessed through instances of the class (`e1` and `e2`).
+
+=== Question Set (Static)
+
+* *Which of the following is true about static methods in Java?*
+
+    A. They can access instance variables directly.
+    
+    B. They belong to the class rather than any object.
+    
+    C. They can be overridden by subclasses.
+    
+    D. They cannot be accessed by class name.
+
+.Click Here For Answer
+[%collapsible]
+====
+*The answer is* `B. They belong to the class rather than any object.`
+====
+
+* *What will be the output of the following code?*
+
+[source, java]
+----
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(Example.getCount());
+        Example e1 = new Example();
+        Example e2 = new Example();
+        System.out.println(Example.getCount());
+    }
+}
+
+class Example {
+    private static int count = 0;
+
+    public Example() {
+        count++;
+    }
+
+    public static int getCount() {
+        return count;
+    }
+}
+----
+
+.Click Here For Answer
+[%collapsible]
+====
+*The answer is* `1 and 3`
+====
+
 
 ##############################################
 
