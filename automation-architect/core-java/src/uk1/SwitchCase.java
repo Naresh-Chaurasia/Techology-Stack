@@ -32,6 +32,8 @@ public class SwitchCase {
                 dayName = "Invalid day";
                 break;
         }
+
+        System.out.println(dayName);
         
     }
 }
