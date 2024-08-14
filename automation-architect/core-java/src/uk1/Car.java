@@ -8,5 +8,7 @@ public class Car {
 
     public void driveCar(){
         System.out.println("Drive The Car");
+        System.out.println(color);
+        System.out.println(model);
     }
 }

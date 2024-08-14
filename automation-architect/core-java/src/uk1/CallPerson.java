@@ -6,12 +6,17 @@ public class CallPerson {
 
         Car c = new Car();
 
+        Car d = new Car();
+
         c.color = "red";
         c.model = 2024;
 
-        System.out.println(c.color);
-        System.out.println(c.model);
+        d.color = "black";
+        d.model = 2022;
+
 
         c.driveCar();
+        System.out.println("-----");
+        d.driveCar();
     }
 }
