@@ -1,6 +1,6 @@
 package uk1;
 
-public class CallPerson {
+public class CallCar {
     public static void main(String[] args) {
         int a=10;
 
