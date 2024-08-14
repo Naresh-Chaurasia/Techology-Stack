@@ -3,37 +3,33 @@ package uk1;
 public class SwitchCase {
     public static void main(String[] args) {
 
-        int day = 3;
-        String dayName;
+        String dayOfWeek = "Monday";
 
-        switch (day) {
-            case 1:
-                dayName = "Monday";
+        switch (dayOfWeek) {
+            case "Monday":
+                System.out.println("Start of the work week!");
                 break;
-            case 2:
-                dayName = "Tuesday";
+            case "Tuesday":
+                System.out.println("Second day of the work week.");
                 break;
-            case 3:
-                dayName = "Wednesday";
+            case "Wednesday":
+                System.out.println("Midweek day.");
                 break;
-            case 4:
-                dayName = "Thursday";
+            case "Thursday":
+                System.out.println("Almost the weekend.");
                 break;
-            case 5:
-                dayName = "Friday";
+            case "Friday":
+                System.out.println("End of the work week!");
                 break;
-            case 6:
-                dayName = "Saturday";
+            case "Saturday":
+                System.out.println("Weekend day.");
                 break;
-            case 7:
-                dayName = "Sunday";
+            case "Sunday":
+                System.out.println("Weekend day.");
                 break;
             default:
-                dayName = "Invalid day";
+                System.out.println("Not a valid day.");
                 break;
-        }
-
-        System.out.println(dayName);
         
     }
 }
