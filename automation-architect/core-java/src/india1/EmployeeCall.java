@@ -2,15 +2,17 @@ package india1;
 
 public class EmployeeCall {
     public static void main(String[] args) {
-        Employee e1 = new Employee("E1");
-        e1.showEmployeeDetails();        
-        System.out.println(e1.company);
-        //e1.company = "CTS";
+        EmployeeCall obj = new EmployeeCall();
+        obj.method1();
 
+        method1();
 
+        EmployeeCall.method1();
+    }   
+    
+    
+    static void method1(){
+        System.out.println("I am static method...");
+    }
 
-        Employee e2 = new Employee("E2");
-        e2.showEmployeeDetails();
-        System.out.println(e2.company);
-    }    
 }
