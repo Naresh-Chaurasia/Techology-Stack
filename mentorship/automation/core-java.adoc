@@ -1038,9 +1038,156 @@ class Employee {
 
 === Inheritance
 
+*Inheritance* in Java is a mechanism that allows one class to acquire the properties (fields) and behaviors (methods) of another class. It promotes code reusability and establishes a parent-child relationship between classes. The class that inherits is called the *subclass* (child class), and the class being inherited from is called the *superclass* (parent class).
+
+---
+
+[source, java]
+----
+class Vehicle {
+    void start() {
+        System.out.println("Vehicle is starting");
+    }
+}
+
+class Car extends Vehicle {
+    void honk() {
+        System.out.println("Car is honking");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car myCar = new Car();
+        myCar.start();  // Inherited method from Vehicle
+        myCar.honk();   // Method specific to Car
+    }
+}
+----
+
+Explanation:
+*Inheritance* allows a class to acquire properties and methods of another class. In this example:
+
+* The `Vehicle` class is the *parent class* (superclass) with a method `start()`.
+* The `Car` class *inherits* from the `Vehicle` class using the `extends` keyword.
+* The `Car` class has its own method `honk()`.
+* In the `Main` class, an object of `Car` is created, and calling `myCar.start()` executes the inherited method from the `Vehicle` class. The `myCar.honk()` method is specific to the `Car` class.
+
+---
+
+[source, java]
+----
+class Animal {
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+        myDog.sound();
+    }
+}
+----
+
+Explanation:
+*Inheritance* allows a class to acquire properties and methods of another class. In this example:
+
+* The `Animal` class is the *parent class* (superclass) with a method `sound()`.
+* The `Dog` class *inherits* from the `Animal` class using the `extends` keyword, making it a *child class* (subclass).
+* The `Dog` class *overrides* the `sound()` method to provide a more specific implementation.
+* In the `Main` class, an object of `Dog` is created, and calling `myDog.sound()` outputs `Dog barks`, showcasing method overriding in inheritance.
+
+==== Question Set (Inheritance 1)
+
+Here are 5 basic objective Java interview questions on inheritance:
+
+*Which keyword is used to inherit a class in Java?*
+
+.Click Here For Answer
+[%collapsible]
+====
+The answer is `extends`.
+====
+
+*Can a Java class be inherited by multiple classes?*
+
+.Click Here For Answer
+[%collapsible]
+====
+The answer is *Yes*, a class can be inherited by multiple classes (each class can inherit from a single superclass).
+====
+
+*What type of relationship does inheritance represent?*
+
+.Click Here For Answer
+[%collapsible]
+====
+The answer is *"is-a"* relationship.
+====
+
+*What is the immediate parent class of a class in Java?*
+
+.Click Here For Answer
+[%collapsible]
+====
+The answer is `Object` class
+
+==== Question Set (Inheritance 2)
+
+Here are 2 basic assignment questions on inheritance in Java:
+
+* Create a Java program where you define a `Person` class with properties like `name` and `age`. Then, create a `Student` class that inherits from the `Person` class and adds a property for `grade`. Demonstrate how to create an object of the `Student` class and access properties from both the `Person` and `Student` classes.
+
+* Define a base class `Employee` with a method `work()` that prints a general message. Create a subclass `Manager` that adds a `teamSize` property. In the main method, create an instance of the `Manager` class and demonstrate inheritance by calling the `work()` method and accessing the `teamSize` property.
+
 === Classes V/s Interfaces
 
 === this keyword
+
+==== Question Set (this)
+
+Here are 2 basic objective Java interview questions on the *this* keyword:
+
+1. *What does the `this` keyword refer to in a class?*
+
+.Click Here For Answer
+[%collapsible]
+====
+The answer is *It refers to the current instance of the class.*
+====
+
+2. *Which of the following is a correct use of the `this` keyword in Java?*
+
+[source, java]
+----
+public class Main {
+    private int x;
+
+    public Main(int x) {
+        this.x = x;
+    }
+}
+----
+
+A. Assigning a parameter to the instance variable  
+B. Referring to the superclass constructor  
+C. Returning a new object of the class  
+D. None of the above
+
+.Click Here For Answer
+[%collapsible]
+====
+The answer is *A. Assigning a parameter to the instance variable*
+====
 
 
 ##############################################
