@@ -3,7 +3,6 @@
 :toclevels: 5
 :sectnums: 5
 
-##############################################
 
 == Path Environment Variable
 
@@ -63,44 +62,14 @@ javac -version
 ----
 If the PATH is set correctly, these commands should display the installed Java version without any errors.
 
-=== Question Set (JDK, JRE, ENV Variables)
-
-1. *What does the PATH environment variable do?*
-- A) Specifies the maximum memory allocation for the operating system.
-- B) Stores the location of executables to be used from the command line.
-- C) Defines the network configuration settings.
-- D) Sets the default file permissions.
-
-2. *What is the primary purpose of the CLASSPATH environment variable in Java?*
-- A) To specify the maximum heap size for Java applications.
-- B) To locate the Java Development Kit (JDK).
-- C) To locate the classes and libraries required by Java programs.
-- D) To store the user’s personal settings for Java applications.
-
-3. *Which of the following statements about bytecode is correct?*
-- A) Bytecode is the machine code for the Java Virtual Machine (JVM).
-- B) Bytecode is the source code written by the programmer.
-- C) Bytecode is the binary code executed directly by the operating system.
-- D) Bytecode is used only for JavaScript programs.
-
-4. *What is included in the Java Development Kit (JDK)?*
-- A) Only the Java Runtime Environment (JRE).
-- B) The JRE, development tools, and libraries for Java development.
-- C) Only the Java Virtual Machine (JVM).
-- D) Only the Java API documentation.
-
-5. *What is the role of the Java Runtime Environment (JRE)?*
-- A) To compile Java source code into bytecode.
-- B) To provide libraries, Java Virtual Machine (JVM), and other components to run Java applications.
-- C) To develop and debug Java applications.
-- D) To edit Java source code files.
-
-##############################################
-
 == Data Types in Java
 
 image::java-data-types.png[]
+
 ---
+
+
+
 
 *Primitive Data Types*
 
@@ -175,9 +144,6 @@ public class PrimitiveDataTypes {
 }
 
 ----
-
-
-
 
 
 == Unicode
@@ -291,7 +257,7 @@ public class VariablesExample {
 }
 ----
 
-##############################################
+################################################################################
 
 == Operators in Java
 
@@ -526,155 +492,6 @@ public class TernaryOperatorDemo {
 
 ----
 
-
-=== Question Set (Data Types, Variables)
-
-
-*Question 1: Java Data Types*
-
-*Which of the following is not a primitive data type in Java?*
-
-A. int
-
-B. boolean
-
-C. String
-
-D. char
-
-.Click Here For Answer
-[%collapsible]
-====
-*The answer is* `C`
-====
-
-*Question 2: Unicode in Java*
-
-*What is the range of Unicode values in Java?*
-
-A. 0 to 65535
-
-B. 0 to 32767
-
-C. 0 to 2147483647
-
-D. 0 to 1114111
-
-.Click Here For Answer
-[%collapsible]
-====
-*The answer is* `A`
-====
-
-*Question 3: Variables in Java*
-
-*Which of the following statements is correct about variable declaration and initialization in Java?*
-
-A. int a; a = 5;
-
-B. int a = 5;
-
-C. a = 5; int a;
-
-D. Both A and B
-
-.Click Here For Answer
-[%collapsible]
-====
-*The answer is* `D`
-====
-
-*Question 4: Operators in Java*
-
-*What will be the output of the following code?*
-
-[source,java]
-----
-
-public class Main {
-    public static void main(String[] args) {
-    int a = 10;
-    int b = 5;
-    System.out.println(a / b);
-    }
-}
-
-----
-
-A. 0
-
-B. 2
-
-C. 2.0
-
-D. 10.0
-
-.Click Here For Answer
-[%collapsible]
-====
-*The answer is* `C`
-====
-
-
-*Question 5: Java Data Types*
-
-*Which of the following statements is true about the `char` data type in Java?*
-
-A. It is a 16-bit signed integer.
-
-B. It is a 32-bit unsigned integer.
-
-C. It is a 16-bit unsigned integer.
-
-D. It is a 32-bit signed integer.
-
-.Click Here For Answer
-[%collapsible]
-====
-*The answer is* `C`
-====
-
-##############################################
-
-=== Coding Exercise: Data Types and Variables
-
-*Objective:*
-
-The goal of this exercise is to test your understanding of Java data types, including both primitive and reference types, and your ability to work with variables.
-
-*Problem Statement:*
-
-1. *Primitive Data Types*
-- Create a Java class named `PrimitiveDataTypes`.
-- Declare variables of the following primitive data types: `int`, `double`, `char`, and `boolean`.
-- Assign appropriate values to each variable.
-- Write a method `displayPrimitives()` that prints the values of these variables to the console.
-
-2. *Reference Data Types*
-- Create a Java class named `ReferenceDataTypes`.
-- Declare variables of the following reference data types: `String`, `Array`, and a custom class type `Person` (which you will define).
-- Assign appropriate values to each variable.
-- Write a method `displayReferences()` that prints the values of these variables to the console.
-
-3. *Custom Class: Person*
-- Create a custom class named `Person` with the following attributes: `name` (String), `age` (int).
-- Include a constructor to initialize these attributes.
-- Override the `toString()` method to provide a string representation of a `Person` object.
-
-*Instructions:*
-
-*Task:*
-
-1. Implement the classes `PrimitiveDataTypes`, `Person`, and `ReferenceDataTypes` as described above.
-2. Compile and run the `PrimitiveDataTypes` and `ReferenceDataTypes` classes to ensure they work as expected.
-3. Ensure that all the values are printed correctly to the console.
-
----
-
-This exercise will help you demonstrate your understanding of both primitive and reference data types in Java, along with basic object-oriented programming concepts.
-
-##############################################
-
 == If, Else
 
 `if-else if` statements in Java are used to execute specific blocks of code based on multiple conditions. They are commonly used for:
@@ -878,48 +695,9 @@ public class Main {
 
 This code demonstrates a `do-while` loop in Java. It initializes an integer `i` to 0 and executes the loop body at least once, regardless of the condition. The loop prints the value of `i` and then increments `i` by 1. After the loop body, it checks if `i` is less than 5 before repeating.
 
-##############################################
-
-
-=== Coding Exercise: Conditional and Looping Statements
-
-*Objective*
-
-The goal of this exercise is to test your understanding of Java conditional statements (`if-else`, `switch`) and looping statements (`for`, `while`, `do-while`).
-
-*Problem Statement:*
-
-1. *Conditional Statements*
-
-- Create a Java class named `ConditionalStatements`.
-- Implement a method `checkNumber(int number)` that:
-- Uses an `if-else` statement to check if the number is positive, negative, or zero and prints the result.
-- Uses a `switch` statement to check if the number is 1, 2, 3, or another value and prints a corresponding message.
-
-2. *Looping Statements*
-
-- Create a Java class named `LoopingStatements`.
-- Implement the following methods:
-- `printNumbersForLoop(int n)`: Uses a `for` loop to print numbers from 1 to `n`.
-- `printNumbersWhileLoop(int n)`: Uses a `while` loop to print numbers from 1 to `n`.
-- `printNumbersDoWhileLoop(int n)`: Uses a `do-while` loop to print numbers from 1 to `n`.
-
-
-*Task:*
-
-1. Implement the classes `ConditionalStatements` and `LoopingStatements` as described above.
-2. Compile and run the `ConditionalStatements` and `LoopingStatements` classes to ensure they work as expected.
-3. Ensure that the appropriate messages and numbers are printed to the console.
-
----
-
-This exercise will help you demonstrate your understanding of conditional and looping statements in Java.
-
-##############################################
-
-
 
 == OOPs Programming
+
 
 === Methods in Java
 
@@ -1412,84 +1190,6 @@ D. None of the above
 The answer is *A. Assigning a parameter to the instance variable*
 ====
 
-##############################################
-
-=== OOPs Question Set
-
-*Question 1*
-
-Which of the following is the correct way to define a method in Java that returns an integer and takes two integer parameters?
-
-A. `public void add(int a, int b) { return a + b; }`
-
-B. `public int add(int a, int b) { return a + b; }`
-
-C. `public int add(int a, int b) { return a.add(b); }`
-
-D. `public void add(int a, int b) { return a + b; }`
-
-.Click Here For Answer
-[%collapsible]
-====
-The answer is B
-====
-
-*Question 2*
-
-What is method overloading in Java?
-
-A. Defining multiple methods in a class with the same name and same parameters.
-
-B. Defining multiple methods in a class with different names and different parameters.
-
-C. Defining multiple methods in a class with the same name but different parameters.
-
-D. Defining multiple methods in a class with the same name and the same return type.
-
-.Click Here For Answer
-[%collapsible]
-====
-The answer is C
-====
-
-*Question 3*
-
-Which statement is true about passing arguments to methods in Java?
-
-A. Arguments are always passed by reference.
-
-B. Arguments are always passed by value.
-
-C. Primitive data types are passed by value, and objects are passed by reference.
-
-D. Primitive data types are passed by reference, and objects are passed by value.
-
-.Click Here For Answer
-[%collapsible]
-====
-The answer is B
-====
-
-*Question 4*
-
-What is the return type of a method that does not return any value?
-
-A. `int`
-
-B. `void`
-
-C. `null`
-
-D. `None`
-
-.Click Here For Answer
-[%collapsible]
-====
-The answer is B
-====
-
-##############################################
-
 
 ##############################################
 
@@ -1888,6 +1588,267 @@ class Example {
 
 ##############################################
 
+== OOPs Question Set
+
+*Question 1*
+
+Which of the following is the correct way to define a method in Java that returns an integer and takes two integer parameters?
+
+A. `public void add(int a, int b) { return a + b; }`
+
+B. `public int add(int a, int b) { return a + b; }`
+
+C. `public int add(int a, int b) { return a.add(b); }`
+
+D. `public void add(int a, int b) { return a + b; }`
+
+.Click Here For Answer
+[%collapsible]
+====
+The answer is B
+====
+
+*Question 2*
+
+What is method overloading in Java?
+
+A. Defining multiple methods in a class with the same name and same parameters.
+
+B. Defining multiple methods in a class with different names and different parameters.
+
+C. Defining multiple methods in a class with the same name but different parameters.
+
+D. Defining multiple methods in a class with the same name and the same return type.
+
+.Click Here For Answer
+[%collapsible]
+====
+The answer is C
+====
+
+*Question 3*
+
+Which statement is true about passing arguments to methods in Java?
+
+A. Arguments are always passed by reference.
+
+B. Arguments are always passed by value.
+
+C. Primitive data types are passed by value, and objects are passed by reference.
+
+D. Primitive data types are passed by reference, and objects are passed by value.
+
+.Click Here For Answer
+[%collapsible]
+====
+The answer is B
+====
+
+*Question 4*
+
+What is the return type of a method that does not return any value?
+
+A. `int`
+
+B. `void`
+
+C. `null`
+
+D. `None`
+
+.Click Here For Answer
+[%collapsible]
+====
+The answer is B
+====
+
+##############################################
+
+== Question Set 1 (JDK, JRE, ENV Variables)
+
+
+Sure! Here are five multiple-choice questions for beginners on PATH, CLASSPATH, environment variables, bytecode, JDK, and JRE:
+
+1. *What does the PATH environment variable do?*
+- A) Specifies the maximum memory allocation for the operating system.
+- B) Stores the location of executables to be used from the command line.
+- C) Defines the network configuration settings.
+- D) Sets the default file permissions.
+
+2. *What is the primary purpose of the CLASSPATH environment variable in Java?*
+- A) To specify the maximum heap size for Java applications.
+- B) To locate the Java Development Kit (JDK).
+- C) To locate the classes and libraries required by Java programs.
+- D) To store the user’s personal settings for Java applications.
+
+3. *Which of the following statements about bytecode is correct?*
+- A) Bytecode is the machine code for the Java Virtual Machine (JVM).
+- B) Bytecode is the source code written by the programmer.
+- C) Bytecode is the binary code executed directly by the operating system.
+- D) Bytecode is used only for JavaScript programs.
+
+4. *What is included in the Java Development Kit (JDK)?*
+- A) Only the Java Runtime Environment (JRE).
+- B) The JRE, development tools, and libraries for Java development.
+- C) Only the Java Virtual Machine (JVM).
+- D) Only the Java API documentation.
+
+5. *What is the role of the Java Runtime Environment (JRE)?*
+- A) To compile Java source code into bytecode.
+- B) To provide libraries, Java Virtual Machine (JVM), and other components to run Java applications.
+- C) To develop and debug Java applications.
+- D) To edit Java source code files.
+
+== Question Set 2 (Data Types, Variables)
+
+
+*Question 1: Java Data Types*
+
+*Which of the following is not a primitive data type in Java?*
+
+A. int
+
+B. boolean
+
+C. String
+
+D. char
+
+*Question 2: Unicode in Java*
+
+*What is the range of Unicode values in Java?*
+
+A. 0 to 65535
+
+B. 0 to 32767
+
+C. 0 to 2147483647
+
+D. 0 to 1114111
+
+*Question 3: Variables in Java*
+
+*Which of the following statements is correct about variable declaration and initialization in Java?*
+
+A. int a; a = 5;
+
+B. int a = 5;
+
+C. a = 5; int a;
+
+D. Both A and B
+
+*Question 4: Operators in Java*
+
+*What will be the output of the following code?*
+
+[source,java]
+----
+
+public class Main {
+    public static void main(String[] args) {
+    int a = 10;
+    int b = 5;
+    System.out.println(a / b);
+    }
+}
+
+----
+
+A. 0
+
+B. 2
+
+C. 2.0
+
+D. 10.0
+
+
+*Question 5: Java Data Types*
+
+*Which of the following statements is true about the `char` data type in Java?*
+
+A. It is a 16-bit signed integer.
+
+B. It is a 32-bit unsigned integer.
+
+C. It is a 16-bit unsigned integer.
+
+D. It is a 32-bit signed integer.
+
+== Coding Exercises
+
+
+### Coding Exercise: Data Types and Variables
+
+*Objective:*
+
+The goal of this exercise is to test your understanding of Java data types, including both primitive and reference types, and your ability to work with variables.
+
+*Problem Statement:*
+
+1. *Primitive Data Types*
+- Create a Java class named `PrimitiveDataTypes`.
+- Declare variables of the following primitive data types: `int`, `double`, `char`, and `boolean`.
+- Assign appropriate values to each variable.
+- Write a method `displayPrimitives()` that prints the values of these variables to the console.
+
+2. *Reference Data Types*
+- Create a Java class named `ReferenceDataTypes`.
+- Declare variables of the following reference data types: `String`, `Array`, and a custom class type `Person` (which you will define).
+- Assign appropriate values to each variable.
+- Write a method `displayReferences()` that prints the values of these variables to the console.
+
+3. *Custom Class: Person*
+- Create a custom class named `Person` with the following attributes: `name` (String), `age` (int).
+- Include a constructor to initialize these attributes.
+- Override the `toString()` method to provide a string representation of a `Person` object.
+
+*Instructions:*
+
+*Task:*
+
+1. Implement the classes `PrimitiveDataTypes`, `Person`, and `ReferenceDataTypes` as described above.
+2. Compile and run the `PrimitiveDataTypes` and `ReferenceDataTypes` classes to ensure they work as expected.
+3. Ensure that all the values are printed correctly to the console.
+
+---
+
+This exercise will help you demonstrate your understanding of both primitive and reference data types in Java, along with basic object-oriented programming concepts.
+
+=== Coding Exercise: Conditional and Looping Statements
+
+*Objective*
+
+The goal of this exercise is to test your understanding of Java conditional statements (`if-else`, `switch`) and looping statements (`for`, `while`, `do-while`).
+
+*Problem Statement:*
+
+1. *Conditional Statements*
+
+- Create a Java class named `ConditionalStatements`.
+- Implement a method `checkNumber(int number)` that:
+- Uses an `if-else` statement to check if the number is positive, negative, or zero and prints the result.
+- Uses a `switch` statement to check if the number is 1, 2, 3, or another value and prints a corresponding message.
+
+2. *Looping Statements*
+
+- Create a Java class named `LoopingStatements`.
+- Implement the following methods:
+- `printNumbersForLoop(int n)`: Uses a `for` loop to print numbers from 1 to `n`.
+- `printNumbersWhileLoop(int n)`: Uses a `while` loop to print numbers from 1 to `n`.
+- `printNumbersDoWhileLoop(int n)`: Uses a `do-while` loop to print numbers from 1 to `n`.
+
+
+*Task:*
+
+1. Implement the classes `ConditionalStatements` and `LoopingStatements` as described above.
+2. Compile and run the `ConditionalStatements` and `LoopingStatements` classes to ensure they work as expected.
+3. Ensure that the appropriate messages and numbers are printed to the console.
+
+---
+
+This exercise will help you demonstrate your understanding of conditional and looping statements in Java.
 
 
 == References
