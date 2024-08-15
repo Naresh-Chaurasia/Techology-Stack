@@ -1140,6 +1140,7 @@ The answer is *"is-a"* relationship.
 [%collapsible]
 ====
 The answer is `Object` class
+====
 
 ==== Question Set (Inheritance 2)
 
@@ -1155,7 +1156,39 @@ Here are 2 basic assignment questions on inheritance in Java:
 
 ==== Question Set (this)
 
+Here are 2 basic objective Java interview questions on the *this* keyword:
 
+1. *What does the `this` keyword refer to in a class?*
+
+.Click Here For Answer
+[%collapsible]
+====
+The answer is *It refers to the current instance of the class.*
+====
+
+2. *Which of the following is a correct use of the `this` keyword in Java?*
+
+[source, java]
+----
+public class Main {
+    private int x;
+
+    public Main(int x) {
+        this.x = x;
+    }
+}
+----
+
+A. Assigning a parameter to the instance variable  
+B. Referring to the superclass constructor  
+C. Returning a new object of the class  
+D. None of the above
+
+.Click Here For Answer
+[%collapsible]
+====
+The answer is *A. Assigning a parameter to the instance variable*
+====
 
 
 ##############################################
