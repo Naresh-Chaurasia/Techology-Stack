@@ -1824,6 +1824,256 @@ The answer is *C. int[] arr = {1, 2, 3, 4, 5};*
 
 == Access Modifier in Java
 
+Access modifiers in Java define the scope of accessibility for classes, methods, and variables. There are four main types of access modifiers:
+
+1. *public*: Accessible from any other class.
+2. *private*: Accessible only within the declared class.
+3. *protected*: Accessible within the same package and by subclasses.
+4. *Default (no modifier)*: Accessible only within the same package.
+
+Here are some examples for better understanding:
+
+
+[source,java]
+----
+class AccessModifiersExample {
+
+    // Public variable: Accessible from anywhere
+    public String publicVar = "I am public";
+
+    // Private variable: Accessible only within this class
+    private String privateVar = "I am private";
+
+    // Protected variable: Accessible within the same package and subclasses
+    protected String protectedVar = "I am protected";
+
+    // Default (no modifier) variable: Accessible only within the same package
+    String defaultVar = "I am default";
+
+    // Public method: Accessible from anywhere
+    public void publicMethod() {
+        System.out.println(publicVar);
+    }
+
+    // Private method: Accessible only within this class
+    private void privateMethod() {
+        System.out.println(privateVar);
+    }
+
+    // Protected method: Accessible within the same package and subclasses
+    protected void protectedMethod() {
+        System.out.println(protectedVar);
+    }
+
+    // Default (no modifier) method: Accessible only within the same package
+    void defaultMethod() {
+        System.out.println(defaultVar);
+    }
+}
+----
+
+
+
+[source,java]
+----
+public class Main {
+    public static void main(String[] args) {
+        AccessModifiersExample obj = new AccessModifiersExample();
+
+        // Accessing public method and variable
+        obj.publicMethod();  // Outputs: I am public
+
+        // Accessing protected and default members within the same package
+        obj.protectedMethod();  // Outputs: I am protected
+        obj.defaultMethod();    // Outputs: I am default
+
+        // Attempting to access private members (will cause a compilation error)
+        // obj.privateMethod();  // Error: privateMethod() has private access
+    }
+}
+----
+
+*Explanation*:
+- public: Accessible from anywhere.
+- private: Accessible only within the class, cannot be accessed from outside.
+- protected: Accessible within the package and by subclasses.
+- Default: Accessible within the package.
+
+In the Main class, accessing privateMethod() will result in a compilation error since it's private to AccessModifiersExample.
+
+##############################################
+
+When dealing with inheritance, access modifiers play an important role in determining what members of the parent class (also called the superclass) are accessible to the child class (also called the subclass). Below is a detailed example demonstrating how access modifiers work with inheritance.
+
+[source,java]
+----
+class ParentClass {
+    public String publicVar = "I am public in Parent";
+    private String privateVar = "I am private in Parent";
+    protected String protectedVar = "I am protected in Parent";
+    String defaultVar = "I am default in Parent";
+
+    public void publicMethod() {
+        System.out.println("Public method in Parent");
+    }
+
+    private void privateMethod() {
+        System.out.println("Private method in Parent");
+    }
+
+    protected void protectedMethod() {
+        System.out.println("Protected method in Parent");
+    }
+
+    void defaultMethod() {
+        System.out.println("Default method in Parent");
+    }
+}
+
+class ChildClass extends ParentClass {
+    public void accessParentMembers() {
+        // Accessing public members
+        System.out.println(publicVar);  // Accessible
+        publicMethod();  // Accessible
+
+        // Accessing protected members
+        System.out.println(protectedVar);  // Accessible
+        protectedMethod();  // Accessible
+
+        // Accessing default members
+        System.out.println(defaultVar);  // Accessible within the same package
+        defaultMethod();  // Accessible within the same package
+
+        // Attempting to access private members (will cause a compilation error)
+        // System.out.println(privateVar);  // Error: privateVar is private
+        // privateMethod();  // Error: privateMethod() is private
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        ChildClass child = new ChildClass();
+        child.accessParentMembers();
+    }
+}
+----
+
+*Explanation*:
+- *Public members* (`publicVar`, `publicMethod()`): Accessible from the child class and anywhere.
+
+- *Private members* (`privateVar`, `privateMethod()`): *Not* accessible from the child class or any other class, only within the parent class itself.
+
+- *Protected members* (`protectedVar`, `protectedMethod()`): Accessible in the child class and within the same package.
+
+- *Default members* (`defaultVar`, `defaultMethod()`): Accessible in the child class if the child class is in the same package as the parent class.
+
+*Output* when running the program:
+[source]
+----
+I am public in Parent
+Public method in Parent
+I am protected in Parent
+Protected method in Parent
+I am default in Parent
+Default method in Parent
+----
+
+The private members are inaccessible in the child class, even though they belong to the parent class.
+
+
+##############################################
+
+=== Question Set (Access Modifier)
+
+
+
+*Which access modifier allows members to be accessed only within the same package and by subclasses?*
+
+[source, java]
+----
+public class Example {
+    protected int number = 10;
+    public void showNumber() {
+        System.out.println(number);
+    }
+}
+----
+
+*Options*:
+
+A. *public*
+
+B. *private*
+
+C. *protected*
+
+D. *default*
+
+.Click Here For Answer
+[%collapsible]
+====
+The answer is C
+====
+
+---
+
+*Which of the following access modifiers cannot be used for top-level classes?*
+
+[source, java]
+----
+class MyClass {
+    // Some code here
+}
+----
+
+*Options*:
+
+A. *public*
+
+B. *private*
+
+C. *protected*
+
+D. *default*
+
+.Click Here For Answer
+[%collapsible]
+====
+The answer is B and C
+====
+
+
+---
+
+
+*What will happen if a class member is declared without any access modifier?*
+
+[source, java]
+----
+class PackageExample {
+    int data = 100;  // No access modifier
+    void showData() {
+        System.out.println(data);
+    }
+}
+----
+
+*Options*:
+A. *It will be accessible everywhere in the project.*
+
+B. *It will be accessible only within the same package.*
+
+C. *It will be accessible only within the same class.*
+
+D. *It will be accessible in all subclasses.*
+
+.Click Here For Answer
+[%collapsible]
+====
+The answer is B
+====
+
+
 ##############################################
 
 == Static Keyword in Java
