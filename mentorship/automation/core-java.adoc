@@ -1754,6 +1754,74 @@ public class Main {
 
 ##############################################
 
+=== Question Set (Arrays)
+
+
+*Exercise:*
+Write a Java program to find the largest element in an array of integers.
+
+*Example Input:*
+
+int[] numbers = {3, 5, 7, 2, 8};
+
+
+*Expected Output:*
+The largest element is 8.
+
+---
+
+*Exercise:*
+
+Write a Java program to reverse the elements of an array.
+
+*Example Input:*
+
+int[] numbers = {1, 2, 3, 4, 5};
+
+*Expected Output:*
+The reversed array is: {5, 4, 3, 2, 1}
+
+---
+
+*What is the default value of elements in an integer array in Java?*
+
+A. 1
+B. 0
+C. Null
+D. Undefined
+
+.Click Here For Answer
+[%collapsible]
+====
+The answer is *B. 0*
+====
+
+---
+
+*Which of the following is the correct way to declare and initialize an array in Java?*
+
+[source, java]
+----
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
+    }
+}
+----
+
+A. `int arr[5] = {1, 2, 3, 4, 5};`
+B. `int[] arr = new int[5] {1, 2, 3, 4, 5};`
+C. `int[] arr = {1, 2, 3, 4, 5};`
+D. `int arr[] = new int(5) {1, 2, 3, 4, 5};`
+
+.Click Here For Answer
+[%collapsible]
+====
+The answer is *C. int[] arr = {1, 2, 3, 4, 5};*
+====
+
+##############################################
+
 == Access Modifier in Java
 
 ##############################################

@@ -32,7 +32,7 @@ Can you give example of for loop, while loop and do while loop in java
 
 == Example 2: Object Questions
 
-Can you give 5 basic objective java interview interview question on string. 
+Can you give 5 basic objective java interview question on string.
 
 While generating bold please replace ** with *
 
