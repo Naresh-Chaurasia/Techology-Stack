@@ -5,16 +5,11 @@ public class StringInJava {
         
         //Object Creation for String
         //String name = new String( "Java Programming");
-        String name = "Java";
+        String name = "Java";//immutable
 
-        char c = name.charAt(0);
-        System.out.println(c);
+        name = name + " programming"; // creating new object with same name
 
-        int index1 = name.indexOf('a');
-        System.out.println(index1);
-
-        int index2 = name.lastIndexOf('a');
-        System.out.println(index2);
+        System.out.println(name);
 
         
 
