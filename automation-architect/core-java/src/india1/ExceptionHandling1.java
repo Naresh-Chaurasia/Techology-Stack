@@ -11,7 +11,7 @@ public class ExceptionHandling1 {
             System.out.println("Before division...");
             c = a / b;
             System.out.println("After division...");
-        } catch (Exception e) {
+        } catch (ArithmeticException e) {
             System.out.println(e.toString());
         } finally {
             System.out.println("This block always executes.");
