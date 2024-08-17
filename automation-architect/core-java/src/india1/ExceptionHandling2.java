@@ -1,9 +1,9 @@
 package india1;
 
-public class ExceptionHandling {
+public class ExceptionHandling2 {
     public static void main(String[] args) {
         int a = 10;
-        int b = 2;
+        int b = 0;
         int c = 0;
         System.out.println("Hello World!");
 
@@ -11,9 +11,7 @@ public class ExceptionHandling {
             System.out.println("Before division...");
             c = a / b;
             System.out.println("After division...");
-        } catch (Exception e) {
-            System.out.println(e.toString());
-        } finally {
+        }finally {
             System.out.println("This block always executes.");
         }
 
