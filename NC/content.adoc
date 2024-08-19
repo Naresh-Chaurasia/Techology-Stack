@@ -24,9 +24,11 @@ public class Main {
 }
 ----
 
-and explanation in asciidoc format.
+Explanation in asciidoc document format.
 
-Can you give example of for loop, while loop and do while loop in java
+Can you give example of for loop, while loop and do while loop in java.
+
+
 
 ################################################################################
 

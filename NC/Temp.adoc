@@ -3,54 +3,200 @@
 :toclevels: 5
 :sectnums: 5
 
-== Example 1
+== Output from ChatGPT
 
-Here are two objective Java interview questions on the `static` keyword:
+*Collections in Java* are a framework that provides an architecture to store and manipulate a group of objects.
+They include classes like *ArrayList*, *LinkedList*, *HashSet*, *HashMap*, and interfaces like *List*, *Set*, *Map*.
+Collections are used to perform operations such as searching, sorting, insertion, manipulation, and deletion.
 
-* *Which of the following is true about static methods in Java?*
+Below is a simple example demonstrating the use of an `ArrayList`, one of the commonly used collection classes:
 
-    A. They can access instance variables directly.
-    
-    B. They belong to the class rather than any object.
-    
-    C. They can be overridden by subclasses.
-    
-    D. They cannot be accessed by class name.
+[source,java]
+----
+import java.util.ArrayList;
 
-.Click Here For Answer
-[%collapsible]
-====
-*The answer is* `B. They belong to the class rather than any object.`
-====
+public class Main {
+    public static void main(String[] args) {
+        // Creating an ArrayList of Strings
+        ArrayList<String> fruits = new ArrayList<>();
 
-* *What will be the output of the following code?*
+        // Adding elements to the ArrayList
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Mango");
+
+        // Accessing elements
+        System.out.println("First fruit: " + fruits.get(0));
+
+        // Removing an element
+        fruits.remove("Banana");
+
+        // Iterating over the ArrayList
+        for (String fruit : fruits) {
+            System.out.println(fruit);
+        }
+    }
+}
+----
+
+*Explanation:*
+
+- `ArrayList<String> fruits = new ArrayList<>();`: Creates an `ArrayList` of strings to store fruit names.
+- `fruits.add("Apple");`: Adds the specified string to the list.
+- `fruits.get(0)`: Retrieves the element at index 0 (first element).
+- `fruits.remove("Banana");`: Removes "Banana" from the list.
+- The *for-each* loop iterates over the list to print all remaining elements.
+
+Java Collections framework provides various utilities to make handling collections easier, offering flexibility for different needs.
+
+Here are examples of both `Set` and `Map` in Java:
+
+*Example of Set (HashSet):*
+
+[source,java]
+----
+import java.util.HashSet;
+import java.util.Set;
+
+public class Main {
+    public static void main(String[] args) {
+        // Creating a HashSet of Strings
+        Set<String> cities = new HashSet<>();
+
+        // Adding elements to the HashSet
+        cities.add("New York");
+        cities.add("Los Angeles");
+        cities.add("Chicago");
+        cities.add("New York"); // Duplicate element, won't be added
+
+        // Iterating over the HashSet
+        for (String city : cities) {
+            System.out.println(city);
+        }
+    }
+}
+----
+
+*Explanation:*
+
+- `Set<String> cities = new HashSet<>();`: Creates a `HashSet` of strings to store city names.
+- `cities.add("New York");`: Adds the city to the set.
+- *Sets* do not allow duplicate elements, so adding "New York" twice will only store it once.
+- The *for-each* loop iterates over the set to print all unique elements.
+
+*Example of Map (HashMap):*
+
+[source,java]
+----
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+    public static void main(String[] args) {
+        // Creating a HashMap to store student names and their scores
+        Map<String, Integer> studentScores = new HashMap<>();
+
+        // Adding key-value pairs (student name, score)
+        studentScores.put("Alice", 85);
+        studentScores.put("Bob", 92);
+        studentScores.put("Charlie", 78);
+
+        // Accessing values by key
+        System.out.println("Alice's score: " + studentScores.get("Alice"));
+
+        // Iterating over the HashMap
+        for (Map.Entry<String, Integer> entry : studentScores.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+    }
+}
+----
+
+*Explanation:*
+
+- `Map<String, Integer> studentScores = new HashMap<>();`: Creates a `HashMap` with student names as keys and scores as values.
+- `studentScores.put("Alice", 85);`: Adds a key-value pair to the map.
+- `studentScores.get("Alice");`: Retrieves the value (score) associated with the key "Alice".
+- The *for-each* loop iterates over the map using `entrySet()` to print all key-value pairs.
+
+These examples showcase how sets are used for unique elements, while maps are designed for key-value pair associations.
+
+Here's a comparison of *List*, *Set*, and *Map* in AsciiDoc format, along with scenarios where each is commonly used:
+
+*Comparison of List, Set, and Map in Java*
+
+[cols="1,1,1,1",options="header"]
+|===========================================
+| *Feature*                       | *List*                        | *Set*                        | *Map*
+
+| **Interface**                   | `List`                        | `Set`                        | `Map`
+
+| **Implementation Classes**      | `ArrayList`, `LinkedList`     | `HashSet`, `TreeSet`, `LinkedHashSet` | `HashMap`, `TreeMap`, `LinkedHashMap`
+
+| **Duplicates Allowed**          | Yes                           | No                           | Keys: No, Values: Yes
+
+| **Order Maintained**            | Yes (insertion order)         | No (unordered), `LinkedHashSet` maintains insertion order | No specific order, `LinkedHashMap` maintains insertion order
+
+| **Null Elements Allowed**       | Yes                           | Yes (only one null element)  | Yes (one null key, multiple null values)
+
+| **Performance**                 | Faster for indexed access (`get(index)`) | Fast for search operations (`contains`) due to hashing | Fast lookup with key-based access
+
+| **Usage Scenarios**             | Ordered collection, frequent access by index | Unique elements, quick lookup | Key-value pairs, dictionary-style data storage
+|===========================================
+
+*Scenarios Where Each is Used:*
+
+*List*:
+- When you need to maintain the order of elements and allow duplicates.
+- **Example**: Storing a list of user tasks in a to-do application where tasks can repeat.
+
+[source,java]
+----
+
+public class Main {
+    public static void main(String[] args) {
+List<String> tasks = new ArrayList<>();
+tasks.add("Read");
+tasks.add("Exercise");
+tasks.add("Read"); // Allowed duplicate
+}}
+----
+
+*Set*:
+- When you require unique elements without duplicates and order is not critical.
+- **Example**: Storing a list of registered usernames where duplicates are not allowed.
+
+[source,java]
+----
+public class Main {
+    public static void main(String[] args) {
+Set<String> usernames = new HashSet<>();
+usernames.add("user1");
+usernames.add("user2");
+usernames.add("user1"); // Duplicate will not be added
+
+}}
+----
+
+*Map*:
+- When you need to store key-value pairs and retrieve values based on keys.
+- **Example**: Storing country codes as keys and their respective country names as values.
 
 [source, java]
 ----
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Example.getCount());
-        Example e1 = new Example();
-        Example e2 = new Example();
-        System.out.println(Example.getCount());
-    }
-}
-
-class Example {
-    private static int count = 0;
-
-    public Example() {
-        count++;
-    }
-
-    public static int getCount() {
-        return count;
-    }
-}
+Map<String, String> countryCodes = new HashMap<>();
+countryCodes.put("US", "United States");
+countryCodes.put("IN", "India");
+countryCodes.put("US", "United States of America"); // Updates the value for key "US"
+}}
 ----
 
-.Click Here For Answer
-[%collapsible]
-====
-*The answer is* `1 and 3`
-====
+In summary:
+
+- Use a *List* when order and duplicates matter.
+
+- Use a *Set* when uniqueness is important.
+
+- Use a *Map* when key-value relationships are needed.
