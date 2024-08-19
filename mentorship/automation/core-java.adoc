@@ -2304,7 +2304,10 @@ public class Main {
 
 These examples showcase how sets are used for unique elements, while maps are designed for key-value pair associations.
 
+---
+
 Here's a comparison of *List*, *Set*, and *Map* in AsciiDoc format, along with scenarios where each is commonly used:
+
 
 *Comparison of List, Set, and Map in Java*
 
