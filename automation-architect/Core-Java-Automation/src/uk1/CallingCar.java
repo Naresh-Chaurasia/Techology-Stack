@@ -3,10 +3,10 @@ package uk1;
 public class CallingCar {
     public static void main(String[] args) {
 
-        Car c = new Car("Hyundai");
+        Car c = new Car("Hyundai", "red", 2024);
         
-        c.color = "red";
-        c.model = 2024;
+        // c.color = "red";
+        // c.model = 2024;
 
         Car c2 = new Car("Hyundai");
         

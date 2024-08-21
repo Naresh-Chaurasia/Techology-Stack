@@ -11,6 +11,12 @@ public class Car {
         company = c;
     }
 
+    Car(String com, String col, int mod){
+        company = com;
+        color = col;
+        model = mod;
+    }
+
     void start(){
         System.out.println("Starting Car...");
     }
