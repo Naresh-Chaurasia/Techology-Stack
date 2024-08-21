@@ -12,5 +12,10 @@ public class Car {
     void stop(){
         System.out.println("Stopping Car...");
     }
+
+    void display(){
+        System.out.println(color);
+        System.out.println(model);
+    }
     
 }
