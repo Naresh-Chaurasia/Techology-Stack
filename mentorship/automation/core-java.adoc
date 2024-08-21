@@ -2391,6 +2391,102 @@ In summary:
 
 == MultiThreading Concepts
 
+Here is a professional explanation of the concept of MultiThreading in Java in AsciiDoc format:
+
+
+== MultiThreading in Java
+
+MultiThreading is a core concept in Java that allows multiple threads to run concurrently within a program, enabling efficient use of system resources. In a multithreaded environment, different parts of a program can execute simultaneously, resulting in better performance, especially in scenarios where multiple tasks need to be executed independently.
+
+*Key Concepts*
+
+- *Thread*: A lightweight process; a sequence of executed instructions.
+- *Main Thread*: The initial thread created by the JVM that begins program execution.
+- *Runnable Interface*: Provides a way to define the code that constitutes a thread.
+- *Thread Class*: Provides methods for creating and managing threads.
+
+*Benefits of MultiThreading*
+
+1. *Enhanced Performance*: Tasks can run concurrently, speeding up execution.
+2. *Resource Sharing*: Threads share common resources, reducing overhead.
+3. *Responsiveness*: Applications remain responsive even when performing complex tasks.
+
+*Implementing MultiThreading in Java*
+
+Java provides two primary ways to create threads:
+
+1. *By Extending the Thread Class*
+2. *By Implementing the Runnable Interface*
+
+*Example 1: Extending the Thread Class*
+
+In this approach, you create a new class that extends the `Thread` class and override its `run()` method.
+
+[source, java]
+----
+class MyThread extends Thread {
+    @Override
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Thread: " + i);
+            try {
+                Thread.sleep(500); // Simulating some work with a delay
+            } catch (InterruptedException e) {
+                System.out.println(e);
+            }
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        MyThread thread1 = new MyThread();
+        MyThread thread2 = new MyThread();
+        thread1.start();
+        thread2.start();
+    }
+}
+----
+
+In this example, we created a class `MyThread` that extends `Thread` and overrides the `run()` method. Multiple threads are created and started using the `start()` method, which internally calls the `run()` method, executing them concurrently.
+
+*Example 2: Implementing the Runnable Interface*
+
+Another way to create threads is by implementing the `Runnable` interface. This approach is preferred when you want to extend a class other than `Thread`.
+
+[source, java]
+----
+class MyRunnable implements Runnable {
+    @Override
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Runnable Thread: " + i);
+            try {
+                Thread.sleep(500); // Simulating some work with a delay
+            } catch (InterruptedException e) {
+                System.out.println(e);
+            }
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Thread thread1 = new Thread(new MyRunnable());
+        Thread thread2 = new Thread(new MyRunnable());
+        thread1.start();
+        thread2.start();
+    }
+}
+----
+
+In this example, we implemented the `Runnable` interface and provided an implementation for the `run()` method. The `Runnable` instance is passed to a `Thread` object and then started, allowing both threads to run concurrently.
+
+*Conclusion*
+
+MultiThreading in Java is essential for building responsive, efficient, and scalable applications. By understanding how to create and manage threads, you can unlock significant performance gains in your Java programs.
+
+
 ##############################################
 
 == Exception Handling
@@ -2477,6 +2573,96 @@ In this example, the exception is handled gracefully, and the program continues 
 ##############################################
 
 == Debugging In Java
+
+
+Debugging is an essential skill for every Java developer. Visual Studio Code (VS Code) provides a powerful and intuitive environment for debugging Java applications. This guide covers the basics of setting breakpoints, inspecting variables, and stepping through your code in VS Code.
+
+*Setting Up Your Environment*
+
+Before you start debugging, ensure that:
+1. You have the **Java Extension Pack** installed in VS Code.
+2. Your project is properly set up with a `launch.json` file, which tells VS Code how to run and debug your application.
+
+*How to Debug a Java Program in VS Code*
+
+*Step 1: Set Breakpoints*
+
+Breakpoints are points in your code where the debugger will pause execution. You can set breakpoints by:
+1. Clicking on the left margin next to the line number in your source code.
+2. Pressing `F9` when your cursor is on the desired line.
+
+*Step 2: Start Debugging*
+
+To start debugging:
+1. Open the file you want to debug.
+2. Press `F5` to launch the debugger or click on the "Run and Debug" button in the left sidebar.
+3. The debugger will start, and execution will pause at your breakpoints.
+
+*Step 3: Inspect Variables and Step Through Code*
+
+When your program hits a breakpoint:
+- You can inspect variables by hovering over them or using the "Variables" pane.
+- Use the following commands to control the debugger:
+* `F10`: Step over a line of code.
+* `F11`: Step into a method.
+* `Shift+F11`: Step out of a method.
+* `F5`: Continue execution.
+
+*Example 1: Debugging a Simple Java Program*
+
+[source,java]
+----
+public class DebugExample {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 5;
+        int result = add(a, b);
+        System.out.println("Result: " + result);
+    }
+
+    public static int add(int num1, int num2) {
+        return num1 + num2;
+    }
+}
+----
+
+In this example:
+- Set a breakpoint on the line `int result = add(a, b);`.
+- Start the debugger (`F5`), and observe how execution pauses at the breakpoint.
+- Use `F11` to step into the `add` method and inspect the variables `num1` and `num2`.
+
+*Example 2: Handling Conditional Breakpoints*
+
+Sometimes, you only want the debugger to pause when a certain condition is met. You can set a conditional breakpoint by:
+1. Right-clicking on an existing breakpoint.
+2. Selecting "Edit Breakpoint" and entering the condition (e.g., `a > 5`).
+
+Let's modify the earlier code:
+
+[source,java]
+----
+public class ConditionalDebug {
+    public static void main(String[] args) {
+        for (int i = 0; i < 10; i++) {
+            int result = multiply(i, 2);
+            System.out.println("Result: " + result);
+        }
+    }
+
+    public static int multiply(int num1, int num2) {
+        return num1 * num2;
+    }
+}
+----
+
+In this example:
+- Set a breakpoint on the line `int result = multiply(i, 2);`.
+- Edit the breakpoint and add a condition: `i > 5`.
+- The debugger will now only pause when the loop variable `i` is greater than 5.
+
+*Conclusion*
+
+Debugging in Visual Studio Code is straightforward and highly effective for Java development. By mastering breakpoints, stepping through code, and inspecting variables, you’ll be able to identify and fix issues in your code more efficiently.
 
 ##############################################
 

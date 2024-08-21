@@ -3,200 +3,95 @@
 :toclevels: 5
 :sectnums: 5
 
-== Output from ChatGPT
 
-*Collections in Java* are a framework that provides an architecture to store and manipulate a group of objects.
-They include classes like *ArrayList*, *LinkedList*, *HashSet*, *HashMap*, and interfaces like *List*, *Set*, *Map*.
-Collections are used to perform operations such as searching, sorting, insertion, manipulation, and deletion.
+Debugging is an essential skill for every Java developer. Visual Studio Code (VS Code) provides a powerful and intuitive environment for debugging Java applications. This guide covers the basics of setting breakpoints, inspecting variables, and stepping through your code in VS Code.
 
-Below is a simple example demonstrating the use of an `ArrayList`, one of the commonly used collection classes:
+*Setting Up Your Environment*
+
+Before you start debugging, ensure that:
+1. You have the **Java Extension Pack** installed in VS Code.
+2. Your project is properly set up with a `launch.json` file, which tells VS Code how to run and debug your application.
+
+*How to Debug a Java Program in VS Code
+
+*Step 1: Set Breakpoints*
+
+Breakpoints are points in your code where the debugger will pause execution. You can set breakpoints by:
+1. Clicking on the left margin next to the line number in your source code.
+2. Pressing `F9` when your cursor is on the desired line.
+
+*Step 2: Start Debugging*
+
+To start debugging:
+1. Open the file you want to debug.
+2. Press `F5` to launch the debugger or click on the "Run and Debug" button in the left sidebar.
+3. The debugger will start, and execution will pause at your breakpoints.
+
+*Step 3: Inspect Variables and Step Through Code*
+
+When your program hits a breakpoint:
+- You can inspect variables by hovering over them or using the "Variables" pane.
+- Use the following commands to control the debugger:
+  * `F10`: Step over a line of code.
+  * `F11`: Step into a method.
+  * `Shift+F11`: Step out of a method.
+  * `F5`: Continue execution.
+
+*Example 1: Debugging a Simple Java Program*
 
 [source,java]
 ----
-import java.util.ArrayList;
-
-public class Main {
+public class DebugExample {
     public static void main(String[] args) {
-        // Creating an ArrayList of Strings
-        ArrayList<String> fruits = new ArrayList<>();
+        int a = 10;
+        int b = 5;
+        int result = add(a, b);
+        System.out.println("Result: " + result);
+    }
 
-        // Adding elements to the ArrayList
-        fruits.add("Apple");
-        fruits.add("Banana");
-        fruits.add("Mango");
-
-        // Accessing elements
-        System.out.println("First fruit: " + fruits.get(0));
-
-        // Removing an element
-        fruits.remove("Banana");
-
-        // Iterating over the ArrayList
-        for (String fruit : fruits) {
-            System.out.println(fruit);
-        }
+    public static int add(int num1, int num2) {
+        return num1 + num2;
     }
 }
 ----
 
-*Explanation:*
+In this example:
+- Set a breakpoint on the line `int result = add(a, b);`.
+- Start the debugger (`F5`), and observe how execution pauses at the breakpoint.
+- Use `F11` to step into the `add` method and inspect the variables `num1` and `num2`.
 
-- `ArrayList<String> fruits = new ArrayList<>();`: Creates an `ArrayList` of strings to store fruit names.
-- `fruits.add("Apple");`: Adds the specified string to the list.
-- `fruits.get(0)`: Retrieves the element at index 0 (first element).
-- `fruits.remove("Banana");`: Removes "Banana" from the list.
-- The *for-each* loop iterates over the list to print all remaining elements.
+*Example 2: Handling Conditional Breakpoints*
 
-Java Collections framework provides various utilities to make handling collections easier, offering flexibility for different needs.
+Sometimes, you only want the debugger to pause when a certain condition is met. You can set a conditional breakpoint by:
+1. Right-clicking on an existing breakpoint.
+2. Selecting "Edit Breakpoint" and entering the condition (e.g., `a > 5`).
 
-Here are examples of both `Set` and `Map` in Java:
-
-*Example of Set (HashSet):*
+Let's modify the earlier code:
 
 [source,java]
 ----
-import java.util.HashSet;
-import java.util.Set;
-
-public class Main {
+public class ConditionalDebug {
     public static void main(String[] args) {
-        // Creating a HashSet of Strings
-        Set<String> cities = new HashSet<>();
-
-        // Adding elements to the HashSet
-        cities.add("New York");
-        cities.add("Los Angeles");
-        cities.add("Chicago");
-        cities.add("New York"); // Duplicate element, won't be added
-
-        // Iterating over the HashSet
-        for (String city : cities) {
-            System.out.println(city);
+        for (int i = 0; i < 10; i++) {
+            int result = multiply(i, 2);
+            System.out.println("Result: " + result);
         }
+    }
+
+    public static int multiply(int num1, int num2) {
+        return num1 * num2;
     }
 }
 ----
 
-*Explanation:*
+In this example:
+- Set a breakpoint on the line `int result = multiply(i, 2);`.
+- Edit the breakpoint and add a condition: `i > 5`.
+- The debugger will now only pause when the loop variable `i` is greater than 5.
 
-- `Set<String> cities = new HashSet<>();`: Creates a `HashSet` of strings to store city names.
-- `cities.add("New York");`: Adds the city to the set.
-- *Sets* do not allow duplicate elements, so adding "New York" twice will only store it once.
-- The *for-each* loop iterates over the set to print all unique elements.
+*Conclusion*
 
-*Example of Map (HashMap):*
+Debugging in Visual Studio Code is straightforward and highly effective for Java development. By mastering breakpoints, stepping through code, and inspecting variables, you’ll be able to identify and fix issues in your code more efficiently.
 
-[source,java]
-----
-import java.util.HashMap;
-import java.util.Map;
 
-public class Main {
-    public static void main(String[] args) {
-        // Creating a HashMap to store student names and their scores
-        Map<String, Integer> studentScores = new HashMap<>();
-
-        // Adding key-value pairs (student name, score)
-        studentScores.put("Alice", 85);
-        studentScores.put("Bob", 92);
-        studentScores.put("Charlie", 78);
-
-        // Accessing values by key
-        System.out.println("Alice's score: " + studentScores.get("Alice"));
-
-        // Iterating over the HashMap
-        for (Map.Entry<String, Integer> entry : studentScores.entrySet()) {
-            System.out.println(entry.getKey() + ": " + entry.getValue());
-        }
-    }
-}
-----
-
-*Explanation:*
-
-- `Map<String, Integer> studentScores = new HashMap<>();`: Creates a `HashMap` with student names as keys and scores as values.
-- `studentScores.put("Alice", 85);`: Adds a key-value pair to the map.
-- `studentScores.get("Alice");`: Retrieves the value (score) associated with the key "Alice".
-- The *for-each* loop iterates over the map using `entrySet()` to print all key-value pairs.
-
-These examples showcase how sets are used for unique elements, while maps are designed for key-value pair associations.
-
-Here's a comparison of *List*, *Set*, and *Map* in AsciiDoc format, along with scenarios where each is commonly used:
-
-*Comparison of List, Set, and Map in Java*
-
-[cols="1,1,1,1",options="header"]
-|===========================================
-| *Feature*                       | *List*                        | *Set*                        | *Map*
-
-| **Interface**                   | `List`                        | `Set`                        | `Map`
-
-| **Implementation Classes**      | `ArrayList`, `LinkedList`     | `HashSet`, `TreeSet`, `LinkedHashSet` | `HashMap`, `TreeMap`, `LinkedHashMap`
-
-| **Duplicates Allowed**          | Yes                           | No                           | Keys: No, Values: Yes
-
-| **Order Maintained**            | Yes (insertion order)         | No (unordered), `LinkedHashSet` maintains insertion order | No specific order, `LinkedHashMap` maintains insertion order
-
-| **Null Elements Allowed**       | Yes                           | Yes (only one null element)  | Yes (one null key, multiple null values)
-
-| **Performance**                 | Faster for indexed access (`get(index)`) | Fast for search operations (`contains`) due to hashing | Fast lookup with key-based access
-
-| **Usage Scenarios**             | Ordered collection, frequent access by index | Unique elements, quick lookup | Key-value pairs, dictionary-style data storage
-|===========================================
-
-*Scenarios Where Each is Used:*
-
-*List*:
-- When you need to maintain the order of elements and allow duplicates.
-- **Example**: Storing a list of user tasks in a to-do application where tasks can repeat.
-
-[source,java]
-----
-
-public class Main {
-    public static void main(String[] args) {
-List<String> tasks = new ArrayList<>();
-tasks.add("Read");
-tasks.add("Exercise");
-tasks.add("Read"); // Allowed duplicate
-}}
-----
-
-*Set*:
-- When you require unique elements without duplicates and order is not critical.
-- **Example**: Storing a list of registered usernames where duplicates are not allowed.
-
-[source,java]
-----
-public class Main {
-    public static void main(String[] args) {
-Set<String> usernames = new HashSet<>();
-usernames.add("user1");
-usernames.add("user2");
-usernames.add("user1"); // Duplicate will not be added
-
-}}
-----
-
-*Map*:
-- When you need to store key-value pairs and retrieve values based on keys.
-- **Example**: Storing country codes as keys and their respective country names as values.
-
-[source, java]
-----
-public class Main {
-    public static void main(String[] args) {
-Map<String, String> countryCodes = new HashMap<>();
-countryCodes.put("US", "United States");
-countryCodes.put("IN", "India");
-countryCodes.put("US", "United States of America"); // Updates the value for key "US"
-}}
-----
-
-In summary:
-
-- Use a *List* when order and duplicates matter.
-
-- Use a *Set* when uniqueness is important.
-
-- Use a *Map* when key-value relationships are needed.
+This guide provides an overview of debugging in Java using Visual Studio Code, with examples suitable for beginners.
