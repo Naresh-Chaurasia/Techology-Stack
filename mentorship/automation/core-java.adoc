@@ -2667,7 +2667,6 @@ Debugging in Visual Studio Code is straightforward and highly effective for Java
 ##############################################
 
 
-
 == References
 
 * https://www.youtube.com/watch?v=Qtua8t20dA4
