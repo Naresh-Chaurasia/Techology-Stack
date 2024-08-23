@@ -1,9 +1,5 @@
 package looping;
 
-/*
- * 
- * 
- */
 public class SampleCode {
     public static void main(String[] args) {
         int a = 10;
