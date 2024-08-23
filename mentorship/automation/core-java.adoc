@@ -2703,10 +2703,11 @@ if (condition) {
 - Use specific exceptions rather than generic ones (e.g., use `IllegalArgumentException` instead of `Exception`).
 - Clean up resources in `finally` blocks or use try-with-resources.
 ```java
-try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+try  {
 // code block
 } catch (IOException e) {
 // handle exception
+}finally{
 }
 ```
 - Avoid empty catch blocks; at least log the exception.
