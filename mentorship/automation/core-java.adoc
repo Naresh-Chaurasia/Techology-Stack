@@ -2733,14 +2733,6 @@ try  {
 *9. Avoid Hardcoding*
 - Avoid hardcoding values directly into the code. Use constants, configuration files, or environment variables instead.
 
-*10. Performance and Resource Management*
-- Be mindful of memory usage—avoid unnecessary object creation.
-- Use collections wisely (e.g., choose `ArrayList` for fast retrievals, `HashMap` for quick lookups).
-- Release resources like file handles, connections, and streams promptly.
-
-*Conclusion*
-Following these Java coding guidelines ensures that your codebase is clean, maintainable, and aligned with industry standards. It’s essential to regularly review and refactor your code to adhere to these best practices, which ultimately leads to better software quality.
-
 
 == References
 
