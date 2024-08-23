@@ -9,6 +9,8 @@ public class CallingThread {
         String name = Thread.currentThread().getName();
         System.out.println(name);
 
+        long id1= Thread.currentThread().getId();
+        System.out.println("id1="+id1);
 
         MyThread t2 = new MyThread();
         t2.start();
