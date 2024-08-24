@@ -4,74 +4,113 @@
 :sectnums: 5
 
 
-Here is a brief write-up of essential coding guidelines in Java programming:
+Java provides a variety of methods for working with arrays. Here are some commonly used array methods and operations in Java:
 
-*Java Coding Guidelines Overview*
+== Common Array Methods in Java
 
-Java coding guidelines are best practices that help improve code quality, readability, maintainability, and consistency across projects. Following these guidelines ensures that code is easier to understand, debug, and maintain.
+1. *`Arrays.toString()`*: Converts an array to a string representation.
 
-*1. Naming Conventions*
+[source, java]
+----
+import java.util.Arrays;
 
-- *Class Names*: Use PascalCase (e.g., `CustomerService`).
-- *Method Names*: Use camelCase (e.g., `calculateTotalPrice()`).
-- *Variable Names*: Use meaningful camelCase names (e.g., `totalAmount`).
-- *Constants*: Use UPPER_SNAKE_CASE (e.g., `MAX_RETRIES`).
-
-*2. Code Structure and Formatting*
-- *Indentation*: Use consistent indentation (usually 4 spaces).
-- *Braces*: Place the opening brace `{` on the same line as the statement (K&R style).
-```java
-if (condition) {
-// code block
-} else {
-// another code block
+public class ArrayExample {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5};
+        System.out.println(Arrays.toString(numbers)); // Output: [1, 2, 3, 4, 5]
+    }
 }
-```
-- *Line Length*: Keep lines under 80 characters where possible.
-- *Blank Lines*: Use blank lines to separate logical sections of code (e.g., between methods).
+----
 
-*3. Comments and Documentation*
-- Use Javadoc comments (`/* */`) for class, method, and field descriptions.
-- Include inline comments (`//`) to clarify complex logic.
-- Avoid redundant comments—focus on explaining *why* rather than *what*.
+2. *`Arrays.sort()`*: Sorts an array in ascending order.
 
-*4. Exception Handling*
-- Use specific exceptions rather than generic ones (e.g., use `IllegalArgumentException` instead of `Exception`).
-- Clean up resources in `finally` blocks or use try-with-resources.
-```java
-try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
-// code block
-} catch (IOException e) {
-// handle exception
+[source, java]
+----
+import java.util.Arrays;
+
+public class ArraySortExample {
+    public static void main(String[] args) {
+        int[] numbers = {5, 1, 4, 2, 3};
+        Arrays.sort(numbers);
+        System.out.println(Arrays.toString(numbers)); // Output: [1, 2, 3, 4, 5]
+    }
 }
-```
-- Avoid empty catch blocks; at least log the exception.
+----
 
-*5. Code Readability and Simplicity*
-- Keep methods small and focused on a single responsibility (Single Responsibility Principle).
-- Avoid deeply nested code—refactor complex logic into smaller methods.
-- Use descriptive names for methods and variables—avoid single-letter names except for loop indices.
+3. *`Arrays.copyOf()`*: Copies an array to a new array.
 
-*6. DRY Principle (Don’t Repeat Yourself)*
-- Reuse existing code by refactoring common logic into utility methods or classes.
-- Avoid duplicating code blocks across methods or classes.
+[source, java]
+----
+import java.util.Arrays;
 
-*7. Object-Oriented Design*
-- Follow SOLID principles (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion).
-- Use encapsulation—make fields private and provide access through getters and setters.
-- Prefer composition over inheritance where appropriate.
+public class ArrayCopyExample {
+    public static void main(String[] args) {
+        int[] original = {1, 2, 3};
+        int[] copy = Arrays.copyOf(original, original.length);
+        System.out.println(Arrays.toString(copy)); // Output: [1, 2, 3]
+    }
+}
+----
 
-*8. Unit Testing*
-- Write unit tests for all critical code paths using frameworks like JUnit.
-- Use descriptive test method names and ensure tests are independent and repeatable.
+4. *`Arrays.equals()`*: Compares two arrays for equality.
 
-*9. Avoid Hardcoding*
-- Avoid hardcoding values directly into the code. Use constants, configuration files, or environment variables instead.
+[source, java]
+----
+import java.util.Arrays;
 
-*10. Performance and Resource Management*
-- Be mindful of memory usage—avoid unnecessary object creation.
-- Use collections wisely (e.g., choose `ArrayList` for fast retrievals, `HashMap` for quick lookups).
-- Release resources like file handles, connections, and streams promptly.
+public class ArrayEqualsExample {
+    public static void main(String[] args) {
+        int[] array1 = {1, 2, 3};
+        int[] array2 = {1, 2, 3};
+        System.out.println(Arrays.equals(array1, array2)); // Output: true
+    }
+}
+----
 
-*Conclusion*
-Following these Java coding guidelines ensures that your codebase is clean, maintainable, and aligned with industry standards. It’s essential to regularly review and refactor your code to adhere to these best practices, which ultimately leads to better software quality.
+5. *`Arrays.fill()`*: Fills an array with a specific value.
+
+[source, java]
+----
+import java.util.Arrays;
+
+public class ArrayFillExample {
+    public static void main(String[] args) {
+        int[] numbers = new int[5];
+        Arrays.fill(numbers, 10);
+        System.out.println(Arrays.toString(numbers)); // Output: [10, 10, 10, 10, 10]
+    }
+}
+----
+
+6. *`Arrays.binarySearch()`*: Searches for a specific value in a sorted array using the binary search algorithm.
+
+[source, java]
+----
+import java.util.Arrays;
+
+public class ArrayBinarySearchExample {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5};
+        int index = Arrays.binarySearch(numbers, 3);
+        System.out.println("Index of 3: " + index); // Output: Index of 3: 2
+    }
+}
+----
+
+7. *`System.arraycopy()`*: Copies elements from one array to another.
+
+[source, java]
+----
+public class ArrayCopyExample2 {
+    public static void main(String[] args) {
+        int[] source = {1, 2, 3, 4, 5};
+        int[] destination = new int[5];
+        System.arraycopy(source, 0, destination, 0, source.length);
+        for (int num : destination) {
+            System.out.print(num + " "); // Output: 1 2 3 4 5
+        }
+    }
+}
+----
+
+These are some of the key methods and operations you can use to manipulate arrays in Java.
