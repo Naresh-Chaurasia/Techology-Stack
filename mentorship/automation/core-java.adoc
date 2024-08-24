@@ -1788,21 +1788,6 @@ public class ArraySortExample {
 }
 ----
 
-3. *`Arrays.copyOf()`*: Copies an array to a new array.
-
-[source, java]
-----
-import java.util.Arrays;
-
-public class ArrayCopyExample {
-    public static void main(String[] args) {
-        int[] original = {1, 2, 3};
-        int[] copy = Arrays.copyOf(original, original.length);
-        System.out.println(Arrays.toString(copy)); // Output: [1, 2, 3]
-    }
-}
-----
-
 4. *`Arrays.equals()`*: Compares two arrays for equality.
 
 [source, java]
@@ -1818,51 +1803,6 @@ public class ArrayEqualsExample {
 }
 ----
 
-5. *`Arrays.fill()`*: Fills an array with a specific value.
-
-[source, java]
-----
-import java.util.Arrays;
-
-public class ArrayFillExample {
-    public static void main(String[] args) {
-        int[] numbers = new int[5];
-        Arrays.fill(numbers, 10);
-        System.out.println(Arrays.toString(numbers)); // Output: [10, 10, 10, 10, 10]
-    }
-}
-----
-
-6. *`Arrays.binarySearch()`*: Searches for a specific value in a sorted array using the binary search algorithm.
-
-[source, java]
-----
-import java.util.Arrays;
-
-public class ArrayBinarySearchExample {
-    public static void main(String[] args) {
-        int[] numbers = {1, 2, 3, 4, 5};
-        int index = Arrays.binarySearch(numbers, 3);
-        System.out.println("Index of 3: " + index); // Output: Index of 3: 2
-    }
-}
-----
-
-7. *`System.arraycopy()`*: Copies elements from one array to another.
-
-[source, java]
-----
-public class ArrayCopyExample2 {
-    public static void main(String[] args) {
-        int[] source = {1, 2, 3, 4, 5};
-        int[] destination = new int[5];
-        System.arraycopy(source, 0, destination, 0, source.length);
-        for (int num : destination) {
-            System.out.print(num + " "); // Output: 1 2 3 4 5
-        }
-    }
-}
-----
 
 ##############################################
 
