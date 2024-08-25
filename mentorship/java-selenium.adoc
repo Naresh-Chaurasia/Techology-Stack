@@ -188,7 +188,6 @@ These topics will provide a comprehensive understanding of TestNG for automation
 ** Validating test scenarios using SQL
 ** Common database testing use cases in automation
 
-This version now uses ** for sub-bullet points.
 
 == Basic Understanding of Maven
 
