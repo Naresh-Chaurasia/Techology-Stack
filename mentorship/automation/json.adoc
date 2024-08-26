@@ -237,9 +237,208 @@ Accept: application/json
 }
 ```
 
-*Summary:*
+=== JSON Parsing 1
 
-The REST API anatomy consists of components like the base URL, endpoints, HTTP methods, headers, request/response bodies, status codes, query parameters, and path parameters. Together, they form a standardized way of interacting with resources in a RESTful manner.
+Here are some simpler examples using JSON and the `json-path` library in Java.
+
+*JSON Structure*
+
+We’ll use the following simple JSON data for the examples:
+
+[source, json]
+----
+{
+  "store": {
+    "book": [
+      {
+        "title": "Book A",
+        "author": "Author 1",
+        "price": 9.99
+      },
+      {
+        "title": "Book B",
+        "author": "Author 2",
+        "price": 12.99
+      }
+    ],
+    "stationery": {
+      "item": "Pen",
+      "price": 1.5
+    }
+  }
+}
+----
+
+*Extracting a Simple Value*
+
+Suppose you want to extract the title of the first book.
+
+[source, java]
+----
+import com.jayway.jsonpath.JsonPath;
+
+public class SimpleJsonExample {
+    public static void main(String[] args) {
+        String json = "{ \"store\": { \"book\": [ { \"title\": \"Book A\", \"author\": \"Author 1\", \"price\": 9.99 }, { \"title\": \"Book B\", \"author\": \"Author 2\", \"price\": 12.99 } ], \"stationery\": { \"item\": \"Pen\", \"price\": 1.5 } } }";
+
+        // Extract the title of the first book
+        String firstBookTitle = JsonPath.parse(json).read("$.store.book[0].title");
+
+        System.out.println("First Book Title: " + firstBookTitle);
+    }
+}
+----
+
+**Output:**
+
+```
+First Book Title: Book A
+```
+
+*Extracting Multiple Values*
+
+You can extract all book titles from the JSON.
+
+[source, java]
+----
+import com.jayway.jsonpath.JsonPath;
+import java.util.List;
+
+public class SimpleJsonExample {
+    public static void main(String[] args) {
+        String json = "{ \"store\": { \"book\": [ { \"title\": \"Book A\", \"author\": \"Author 1\", \"price\": 9.99 }, { \"title\": \"Book B\", \"author\": \"Author 2\", \"price\": 12.99 } ], \"stationery\": { \"item\": \"Pen\", \"price\": 1.5 } } }";
+
+        // Extract all book titles
+        List<String> bookTitles = JsonPath.parse(json).read("$.store.book[*].title");
+
+        System.out.println("Book Titles: " + bookTitles);
+    }
+}
+----
+
+*Output:*
+
+```
+Book Titles: [Book A, Book B]
+```
+
+*Accessing Nested Values*
+
+Suppose you want to get the price of the pen.
+
+[source, java]
+----
+import com.jayway.jsonpath.JsonPath;
+
+public class SimpleJsonExample {
+    public static void main(String[] args) {
+        String json = "{ \"store\": { \"book\": [ { \"title\": \"Book A\", \"author\": \"Author 1\", \"price\": 9.99 }, { \"title\": \"Book B\", \"author\": \"Author 2\", \"price\": 12.99 } ], \"stationery\": { \"item\": \"Pen\", \"price\": 1.5 } } }";
+
+        // Extract the price of the pen
+        double penPrice = JsonPath.parse(json).read("$.store.stationery.price");
+
+        System.out.println("Pen Price: " + penPrice);
+    }
+}
+----
+
+**Output:**
+```
+Pen Price: 1.5
+```
+
+*Simple Filtering*
+
+Suppose you want to find the book with a price greater than 10.
+
+[source, java]
+----
+import com.jayway.jsonpath.JsonPath;
+import java.util.List;
+
+public class SimpleJsonExample {
+    public static void main(String[] args) {
+        String json = "{ \"store\": { \"book\": [ { \"title\": \"Book A\", \"author\": \"Author 1\", \"price\": 9.99 }, { \"title\": \"Book B\", \"author\": \"Author 2\", \"price\": 12.99 } ], \"stationery\": { \"item\": \"Pen\", \"price\": 1.5 } } }";
+
+        // Extract books with price greater than 10
+        List<Object> expensiveBooks = JsonPath.parse(json).read("$.store.book[?(@.price > 10)]");
+
+        System.out.println("Expensive Books: " + expensiveBooks);
+    }
+}
+----
+
+**Output:**
+```
+Expensive Books: [{"title":"Book B","author":"Author 2","price":12.99}]
+```
+
+
+=== JSON Paring 2
+
+Here is the example of using JSONPath functions in Java, formatted as requested:
+
+[source, java]
+----
+import com.jayway.jsonpath.JsonPath;
+
+public class Main {
+    public static void main(String[] args) {
+        String json = """
+        {
+            "store": {
+                "book": [
+                    { "title": "Book A", "price": 9.99 },
+                    { "title": "Book B", "price": 12.99 },
+                    { "title": "Book C", "price": 7.99 }
+                ]
+            }
+        }
+        """;
+
+        // Get the count of books
+        int bookCount = JsonPath.parse(json).read("$.store.book.length()");
+        System.out.println("Number of Books: " + bookCount);
+
+        // Get the minimum book price
+        double minPrice = JsonPath.parse(json).read("$.store.book.min(@.price)");
+        System.out.println("Minimum Book Price: " + minPrice);
+
+        // Get the maximum book price
+        double maxPrice = JsonPath.parse(json).read("$.store.book.max(@.price)");
+        System.out.println("Maximum Book Price: " + maxPrice);
+    }
+}
+----
+
+*Explanation*
+
+In this example:
+
+* The `length()` function is used to determine the total number of books in the JSON array.
+* The `min()` function finds the minimum price among the books.
+* The `max()` function finds the maximum price among the books.
+
+The JSON structure contains a list of books, each with a `title` and `price`. The functions allow for extracting and analyzing specific data from the JSON content.
+
+---
+
+The JSONPath expression `$.store.book.min(@.price)` is used to find the minimum value of a specific field within a JSON array. Here’s a breakdown of the components of this expression:
+
+* `$.store.book` - This part of the expression selects the `book` array within the `store` object. The `$` symbol represents the root of the JSON data.
+
+* `.min(@.price)` - This function is applied to the array selected by the previous part of the expression. It calculates the minimum value of the specified field, which in this case is `price`.
+
+* `@.price` - The `@` symbol represents the current element in the array being processed. `.price` specifies that we are interested in the `price` field of each book in the array.
+
+So, `$.store.book.min(@.price)`:
+
+1. Selects the `book` array from the JSON data.
+2. Applies the `min()` function to find the smallest value of the `price` field within that array.
+
+In essence, this expression finds the lowest price among all books in the `book` array.
+
+
 
 == JSON V/s XML
 
@@ -272,3 +471,15 @@ The REST API anatomy consists of components like the base URL, endpoints, HTTP m
 </student>
 
 ----
+
+
+== Commands
+
+[source,commandline]
+----
+mvn archetype:generate -DgroupId=com.nc -DartifactId=json-project -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+----
+
+== Resources
+
+* https://github.com/json-path/JsonPath
