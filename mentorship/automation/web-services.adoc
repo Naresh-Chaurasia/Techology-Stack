@@ -5,7 +5,7 @@
 
 == What are Web Services?
 
-- Types of Web Services
+An API (Application Programming Interface) is a set of rules and protocols that allows one software application to interact with another. It defines how requests should be made, what data formats to use, and how responses should be handled. APIs enable different systems, applications, or services to communicate and share data seamlessly. In simpler terms, an API is like a bridge that connects different software components, allowing them to work together efficiently.
 
 == Basics of REST API
 - Definition of REST
