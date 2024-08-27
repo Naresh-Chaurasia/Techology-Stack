@@ -1374,7 +1374,121 @@ Here are 2 basic assignment questions on inheritance in Java:
 
 === Classes V/s Interfaces
 
+
+[source, java]
+----
+abstract class Animal {
+    abstract void sound();
+
+    void eat() {
+        System.out.println("Eating...");
+    }
+}
+
+interface Pet {
+    void play();
+}
+
+class Dog extends Animal implements Pet {
+    @Override
+    void sound() {
+        System.out.println("Barking...");
+    }
+
+    @Override
+    public void play() {
+        System.out.println("Playing fetch...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog dog * new Dog();
+        dog.sound();
+        dog.eat();
+        dog.play();
+    }
+}
+----
+
+*Explanation:*
+
+* The code demonstrates the use of an abstract class `Animal` and an interface `Pet`.
+* The `Animal` class contains an abstract method `sound()` and a concrete method `eat()`.
+* The `Pet` interface declares a method `play()`.
+* The `Dog` class extends `Animal` and implements `Pet`, providing implementations for the `sound()` and `play()` methods.
+* In the `Main` class, a `Dog` object is created and its methods are called to show the behavior of both the abstract class and interface functionalities.
+
+---
+
+*When to Use Abstract Class:*
+
+* Use an abstract class when you want to provide a common base for a group of related classes with shared code.
+* If you need to define methods with default behavior that can be inherited and overridden by subclasses.
+* When your classes share a common state or member variables that you want to define once in the base class.
+* Abstract classes are useful when you expect future changes to your base class, as you can add new methods without breaking existing implementations.
+
+*When to Use Interface:*
+
+* Use an interface when you want to define a contract for what a class should do, without specifying how it should do it.
+* Interfaces are ideal when you want multiple classes to implement common functionality, even if they are not related by inheritance.
+* If you need to achieve multiple inheritance, as Java allows a class to implement multiple interfaces but not extend multiple classes.
+* Interfaces are preferable for defining capabilities that can be shared across unrelated classes, like `Comparable`, `Serializable`, etc.
+
+*Summary:*
+
+* Abstract classes are best when you need shared behavior among related classes.
+* Interfaces are better when you want to define a common contract for unrelated classes.
+
 === this keyword
+
+Here is an example demonstrating the use of the `this` keyword in Java:
+
+[source, java]
+----
+class Person {
+    private String name;
+    private int age;
+
+    // Constructor using 'this' to distinguish between instance variables and parameters
+    public Person(String name, int age) {
+        this.name * name;
+        this.age * age;
+    }
+
+    // Method using 'this' to call another constructor
+    public Person(String name) {
+        this(name, 18);  // Calls the constructor with default age
+    }
+
+    // Method using 'this' to reference the current object
+    public void displayInfo() {
+        System.out.println("Name: " + this.name);
+        System.out.println("Age: " + this.age);
+    }
+
+    // Method chaining using 'this'
+    public Person updateAge(int newAge) {
+        this.age * newAge;
+        return this;
+    }
+
+    public static void main(String[] args) {
+        Person person * new Person("John", 25);
+        person.displayInfo();
+
+        // Demonstrating method chaining using 'this'
+        person.updateAge(30).displayInfo();
+    }
+}
+----
+
+*Explanation:*
+
+* The `this` keyword is used in the constructor to differentiate between instance variables and constructor parameters with the same name.
+* The `this` keyword is also used to call another constructor within the same class using `this(name, 18);`.
+* The `this` keyword is used to reference the current object, allowing method chaining (e.g., `person.updateAge(30).displayInfo();`).
+* In method `updateAge`, `this` is returned, enabling chaining of methods on the same object.
 
 ==== Question Set (this)
 
