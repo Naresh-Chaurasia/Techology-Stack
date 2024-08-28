@@ -1,0 +1,75 @@
+[
+  {
+    "id": "66cb53929792927208725d10",
+    "name": "The Unplugged Alpha Update2",
+    "author": "Richard Cooper",
+    "summary": "Book Summary",
+    "chapters": [
+      {
+        "chapter": 0,
+        "title": "Chapter Title",
+        "summary": "Chapter Summary",
+        "important_points": [
+          {
+            "point": "Learn from the mistakes of others, you can't live long enough to make them all yourself.",
+            "comments": [
+              {
+                "my_comment": "<p><strong>My Comment</strong> Got Givent Point</p>",
+                "create_date": "2024-Aug-20",
+                "category": [
+                  "Self Improvement"
+                ],
+                "priority": "High",
+                "weight": 5,
+                "number": 1,
+                "used_date": "2024-Aug-19",
+                "tags": [
+                  "life lessons",
+                  "youth",
+                  "personal growth"
+                ]
+              },
+              {
+                "my_comment": "My Comment2",
+                "create_date": "2024-Aug-20",
+                "category": [
+                  "Self Improvement"
+                ],
+                "priority": "High",
+                "weight": 5,
+                "number": 1,
+                "used_date": "2024-Aug-19",
+                "tags": [
+                  "life lessons",
+                  "youth",
+                  "personal growth"
+                ]
+              }
+            ]
+          },
+          {
+            "point": "Learn 2",
+            "comments": [
+              {
+                "my_comment": "My Comment Got Givent Point",
+                "create_date": "2024-Aug-20",
+                "category": [
+                  "Self Improvement"
+                ],
+                "priority": "High",
+                "weight": 5,
+                "number": 1,
+                "used_date": "2024-Aug-19",
+                "tags": [
+                  "life lessons",
+                  "youth",
+                  "personal growth"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
