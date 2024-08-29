@@ -12,7 +12,8 @@ public class Main {
         // System.out.println(e1.companyName);
 
         Employee e1 = new Employee("Punit");
-        e1.companyName = "CTS";
+        //e1.companyName = "CTS";
+        Employee.companyName = "CTS";
 
         Employee e2 = new Employee("NC");
 
