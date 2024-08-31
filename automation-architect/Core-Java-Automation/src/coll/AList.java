@@ -19,6 +19,15 @@ public class AList {
             System.out.println(fruits.get(i));
         }
 
+
+        System.out.println(fruits.isEmpty());
+
+        System.out.println(fruits.indexOf("apple"));
+
+        System.out.println(fruits);
+        fruits.remove(0);
+
+        System.out.println(fruits);
     }
     
 }
