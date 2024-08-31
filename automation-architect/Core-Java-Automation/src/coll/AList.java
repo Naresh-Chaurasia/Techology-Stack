@@ -13,7 +13,11 @@ public class AList {
         fruits.add("Banana");
         fruits.add("Mango");
 
-        System.out.println(fruits);
+        //System.out.println(fruits);
+
+        for(int i=0;i<fruits.size();i++){
+            System.out.println(fruits.get(i));
+        }
 
     }
     
