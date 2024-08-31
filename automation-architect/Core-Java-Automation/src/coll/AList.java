@@ -12,8 +12,9 @@ public class AList {
         fruits.add("Apple");
         fruits.add("Banana");
         fruits.add("Mango");
+        fruits.add("Apple");
 
-        //System.out.println(fruits);
+        System.out.println(fruits);
 
         for(int i=0;i<fruits.size();i++){
             System.out.println(fruits.get(i));
