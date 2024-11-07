@@ -591,7 +591,7 @@ D. Both A and B
 [source,java]
 ----
 
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
     int a = 10;
     int b = 5;
@@ -685,7 +685,7 @@ This exercise will help you demonstrate your understanding of both primitive and
 
 [source,java]
 ----
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         int number = 10;
 
@@ -704,7 +704,7 @@ public class Main {
 
 [source, java]
 ----
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         int day = 3;
         String dayName;
@@ -777,7 +777,7 @@ Choosing between `switch-case` and `if-else` in Java depends on the specific use
 
 [source,java]
 ----
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
 int option = 2;
 
@@ -803,7 +803,7 @@ switch (option) {
 [source,java]
 ----
 
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
 
 
@@ -833,7 +833,7 @@ In summary, use `switch-case` for comparing a single variable against multiple c
 
 [source, java]
 ----
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         for (int i = 0; i < 5; i++) {
             System.out.println("i = " + i);
@@ -848,7 +848,7 @@ This code demonstrates a `for` loop in Java. It initializes an integer `i` to 0,
 
 [source, java]
 ----
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         int i = 0;
         while (i < 5) {
@@ -865,7 +865,7 @@ This code demonstrates a `while` loop in Java. It initializes an integer `i` to 
 
 [source, java]
 ----
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         int i = 0;
         do {
@@ -961,7 +961,7 @@ This code defines a `Calculator` class with four methods: `add`, `subtract`, `mu
 
 [source, java]
 ----
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         // Creating an object of the Calculator class
         Calculator calculator = new Calculator();
@@ -998,9 +998,9 @@ In this code, we create an object `calculator` of the `Calculator` class and cal
 
 [source, java]
 ----
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
-        Main mainObj = new Main();
+        p2.Main mainObj = new p2.Main();
         mainObj.greet("Alice");
     }
 
@@ -1048,7 +1048,7 @@ This code defines a `MathOperations` class with three overloaded `add` methods:
 
 [source, java]
 ----
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         // Creating an object of the MathOperations class
         MathOperations math = new MathOperations();
@@ -1116,7 +1116,7 @@ This code defines a `Car` class with three attributes: `color`, `model`, and `ye
 
 [source, java]
 ----
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         // Creating an object of the Car class
         Car car1 = new Car("Red", "Toyota", 2021);
@@ -1176,7 +1176,7 @@ This code defines a `Car` class with three attributes: `color`, `model`, and `ye
 
 [source, java]
 ----
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         // Creating an object of the Car class using the constructor
         Car car1 = new Car("Red", "Toyota", 2021);
@@ -1225,7 +1225,7 @@ Here are two basic objective Java interview questions on encapsulation:
 
 [source, java]
 ----
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         Employee emp = new Employee();
         emp.setName("John");
@@ -1278,7 +1278,7 @@ class Car extends Vehicle {
     }
 }
 
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         Car myCar = new Car();
         myCar.start();  // Inherited method from Vehicle
@@ -1312,7 +1312,7 @@ class Dog extends Animal {
     }
 }
 
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         Dog myDog = new Dog();
         myDog.sound();
@@ -1401,7 +1401,7 @@ class Dog extends Animal implements Pet {
     }
 }
 
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         Dog dog * new Dog();
         dog.sound();
@@ -1506,10 +1506,10 @@ The answer is *It refers to the current instance of the class.*
 
 [source, java]
 ----
-public class Main {
+public class p2.Main {
     private int x;
 
-    public Main(int x) {
+    public p2.Main(int x) {
         this.x = x;
     }
 }
@@ -1617,7 +1617,7 @@ There are several ways to create strings in Java:
 
 [source, java]
 ----
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         // Creating strings using string literals
         String str1 = "Hello, World!";
@@ -1639,7 +1639,7 @@ The `String` class provides various methods for manipulating strings. Here are s
 
 [source, java]
 ----
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         String str = "Hello, World!";
 
@@ -1693,7 +1693,7 @@ public class Main {
 
 [source, java]
 ----
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         String str1 = "Hello";
         String str2 = "World";
@@ -1733,7 +1733,7 @@ public class Main {
 
 [source, java]
 ----
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         String str = "Java";
         str = str.concat(" Programming");
@@ -1778,7 +1778,7 @@ A `StringBuffer` can be created in several ways:
 
 [source, java]
 ----
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         // Creating a StringBuffer with an initial capacity of 16 characters
         StringBuffer buffer1 = new StringBuffer();
@@ -1830,7 +1830,7 @@ Arrays can be created and initialized in several ways:
 
 [source, java]
 ----
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         // Declaring and initializing an array of integers
         int[] numbers = {1, 2, 3, 4, 5};
@@ -1969,7 +1969,7 @@ The answer is *B. 0*
 
 [source, java]
 ----
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5};
     }
@@ -2043,7 +2043,7 @@ class AccessModifiersExample {
 
 [source,java]
 ----
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         AccessModifiersExample obj = new AccessModifiersExample();
 
@@ -2066,7 +2066,7 @@ public class Main {
 - protected: Accessible within the package and by subclasses.
 - Default: Accessible within the package.
 
-In the Main class, accessing privateMethod() will result in a compilation error since it's private to AccessModifiersExample.
+In the p2.Main class, accessing privateMethod() will result in a compilation error since it's private to AccessModifiersExample.
 
 ##############################################
 
@@ -2117,7 +2117,7 @@ class ChildClass extends ParentClass {
     }
 }
 
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         ChildClass child = new ChildClass();
         child.accessParentMembers();
@@ -2262,7 +2262,7 @@ Here's an example demonstrating the use of `static`:
 
 [source, java]
 ----
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         Employee e1 = new Employee("John");
         Employee e2 = new Employee("Jane");
@@ -2318,7 +2318,7 @@ class Employee {
 
 [source, java]
 ----
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         System.out.println(Example.getCount());
         Example e1 = new Example();
@@ -2365,7 +2365,7 @@ Below is a simple example demonstrating the use of an `ArrayList`, one of the co
 ----
 import java.util.ArrayList;
 
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         // Creating an ArrayList of Strings
         ArrayList<String> fruits = new ArrayList<>();
@@ -2408,7 +2408,7 @@ Here are examples of both `Set` and `Map` in Java:
 import java.util.HashSet;
 import java.util.Set;
 
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         // Creating a HashSet of Strings
         Set<String> cities = new HashSet<>();
@@ -2441,7 +2441,7 @@ public class Main {
 import java.util.HashMap;
 import java.util.Map;
 
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         // Creating a HashMap to store student names and their scores
         Map<String, Integer> studentScores = new HashMap<>();
@@ -2506,7 +2506,7 @@ Here's a comparison of *List*, *Set*, and *Map* in AsciiDoc format, along with s
 [source,java]
 ----
 
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
 List<String> tasks = new ArrayList<>();
 tasks.add("Read");
@@ -2521,7 +2521,7 @@ tasks.add("Read"); // Allowed duplicate
 
 [source,java]
 ----
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
 Set<String> usernames = new HashSet<>();
 usernames.add("user1");
@@ -2537,7 +2537,7 @@ usernames.add("user1"); // Duplicate will not be added
 
 [source, java]
 ----
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
 Map<String, String> countryCodes = new HashMap<>();
 countryCodes.put("US", "United States");
@@ -2605,7 +2605,7 @@ class MyThread extends Thread {
     }
 }
 
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         MyThread thread1 = new MyThread();
         MyThread thread2 = new MyThread();
@@ -2637,7 +2637,7 @@ class MyRunnable implements Runnable {
     }
 }
 
-public class Main {
+public class p2.Main {
     public static void main(String[] args) {
         Thread thread1 = new Thread(new MyRunnable());
         Thread thread2 = new Thread(new MyRunnable());

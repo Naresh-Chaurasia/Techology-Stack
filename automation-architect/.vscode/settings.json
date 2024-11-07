@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
-        "core-java/src"
+        "core-java/src",
+        "Core-Java-Automation/src/uk1"
     ]
 }
