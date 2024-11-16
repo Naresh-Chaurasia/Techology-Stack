@@ -1,0 +1,119 @@
+= Python Programming
+:toc: right
+:toclevels: 5
+
+===  1. **Introduction to Python**
+
+- Overview of Python
+- Installation and Setup
+- Python IDEs (PyCharm, VSCode, etc.)
+- Writing and Running Your First Python Program
+
+===  2. **Basic Syntax and Operations**
+
+- Variables and Data Types
+- Basic Input and Output
+- Arithmetic, Comparison, and Logical Operators
+- Python Comments and Documentation
+
+===  3. **Control Flow**
+
+- Conditional Statements (if, elif, else)
+- Looping Constructs (for loop, while loop)
+- Break, Continue, and Pass Statements
+
+===  4. **Data Structures**
+
+- Lists
+- Creating, Accessing, and Modifying Lists
+- List Methods
+- Tuples
+- Differences between Lists and Tuples
+- Dictionaries
+- Key-Value Pairs, Common Methods
+- Sets
+- Creating Sets, Set Operations
+
+===  5. **Functions**
+
+- Defining and Calling Functions
+- Function Arguments (positional, keyword, default)
+- Return Statements
+- Lambda Functions
+- Scope of Variables (local, global)
+
+===  6. **Object-Oriented Programming (OOP)**
+
+- Introduction to Classes and Objects
+- Constructors and Destructors
+- Class and Instance Variables
+- Methods (instance, class, static)
+- Inheritance, Polymorphism, and Encapsulation
+- Magic Methods and Operator Overloading
+
+===  7. **File Handling**
+
+- Reading and Writing Text Files
+- File Methods (open, read, write, close)
+- Working with CSV Files
+
+===  8. **Error Handling**
+
+- Types of Errors (syntax, runtime)
+- Exception Handling (try, except, finally)
+- Custom Exceptions
+
+===  9. **Modules and Packages**
+
+- Importing Built-in and External Modules
+- Creating Custom Modules
+- Package Structure and Importing from Packages
+
+===  10. **Advanced Topics**
+
+- List Comprehensions
+- Generators and Iterators
+- Decorators
+- Context Managers (using `with` statement)
+
+===  11. **Data Science Libraries (Introduction)**
+
+- NumPy Basics
+- Pandas for Data Manipulation
+- Matplotlib for Basic Plotting
+
+===  12. **Web Scraping**
+
+- Using Beautiful Soup and Requests Library
+- Extracting Data from HTML Pages
+
+===  13. **APIs and JSON**
+
+- Introduction to REST APIs
+- Making API Requests
+- Working with JSON Data
+
+===  **Project 1: Expense Tracker Application**
+
+**Objective**: Build a command-line tool that allows users to track and manage their daily expenses.
+
+**Key Features**:
+
+- User input for adding, editing, and deleting expenses
+- Categorization of expenses
+- Summarizing total expenses over a period
+- Saving data to a CSV file
+
+===  **Project 2: Web Scraping Dashboard**
+
+**Objective**:
+
+Create a Python-based dashboard that scrapes data from a news website and displays it.
+
+**Key Features**:
+
+- Use of Beautiful Soup and Requests to collect data
+- Displaying data in a user-friendly format
+- Basic filtering options for news categories
+- Data export to CSV format
+
