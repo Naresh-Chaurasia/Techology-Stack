@@ -1,0 +1,93 @@
+* *Java Installation*
+- Environment Variables
+- Path and CLASSPATH
+
+* *Basic Java Concepts*
+
+- *Java Basics*
+- Introduction to Java
+- Setting up Java Development Environment
+- Writing your first Java program
+
+- *Data Types and Variables*
+- Primitive Data Types
+- Reference Data Types
+- Variables and Constants
+
+* *Control Flow Statements*
+- *Conditional Statements*
+- If-else Statements
+- Switch Statements
+- *Looping Statements*
+- For Loop
+- While Loop
+- Do-While Loop
+
+* *Object-Oriented Programming (OOP)*
+- *Classes and Objects*
+- Defining a Class
+- Creating Objects
+- Constructors
+- *Inheritance*
+- Superclass and Subclass
+- Method Overriding
+- *Polymorphism*
+- Method Overloading
+- Dynamic Method Dispatch
+- *Encapsulation*
+- Access Modifiers
+- Getters and Setters
+- *Abstraction*
+- Abstract Classes
+- Interfaces
+
+* *Exception Handling*
+- Types of Exceptions
+- Checked Exceptions
+- Unchecked Exceptions
+- Try-Catch Block
+- Throw and Throws
+- Finally Block
+
+* *Collections Framework*
+- *List*
+- ArrayList
+- LinkedList
+- *Set*
+- HashSet
+- LinkedHashSet
+- TreeSet
+- *Map*
+- HashMap
+- LinkedHashMap
+- TreeMap
+
+* *Java Input and Output (I/O)*
+- File Handling
+- File Class
+- Reading and Writing Files
+- Streams
+- Byte Streams
+- Character Streams
+
+* *Multithreading*
+- Creating Threads
+- Extending Thread Class
+- Implementing Runnable Interface
+- Thread Life Cycle
+- Synchronization
+- Inter-Thread Communication
+
+* *Java Utility Classes*
+- *String Handling*
+- String Class
+- StringBuilder and StringBuffer
+- Wrapper Classes
+- Autoboxing and Unboxing
+
+
+* *Java 8 Features (#Overview#)*
+- Lambda Expressions
+- Streams API
+- Functional Interfaces
+- Default and Static Methods in Interfaces

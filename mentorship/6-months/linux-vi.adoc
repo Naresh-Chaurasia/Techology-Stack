@@ -1,0 +1,67 @@
+*Introduction to Linux*
+
+* What is Linux?
+
+*Getting Started with the Terminal*
+
+* Opening and using the terminal
+* Navigating the filesystem
+
+*File and Directory Management*
+
+* Viewing current directory: `pwd`
+* Listing files and directories: `ls`
+  - Using options like `-l` and `-a`
+* Changing directories: `cd`
+* Creating directories: `mkdir`
+* Creating files: `touch`
+* Viewing file content: `cat`, `less`, `more`
+* Copying files: `cp`
+* Moving and renaming files: `mv`
+* Deleting files and directories: `rm` and `rmdir`
+
+*File Permissions and Ownership*
+
+* Understanding file permissions: `ls -l`
+* Changing permissions: `chmod`
+* Changing ownership: `chown`
+* Using `sudo` for administrative commands
+
+*Searching and Finding Files*
+
+* Searching with `find`
+* Searching within files using `grep`
+
+*Process Management*
+
+* Viewing running processes: `ps`
+* Managing processes: `kill` and `killall`
+* Monitoring system performance: `top` and `htop`
+
+*Disk and System Information*
+* Checking disk usage: `df` and `du`
+* Viewing system information: `uname`, `hostname`, `uptime`
+
+
+*Archive and Compression Tools*
+* Creating and extracting archives: `tar`
+* Compressing files: `gzip` and `zip`
+* Extracting compressed files: `gunzip` and `unzip`
+
+
+*User Management*
+
+* Adding and switching users: `adduser` and `su`
+* Changing passwords: `passwd`
+* Viewing logged-in users: `who` and `w`
+
+*Helpful Shortcuts and Tricks*
+
+* Using `tab` for autocomplete
+* Using `history` to view command history
+* Canceling a running command: `Ctrl+C`
+
+*Conclusion*
+
+* Importance of mastering basic commands
+* Next steps: Exploring intermediate Linux commands

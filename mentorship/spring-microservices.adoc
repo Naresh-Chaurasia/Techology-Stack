@@ -1,0 +1,146 @@
+= Spring Microservices
+:toc: right
+:toclevels: 5
+:sectnums: 5
+
+== Spring Microservices Course Outline
+
+=== 1. Introduction to Microservices
+* Overview of Microservices Architecture
+* Monolithic vs. Microservices
+* Benefits and challenges of Microservices
+* Use cases for Microservices
+
+=== 2. Setting up the Development Environment
+* Installing Java, Spring Boot, and IDE (IntelliJ/Eclipse)
+* Introduction to Maven/Gradle
+* Creating a simple Spring Boot application
+
+=== 3. Building Blocks of Microservices
+* Spring Boot overview
+* Dependency injection and application context
+* RESTful web services (GET, POST, PUT, DELETE)
+* JSON and data exchange
+
+=== 4. Design Patterns in Microservices
+* Introduction to design patterns
+* *Service Registry and Discovery Pattern*: Eureka
+* *API Gateway Pattern*: Spring Cloud Gateway
+* *Circuit Breaker Pattern*: Resilience4j
+* *Saga Pattern*: Managing distributed transactions
+* *Database per Service Pattern*: Data management in Microservices
+* *Event Sourcing and CQRS Patterns*: Implementing asynchronous communication
+* *Strangler Fig Pattern*: Migrating from monolithic to microservices
+* Practical examples of applying these patterns in projects
+
+=== 5. Microservices Communication
+* Synchronous communication with REST
+* Asynchronous communication with RabbitMQ/Kafka
+* Feign clients for inter-service communication
+
+=== 6. Service Discovery and Load Balancing
+* Introduction to Eureka Server
+* Configuring Eureka Client
+* Using Ribbon for client-side load balancing
+
+=== 7. Centralized Configuration Management
+* Introduction to Spring Cloud Config
+* Setting up a centralized configuration server
+* Managing configuration for multiple services
+
+=== 8. API Gateway
+* Role of an API Gateway
+* Implementing API Gateway with Spring Cloud Gateway
+* Route configuration and filters
+* Securing API Gateway with authentication
+
+=== 9. Resilience and Fault Tolerance
+* Introduction to resilience patterns
+* Using Spring Cloud Circuit Breaker (Resilience4j)
+* Rate limiting with Spring Boot
+* Timeout and retry mechanisms
+
+=== 10. Security in Microservices
+* Introduction to OAuth2 and JWT
+* Implementing authentication and authorization
+* Securing communication between microservices
+
+=== 11. Monitoring and Logging
+* Introduction to centralized logging
+* Configuring Spring Boot Actuator
+* Distributed tracing with Sleuth and Zipkin
+* Setting up metrics monitoring with Prometheus and Grafana
+
+=== 12. Database Management
+* Database per microservice architecture
+* Using Spring Data JPA for database operations
+* Introduction to distributed transactions
+* Using Saga pattern for transaction management
+
+=== 13. Deployment and Scaling
+* Containerization with Docker
+* CI/CD pipeline overview for Microservices
+
+=== Projects
+
+==== Project 1: Online Bookstore Microservices
+*Overview*: Build a bookstore application with microservices architecture.
+
+*Microservices*:
+
+* *User Service*: Manage user accounts
+* *Catalog Service*: Manage book inventory
+* *Order Service*: Handle book orders
+
+*Features*:
+
+* REST APIs for CRUD operations
+* Service communication with Feign
+* Centralized configuration and service discovery
+* API Gateway for routing and security
+* Basic logging and monitoring setup
+
+==== Project 2: E-Wallet Application
+
+
+*Overview*: Create a digital wallet platform with microservices.
+
+*Microservices*:
+
+* *Account Service*: Handle user accounts and wallet balance
+* *Transaction Service*: Record and manage wallet transactions
+* *Notification Service*: Send transaction notifications
+
+*Features*:
+
+* Database per service with Spring Data JPA
+* Circuit breaker and resilience mechanisms
+* Authentication and authorization with JWT
+* Distributed tracing with Sleuth and Zipkin
+* Deployment using Docker and Kubernetes
+
+=== Interview Preparation and Mock Sessions
+
+==== 1. Technical Microservices Interview Preparation
+* Common microservices interview questions and answers
+** Core Spring Boot concepts
+** REST API design principles
+** Service discovery, load balancing, and API Gateway
+** Circuit breakers and resilience mechanisms
+** Database management and distributed transactions
+** Event-driven architectures
+
+==== 2. Design and Architecture Round Preparation
+* Discussing microservices architecture case studies
+* Practical application of design patterns in microservices
+* Explaining trade-offs in architectural decisions
+
+==== 3. Coding Round Preparation
+* Building a basic microservice within 45 minutes
+* Implementing CRUD operations
+* Writing unit tests with JUnit and MockMvc
+
+==== 4. Mock Interview Sessions
+* Technical round simulation
+* Design and architecture round simulation
+* Feedback and improvement strategies

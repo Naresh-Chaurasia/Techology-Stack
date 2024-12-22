@@ -1,0 +1,115 @@
+*Introduction to Unit Testing*
+
+* What is unit testing?
+* Benefits of unit testing
+* Role of JUnit in unit testing
+
+*Getting Started with JUnit*
+
+* Setting up JUnit in your project
+  - Adding JUnit dependencies (Maven/Gradle)
+* Writing the first JUnit test
+* Basic structure of a JUnit test
+  - Annotations: `@Test`, `@BeforeEach`, `@AfterEach`, `@BeforeAll`, `@AfterAll`
+
+*Assertions in JUnit*
+
+* Using the `Assertions` class
+  - `assertEquals`
+  - `assertNotEquals`
+  - `assertTrue` and `assertFalse`
+  - `assertNull` and `assertNotNull`
+  - `assertThrows` for exception testing
+* Grouping and organizing assertions
+
+*Test Lifecycle*
+
+* Understanding the test lifecycle
+* Setup and teardown methods
+  - `@BeforeEach` and `@AfterEach`
+  - `@BeforeAll` and `@AfterAll` (for static setup/teardown)
+
+*Parameterized Tests*
+
+* What are parameterized tests?
+* Writing tests with `@ParameterizedTest`
+* Using `@ValueSource`, `@CsvSource`, and `@CsvFileSource`
+
+*JUnit Test Suites*
+
+* Combining multiple test classes into a suite
+* Using `@Suite` and `@SelectClasses`
+
+
+*Testing Exceptions*
+
+* Handling and testing exceptions
+  - Using `assertThrows`
+  - Verifying exception messages
+
+*Annotations in JUnit*
+
+* Commonly used annotations
+  - `@Test`
+  - `@Disabled`
+  - `@DisplayName`
+  - `@Timeout`
+* Organizing tests with `@Nested`
+
+
+*Hands-On Practice*
+
+* Writing tests for a simple Java class (e.g., Calculator)
+* Testing edge cases and invalid inputs
+* Mocking dependencies for a service class
+* Parameterized tests for multiple scenarios
+
+*Debugging and Troubleshooting Tests*
+
+* Understanding test failures
+* Using JUnit’s output and reports for debugging
+* Managing flaky tests
+
+*Conclusion*
+
+* Importance of unit testing in software development
+* Real-world usage of JUnit in projects
+* Next steps: Exploring advanced testing tools and frameworks (e.g., TestNG, Spring Boot testing)
+
+
+
+== SQL / MySQL Database
+
+== Basic Understanding of Maven
+
+
+1. *Introduction to Maven*
+   - What is Maven?
+   - Benefits of using Maven
+
+2. *Maven Installation*
+   - Prerequisites
+   - Steps to install Maven
+
+3. *Maven Project Structure*
+   - Standard directory layout
+
+4. *POM File*
+   - What is a POM file?
+   - Basic structure of a POM file
+
+5. *Dependencies*
+   - Adding dependencies
+   - Understanding the dependency scope
+
+6. *Build Lifecycle*
+   - Phases of the build lifecycle
+
+7. *Plugins*
+   - What are plugins?
+   - Commonly used plugins
+
+8. *Example Maven Project*
+   - Creating a simple Maven project
+   - Adding dependencies
+   - Building the project
