@@ -1,0 +1,191 @@
+= Python Selenium Automation
+:toc: right
+:toclevels: 5
+:sectnums
+
+
+== Selenium Automation with Python
+
+=== 1. Introduction to Selenium and Python
+- What is Selenium?
+- Importance of automation testing.
+- Overview of Python and why it is used with Selenium.
+- Setting up Python and IDE (PyCharm, VS Code).
+- Installing Selenium and necessary libraries.
+* *Mock interview sessions on Selenium and Python basics will be conducted regularly.*
+
+=== 2. Python Fundamentals (Prerequisite Topics)
+* *Python Basics*
+  - Python syntax and structure.
+  - Variables and data types (int, float, string, boolean).
+  - Basic input and output.
+* *Operators in Python*
+  - Arithmetic, comparison, and logical operators.
+  - Assignment and membership operators.
+* *Control Flow*
+  - `if`, `else`, `elif` statements.
+  - Nested conditions.
+* *Loops in Python*
+  - `for` and `while` loops.
+  - Using `break`, `continue`, and `pass` statements.
+* *Functions in Python*
+  - Defining and calling functions.
+  - Function parameters and return values.
+  - Lambda functions.
+* *Exception Handling*
+  - `try`, `except`, `finally` blocks.
+  - Handling multiple exceptions.
+* *File Handling*
+  - Reading and writing files.
+  - Using `with open()` for file management.
+* *Working with Libraries*
+  - Importing libraries.
+  - Using `pip` for package management.
+* *Mock interview sessions on Python fundamentals will be conducted regularly.*
+
+=== 3. Getting Started with Selenium
+- Introduction to WebDriver.
+- Inspecting web elements (HTML, CSS, XPath).
+- Locating elements:
+  - By ID, Name, Class, Tag Name.
+  - By CSS Selector and XPath.
+- Browser navigation commands:
+  - `get()`, `back()`, `forward()`, `refresh()`.
+* *Mock interview sessions on Selenium basics will be conducted regularly.*
+
+=== 4. Interacting with Web Elements
+- Performing actions:
+  - Clicking buttons.
+  - Entering text into input fields.
+  - Selecting dropdown options.
+- Handling checkboxes and radio buttons.
+- Submitting forms.
+- Working with keyboard and mouse events:
+  - `send_keys()`
+  - `ActionChains`
+* *Mock interview sessions on interacting with web elements will be conducted regularly.*
+
+=== 5. Handling Web Elements
+- Working with static and dynamic web pages.
+- Handling waits:
+  - Implicit wait.
+  - Explicit wait.
+  - Fluent wait.
+- Handling alerts, pop-ups, and confirmations.
+- Working with iframes.
+* *Mock interview sessions on handling web elements will be conducted regularly.*
+
+=== 6. Advanced Python for Selenium
+* *Object-Oriented Programming (OOP)*
+  - Classes and objects.
+  - Inheritance and polymorphism.
+  - Encapsulation.
+* *List, Tuple, Dictionary, and Set*
+  - Operations and methods.
+  - Iterating through collections.
+* *Comprehensions*
+  - List, dictionary, and set comprehensions.
+* *Regular Expressions*
+  - Using `re` module.
+  - Pattern matching and searching.
+* *Date and Time Handling*
+  - Using `datetime` module.
+  - Formatting and parsing dates.
+* *Working with JSON and CSV Files*
+  - Reading and writing JSON.
+  - Using `csv` module for CSV files.
+* *Mock interview sessions on advanced Python topics will be conducted regularly.*
+
+=== 7. Advanced Selenium Techniques
+- Taking screenshots.
+- Executing JavaScript with Selenium.
+- Working with multiple browser windows and tabs.
+- Handling browser cookies.
+- Downloading and uploading files using Selenium.
+* *Mock interview sessions on advanced Selenium techniques will be conducted regularly.*
+
+=== 8. Data-Driven Testing
+- Introduction to data-driven testing.
+- Reading data from:
+  - Excel files using `openpyxl`.
+  - CSV files.
+- Parameterizing test cases.
+* *Mock interview sessions on data-driven testing will be conducted regularly.*
+
+=== 9. Selenium with PyTest Framework
+- Introduction to PyTest.
+- Setting up PyTest with Selenium.
+- Writing and running test cases.
+- Using assertions in PyTest.
+- Implementing fixtures.
+- Generating test reports.
+* *Mock interview sessions on PyTest framework will be conducted regularly.*
+
+=== 10. Page Object Model (POM) and Design Patterns
+- What is POM and why use it?
+- Creating page classes.
+- Separating test logic from page actions.
+- Implementing reusable components.
+- Using POM with PyTest.
+* *Mock interview sessions on POM and design patterns will be conducted regularly.*
+
+=== 11. Cross-Browser and Parallel Testing
+- Running tests on different browsers (Chrome, Firefox, Edge).
+- Using `pytest-xdist` for parallel execution.
+- Running headless browser tests.
+* *Mock interview sessions on cross-browser and parallel testing will be conducted regularly.*
+
+=== 12. Continuous Integration and Reporting
+- Integrating Selenium with GitHub Actions.
+- Generating HTML reports.
+- Using Allure for better reporting.
+- Running tests in CI/CD pipelines.
+* *Mock interview sessions on CI/CD and reporting will be conducted regularly.*
+
+=== 13. Best Practices and Optimization
+- Writing efficient and maintainable Selenium scripts.
+- Using reusable functions and utilities.
+- Handling flaky tests and retries.
+- Optimizing test execution time.
+* *Mock interview sessions on best practices will be conducted regularly.*
+
+=== 14. Project: End-to-End Test Automation
+- Creating a sample project.
+- Automating an e-commerce website.
+- Performing:
+  - User login/logout.
+  - Adding items to the cart.
+  - Checkout process.
+- Generating reports and analyzing results.
+* *Mock interview sessions on end-to-end test automation will be conducted regularly.*
+
+=== 15. Mock Interview Preparation
+* *Mock Interview Sessions*
+  - Conducting mock interviews simulating real interview scenarios.
+  - Asking practical and theoretical Selenium + Python questions.
+* *Behavioral and Technical Questions*
+  - Common interview questions for automation testers.
+  - Questions on Python fundamentals and Selenium commands.
+  - Questions on PyTest, POM, and reporting.
+* *Coding Challenges*
+  - Writing automation scripts under time constraints.
+  - Solving Python-based automation problems.
+  - Debugging and optimizing code.
+
+=== 16. Assignments and Exercises
+* *Objective Assignments*
+  - Multiple-choice questions covering:
+    - Selenium fundamentals.
+    - Python basics and advanced concepts.
+    - PyTest framework.
+  - Testing concepts with practical scenarios.
+* *Coding Assignments*
+  - Writing Selenium scripts for:
+    - Form submission and validation.
+    - Dynamic element handling.
+    - Data-driven test execution.
+  - Creating POM-based test frameworks.
+  - Running cross-browser and parallel tests.
+* *Debugging Challenges*
+  - Identifying and fixing issues in sample Selenium scripts.
+  - Optimizing slow or failing test cases.
