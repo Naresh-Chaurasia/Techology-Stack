@@ -2,9 +2,31 @@
 :toc: right
 :toclevels: 5
 
-== 6 Months Mentorship Program
+== Automation Architect
+
+NOTE: 6 Months Mentorship Program
 
 link:mentorship/6-months-mentorship.adoc[6 Months Mentorship Program,window=_blank]
+
+##############################################
+
+== Java Selenium Automation
+
+link:mentorship/java-selenium.adoc[Java Selenium Automation,window=_blank]
+
+##############################################
+
+== Python Selenium Automation
+
+link:mentorship/python-selenium.adoc[Python Selenium Automation,window=_blank]
+
+##############################################
+
+== Java Full Stack
+
+link:mentorship/full-stack.adoc[Java Full Stack,window=_blank]
+
+
 
 
 
