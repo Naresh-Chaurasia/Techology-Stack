@@ -1,0 +1,239 @@
+= Python Data Science
+:toc: right
+:toclevels: 5
+:sectnums
+
+
+== Data Science with Python - Detailed Course Outline
+
+=== 1. **Introduction**
+- What is Data Science?
+- Importance and Applications of Data Science
+- Real-world Use Cases of Data Science
+- Python's Role in Data Science
+- Overview of the Python Ecosystem for Data Science
+- *Mock sessions will be conducted regularly for this topic*
+
+=== 2. **Setting Up the Environment**
+- Installing Python
+- Installing IDEs:
+    - Jupyter Notebook
+    - Google Colab
+    - VS Code / PyCharm
+- Setting up Virtual Environments
+- Installing Required Libraries:
+    - `numpy`
+    - `pandas`
+    - `matplotlib`
+    - `seaborn`
+    - `opencv`
+    - `beautifulsoup4`
+    - `scrapy`
+- *Mock sessions will be conducted regularly for this topic*
+
+=== 3. **Python Fundamentals**
+- Python Syntax and Variables
+- Data Types:
+    - int, float, string, bool
+- Type Conversion
+- Basic Operations:
+    - Arithmetic, Comparison, Logical
+- Conditional Statements:
+    - if, elif, else
+- Loops:
+    - for, while, nested loops
+- List Comprehensions
+- Exception Handling
+- Working with Files:
+    - Reading and writing files
+    - File operations
+- *Mock sessions will be conducted regularly for this topic*
+
+=== 4. **Python In-built Data Structures**
+- **Lists**
+    - Creating and accessing lists
+    - List methods: `append()`, `remove()`, `sort()`, etc.
+    - Slicing and indexing
+- **Tuples**
+    - Creating and accessing tuples
+    - Tuple packing and unpacking
+- **Sets**
+    - Creating sets
+    - Set operations: union, intersection, difference
+- **Dictionaries**
+    - Key-value pairs
+    - Dictionary methods: `get()`, `items()`, `keys()`, etc.
+- *Mock sessions will be conducted regularly for this topic*
+
+=== 5. **Python Functions and Modules**
+- Defining Functions
+- Arguments and Parameters
+- Return Values
+- Default and Keyword Arguments
+- Lambda Functions
+- `*args` and `**kwargs`
+- Working with Modules:
+    - Importing Modules
+    - Creating and Using Custom Modules
+- Python Standard Library
+- *Mock sessions will be conducted regularly for this topic*
+
+=== 6. **Object-Oriented Programming (OOPs)**
+- **Classes and Objects**
+    - Defining classes
+    - Creating objects
+- **Class Attributes and Methods**
+- **Encapsulation**
+    - Private and public attributes
+- **Inheritance**
+    - Single and multiple inheritance
+- **Polymorphism**
+    - Method overloading and overriding
+- **Abstraction**
+- **Magic Methods**
+- *Mock sessions will be conducted regularly for this topic*
+
+=== 7. **Statistics and Probability**
+- **Statistics Basics**
+    - Mean, Median, Mode
+    - Variance and Standard Deviation
+    - Percentiles and Quartiles
+- **Probability Concepts**
+    - Basic Probability
+    - Conditional Probability
+    - Probability Distributions:
+        - Normal Distribution
+        - Binomial Distribution
+        - Poisson Distribution
+- **Statistical Tests**
+    - Hypothesis Testing
+    - p-value and significance level
+    - T-test and Z-test
+- *Mock sessions will be conducted regularly for this topic*
+
+=== 8. **NumPy - Numerical Python**
+- Introduction to NumPy
+- Creating Arrays:
+    - `np.array()`
+    - `np.arange()`
+    - `np.linspace()`
+- Indexing and Slicing Arrays
+- Reshaping Arrays
+- Array Operations:
+    - Mathematical operations
+    - Broadcasting
+- Random Number Generation
+- Aggregation Functions:
+    - `sum()`, `mean()`, `std()`, etc.
+- *Mock sessions will be conducted regularly for this topic*
+
+=== 9. **Data Analysis - Pandas**
+- Introduction to Pandas
+- Creating Series and DataFrames
+- Reading and Writing Data:
+    - CSV, Excel, JSON
+- Data Cleaning and Preprocessing:
+    - Handling missing values
+    - Removing duplicates
+    - Replacing values
+- Filtering and Sorting Data
+- Aggregation and Grouping
+- Merging and Joining DataFrames
+- Data Transformation
+- *Mock sessions will be conducted regularly for this topic*
+
+=== 10. **Data Visualization - Matplotlib**
+- Introduction to Matplotlib
+- Creating Basic Plots:
+    - Line plot
+    - Bar plot
+    - Scatter plot
+    - Pie chart
+- Customizing Plots:
+    - Colors, Labels, Legends
+    - Line styles and markers
+- Subplots and Grid Layout
+- Plot Customizations:
+    - Titles, Axes Labels
+    - Adding Text and Annotations
+- *Mock sessions will be conducted regularly for this topic*
+
+=== 11. **Computer Vision with OpenCV**
+- Introduction to OpenCV
+- Reading and Displaying Images
+- Image Processing Techniques:
+    - Grayscale Conversion
+    - Blurring and Smoothing
+    - Edge Detection (Canny)
+- Image Thresholding
+- Contour Detection and Drawing
+- Shape and Color Detection
+- Image Transformations:
+    - Scaling, Rotating, and Flipping
+- *Mock sessions will be conducted regularly for this topic*
+
+=== 12. **Data Visualization - Seaborn**
+- Introduction to Seaborn
+- Creating Advanced Visualizations:
+    - Line and Bar Plots
+    - Box Plots and Violin Plots
+    - Pair Plots and Joint Plots
+    - Heatmaps
+- Customizing Seaborn Plots
+- Styling and Themes
+- *Mock sessions will be conducted regularly for this topic*
+
+=== 13. **Web Scraping - BeautifulSoup**
+- Introduction to Web Scraping
+- Setting up BeautifulSoup
+- Extracting Data from HTML and XML
+- Navigating HTML DOM:
+    - `find()`, `find_all()`
+- Extracting Text and Attributes
+- Working with Tables
+- Exporting Data to CSV or Excel
+- Handling Exceptions
+- *Mock sessions will be conducted regularly for this topic*
+
+=== 14. **Web Crawling - Scrapy**
+- Introduction to Scrapy
+- Setting up Scrapy Project
+- Creating Spiders
+- Extracting Data:
+    - XPath and CSS Selectors
+- Storing Scraped Data:
+    - CSV, JSON, MongoDB
+- Handling Pagination and Crawling Multiple Pages
+- Using Scrapy Pipelines and Middlewares
+- Scrapy Best Practices
+- *Mock sessions will be conducted regularly for this topic*
+
+=== 15. **Assignments and Projects**
+- **Objective Assignments**
+    - Multiple-choice and short-answer questions on Python, statistics, and libraries
+- **Coding Exercises**
+    - Data cleaning and manipulation tasks
+    - Web scraping and crawling exercises
+    - Data visualization exercises
+- **Capstone Project**
+    - End-to-end Data Science project including:
+        - Data collection and cleaning
+        - EDA and visualization
+        - Model building and evaluation
+        - Presentation of insights
+
+=== 16. **Mock Interview Preparation**
+- **Technical Questions**
+    - Python coding questions
+    - Libraries and their applications
+    - Statistics and Probability
+    - Data analysis and visualization
+- **Scenario-based Questions**
+    - Real-world data science problem-solving
+- **Behavioral Questions**
+    - Communication and collaboration skills
+- **Interview Tips**
+    - Resume building
+    - Common interview mistakes
+    - Presentation skills
+- *Mock sessions will be conducted regularly for this topic*
